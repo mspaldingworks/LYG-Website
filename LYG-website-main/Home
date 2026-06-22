@@ -1,0 +1,61 @@
+<!-- wp:carousel-slider/slider /-->
+
+<!-- wp:cover {"url":"https://louisvilleyouthgroup.org/wp-content/uploads/2025/07/O5C8742.jpg","id":52,"dimRatio":30,"customOverlayColor":"#665f5f","isUserOverlayColor":false,"minHeight":720,"minHeightUnit":"px","customGradient":"linear-gradient(35deg,rgb(6,0,151) 0%,rgb(130,4,255) 73%,rgb(193,15,255) 100%)","sizeSlug":"full","align":"full"} -->
+<div class="wp-block-cover alignfull" style="min-height:720px"><img class="wp-block-cover__image-background wp-image-52 size-full" alt="" src="https://louisvilleyouthgroup.org/wp-content/uploads/2025/07/O5C8742.jpg" data-object-fit="cover"/><span aria-hidden="true" class="wp-block-cover__background has-background-dim-30 has-background-dim wp-block-cover__gradient-background has-background-gradient" style="background-color:#665f5f;background:linear-gradient(35deg,rgb(6,0,151) 0%,rgb(130,4,255) 73%,rgb(193,15,255) 100%)"></span><div class="wp-block-cover__inner-container"><!-- wp:group {"align":"wide","layout":{"inherit":true,"type":"constrained"}} -->
+<div class="wp-block-group alignwide"><!-- wp:heading {"textAlign":"left","level":1,"textColor":"white"} -->
+<h1 class="wp-block-heading has-text-align-left has-white-color has-text-color">Louisville Youth Group</h1>
+<!-- /wp:heading -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons"><!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="https://louisvilleyouthgroup.org/contact-us/">Contact Us</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons --></div>
+<!-- /wp:group --></div></div>
+<!-- /wp:cover -->
+
+<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"bottom":"0px","top":"144px"}}},"layout":{"inherit":false,"contentSize":"1200px","type":"constrained"}} -->
+<div class="wp-block-group alignfull" id="services" style="padding-top:144px;padding-bottom:0px"><!-- wp:columns {"style":{"spacing":{"margin":{"top":"50px"}}}} -->
+<div class="wp-block-columns" style="margin-top:50px"><!-- wp:column {"style":{"spacing":{"blockGap":"8px"}}} -->
+<div class="wp-block-column"><!-- wp:cover {"url":"https://louisvilleyouthgroup.org/wp-content/uploads/2025/07/Screen-Shot-2018-02-23-at-12.49.28-AM.png","id":54,"dimRatio":50,"customOverlayColor":"#59535f","isUserOverlayColor":false,"sizeSlug":"full","layout":{"type":"constrained"}} -->
+<div class="wp-block-cover"><img class="wp-block-cover__image-background wp-image-54 size-full" alt="" src="https://louisvilleyouthgroup.org/wp-content/uploads/2025/07/Screen-Shot-2018-02-23-at-12.49.28-AM.png" data-object-fit="cover"/><span aria-hidden="true" class="wp-block-cover__background has-background-dim" style="background-color:#59535f"></span><div class="wp-block-cover__inner-container"><!-- wp:paragraph {"align":"center","placeholder":"Write title…","fontSize":"large"} -->
+<p class="has-text-align-center has-large-font-size"><strong>ABOUT US</strong></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"}} -->
+<div class="wp-block-buttons"><!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="https://louisvilleyouthgroup.org/about-us/">Learn More</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons --></div></div>
+<!-- /wp:cover --></div>
+<!-- /wp:column -->
+
+<!-- wp:column {"style":{"spacing":{"blockGap":"8px"}}} -->
+<div class="wp-block-column"><!-- wp:cover {"url":"https://louisvilleyouthgroup.org/wp-content/uploads/2025/07/Screen-Shot-2018-02-23-at-12.48.50-AM.png","id":55,"dimRatio":50,"customOverlayColor":"#805f89","isUserOverlayColor":false,"sizeSlug":"full","layout":{"type":"constrained"}} -->
+<div class="wp-block-cover"><img class="wp-block-cover__image-background wp-image-55 size-full" alt="" src="https://louisvilleyouthgroup.org/wp-content/uploads/2025/07/Screen-Shot-2018-02-23-at-12.48.50-AM.png" data-object-fit="cover"/><span aria-hidden="true" class="wp-block-cover__background has-background-dim" style="background-color:#805f89"></span><div class="wp-block-cover__inner-container"><!-- wp:paragraph {"align":"center","placeholder":"Write title…","fontSize":"large"} -->
+<p class="has-text-align-center has-large-font-size"><strong>VOLUNTEER</strong></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"}} -->
+<div class="wp-block-buttons"><!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="https://louisvilleyouthgroup.org/volunteer/">Learn More</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons --></div></div>
+<!-- /wp:cover --></div>
+<!-- /wp:column -->
+
+<!-- wp:column {"style":{"spacing":{"blockGap":"8px"}}} -->
+<div class="wp-block-column"><!-- wp:cover {"url":"https://louisvilleyouthgroup.org/wp-content/uploads/2025/07/Screen-Shot-2018-02-23-at-12.48.05-AM.png","id":56,"dimRatio":50,"customOverlayColor":"#6ba7ac","isUserOverlayColor":false,"isDark":false,"sizeSlug":"full","layout":{"type":"constrained"}} -->
+<div class="wp-block-cover is-light"><img class="wp-block-cover__image-background wp-image-56 size-full" alt="" src="https://louisvilleyouthgroup.org/wp-content/uploads/2025/07/Screen-Shot-2018-02-23-at-12.48.05-AM.png" data-object-fit="cover"/><span aria-hidden="true" class="wp-block-cover__background has-background-dim" style="background-color:#6ba7ac"></span><div class="wp-block-cover__inner-container"><!-- wp:paragraph {"align":"center","placeholder":"Write title…","style":{"elements":{"link":{"color":{"text":"var:preset|color|base-2"}}}},"textColor":"base-2","fontSize":"large"} -->
+<p class="has-text-align-center has-base-2-color has-text-color has-link-color has-large-font-size"><strong>DONATE</strong></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"}} -->
+<div class="wp-block-buttons"><!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="https://louisvilleyouthgroup.org/donate/">Learn More</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons --></div></div>
+<!-- /wp:cover --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns --></div>
+<!-- /wp:group -->

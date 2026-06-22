@@ -1,0 +1,62 @@
+<!-- wp:cover {"url":"https://louisvilleyouthgroup.org/wp-content/uploads/2025/07/Screen-Shot-2018-02-20-at-10.06.01-AM-1024x576.png","id":96,"dimRatio":50,"customOverlayColor":"#a38667","isUserOverlayColor":false,"isDark":false,"sizeSlug":"large","align":"full","layout":{"type":"constrained"}} -->
+<div class="wp-block-cover alignfull is-light"><img class="wp-block-cover__image-background wp-image-96 size-large" alt="" src="https://louisvilleyouthgroup.org/wp-content/uploads/2025/07/Screen-Shot-2018-02-20-at-10.06.01-AM-1024x576.png" data-object-fit="cover"/><span aria-hidden="true" class="wp-block-cover__background has-background-dim" style="background-color:#a38667"></span><div class="wp-block-cover__inner-container"><!-- wp:heading {"level":3,"style":{"elements":{"link":{"color":{"text":"var:preset|color|base"}}}},"textColor":"base"} -->
+<h3 class="wp-block-heading has-base-color has-text-color has-link-color">COMMUNITY EDUCATION &amp; OUTREACH</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"placeholder":"Write title…","style":{"elements":{"link":{"color":{"text":"var:preset|color|base"}}}},"textColor":"base","fontSize":"small"} -->
+<p class="has-base-color has-text-color has-link-color has-small-font-size">Bringing Youth LGBTQIA+ Topics and Concerns to the forefront of our schools, businesses and organizations.</p>
+<!-- /wp:paragraph --></div></div>
+<!-- /wp:cover -->
+
+<!-- wp:group {"style":{"spacing":{"padding":{"top":"0.25rem","bottom":"0.25rem","left":"0.25rem","right":"0.25rem"}}},"backgroundColor":"accent-5","layout":{"type":"constrained"}} -->
+<div class="wp-block-group has-accent-5-background-color has-background" style="padding-top:0.25rem;padding-right:0.25rem;padding-bottom:0.25rem;padding-left:0.25rem"><!-- wp:columns {"align":"full","style":{"spacing":{"blockGap":{"top":"0","left":"0.25rem"},"padding":{"right":"0.25rem","left":"0.25rem"}}}} -->
+<div class="wp-block-columns alignfull" style="padding-right:0.25rem;padding-left:0.25rem"><!-- wp:column {"verticalAlignment":"stretch","width":"50%","style":{"spacing":{"padding":{"top":"var:preset|spacing|10","bottom":"var:preset|spacing|10","left":"var:preset|spacing|10","right":"var:preset|spacing|10"}}},"backgroundColor":"base"} -->
+<div class="wp-block-column is-vertically-aligned-stretch has-base-background-color has-background" style="padding-top:var(--wp--preset--spacing--10);padding-right:var(--wp--preset--spacing--10);padding-bottom:var(--wp--preset--spacing--10);padding-left:var(--wp--preset--spacing--10);flex-basis:50%"><!-- wp:heading -->
+<h2 class="wp-block-heading">OUR GOALS</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>In 2017, Natalie and Jason Snyder established the Good Choices Foundation because they believe that everyone should have access to resources that enable them to make good choices. This funding currently supports our Community Education and Outreach Coordinator position, enabling LYG to expand our reach to youth, while also creating community education and training resources.&nbsp;</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Our Outreach and Community Education programming supports individuals, communities, and organizations in effecting personal and organizational changes to build inclusive environments that recognize and promote the value of diversity. We work with these organizations to develop education and resources to assist with communicating, encouraging, and providing an enriching and safe environment for the QTBIPoC/LGBTQIA+ community.&nbsp;</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:embed {"url":"https://youtu.be/jF-alcdebcc","type":"video","providerNameSlug":"youtube","responsive":true,"className":"wp-embed-aspect-16-9 wp-has-aspect-ratio"} -->
+<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
+https://youtu.be/jF-alcdebcc
+</div></figure>
+<!-- /wp:embed -->
+
+<!-- wp:paragraph -->
+<p>As a part of the Kentuckiana community, we want our doors to be open to everyone and be a support for the entire LGBTQIA+ population. It’s about striking the balance of giving kids the opportunity to be themselves, but also teaching them how to take responsibility and give back.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:html -->
+<div style="position: relative; width: 100%; height: 0; padding-top: 56.2500%;
+ padding-bottom: 48px; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+ border-radius: 8px; will-change: transform;">
+  <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;" src="https://www.canva.com/design/DAEZmlvLYKo/view?embed">
+  </iframe>
+</div>
+<!-- /wp:html -->
+
+<!-- wp:paragraph -->
+<p><a href="https://www.canva.com/design/DAEZmlvLYKo/view?utm_content=DAEZmlvLYKo&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener"></a></p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:column -->
+
+<!-- wp:column {"verticalAlignment":"stretch","width":"50%","style":{"spacing":{"padding":{"top":"var:preset|spacing|10","bottom":"var:preset|spacing|10","left":"var:preset|spacing|10","right":"var:preset|spacing|10"}}},"backgroundColor":"base"} -->
+<div class="wp-block-column is-vertically-aligned-stretch has-base-background-color has-background" style="padding-top:var(--wp--preset--spacing--10);padding-right:var(--wp--preset--spacing--10);padding-bottom:var(--wp--preset--spacing--10);padding-left:var(--wp--preset--spacing--10);flex-basis:50%"><!-- wp:heading -->
+<h2 class="wp-block-heading">WORK WITH US</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Louisville Youth Group Inc. is committed to creating an environment where QTBIPoC/LGBTQIA+ people, and specifically youth and young adults can thrive. We provide education, outreach, and consultation services to the spaces that impact our communities the most, and seek to create a more supportive and affirming world for every member of our family and community.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:wpforms/form-selector {"clientId":"3aa13fb3-9185-47a9-abd4-aaff0775ae53","formId":"121","copyPasteJsonValue":"{\u0022displayTitle\u0022:false,\u0022displayDesc\u0022:false,\u0022theme\u0022:\u0022default\u0022,\u0022themeName\u0022:\u0022\u0022,\u0022fieldSize\u0022:\u0022medium\u0022,\u0022backgroundImage\u0022:\u0022none\u0022,\u0022backgroundPosition\u0022:\u0022center center\u0022,\u0022backgroundRepeat\u0022:\u0022no-repeat\u0022,\u0022backgroundSizeMode\u0022:\u0022cover\u0022,\u0022backgroundSize\u0022:\u0022cover\u0022,\u0022backgroundWidth\u0022:\u0022100px\u0022,\u0022backgroundHeight\u0022:\u0022100px\u0022,\u0022backgroundUrl\u0022:\u0022url()\u0022,\u0022backgroundColor\u0022:\u0022rgba( 0, 0, 0, 0 )\u0022,\u0022fieldBorderRadius\u0022:\u00223px\u0022,\u0022fieldBorderStyle\u0022:\u0022solid\u0022,\u0022fieldBorderSize\u0022:\u00221px\u0022,\u0022fieldBackgroundColor\u0022:\u0022#ffffff\u0022,\u0022fieldBorderColor\u0022:\u0022rgba( 0, 0, 0, 0.25 )\u0022,\u0022fieldTextColor\u0022:\u0022rgba( 0, 0, 0, 0.7 )\u0022,\u0022fieldMenuColor\u0022:\u0022#ffffff\u0022,\u0022labelSize\u0022:\u0022medium\u0022,\u0022labelColor\u0022:\u0022rgba( 0, 0, 0, 0.85 )\u0022,\u0022labelSublabelColor\u0022:\u0022rgba( 0, 0, 0, 0.55 )\u0022,\u0022labelErrorColor\u0022:\u0022#d63637\u0022,\u0022buttonSize\u0022:\u0022medium\u0022,\u0022buttonBorderStyle\u0022:\u0022none\u0022,\u0022buttonBorderSize\u0022:\u00221px\u0022,\u0022buttonBorderRadius\u0022:\u00223px\u0022,\u0022buttonBackgroundColor\u0022:\u0022#066aab\u0022,\u0022buttonTextColor\u0022:\u0022#ffffff\u0022,\u0022buttonBorderColor\u0022:\u0022#066aab\u0022,\u0022pageBreakColor\u0022:\u0022#066aab\u0022,\u0022containerPadding\u0022:\u00220px\u0022,\u0022containerBorderStyle\u0022:\u0022none\u0022,\u0022containerBorderWidth\u0022:\u00221px\u0022,\u0022containerBorderColor\u0022:\u0022#000000\u0022,\u0022containerBorderRadius\u0022:\u00223px\u0022,\u0022containerShadowSize\u0022:\u0022none\u0022,\u0022customCss\u0022:\u0022\u0022}"} /--></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns --></div>
+<!-- /wp:group -->

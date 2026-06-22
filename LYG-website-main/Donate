@@ -1,0 +1,254 @@
+<!-- wp:group {"align":"full","style":{"color":{"background":"#41bdea"},"spacing":{"padding":{"top":"0.25rem","bottom":"0.25rem","left":"2rem","right":"2rem"},"blockGap":"5px"}},"layout":{"type":"default"}} -->
+<div class="wp-block-group alignfull has-background" style="background-color:#41bdea;padding-top:0.25rem;padding-right:2rem;padding-bottom:0.25rem;padding-left:2rem"><!-- wp:html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Donate | Louisville Youth Group</title>
+  <meta name="description" content="Support Louisville Youth Group. Your donation empowers LGBTQIA+ youth in our community.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@700;800&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    .pw-donate-block {
+      --purple:#28104e;
+      --purple-dark:#1b1533;
+      --teal:#28c2c1;
+      --gold:#f5b53f;
+      --light:#f4f2fb;
+      --white:#fff;
+      --shadow:0 14px 34px rgba(40,16,78,.13);
+      font-family:"Poppins",system-ui,sans-serif;
+      color:var(--purple-dark);
+      background:var(--light);
+      margin:0;
+      padding:0;
+    }
+    .pw-donate-block * { box-sizing:border-box; }
+    .pw-donate-block .wrap { width:min(1120px,92vw); margin:0 auto; }
+    .pw-donate-block .section { padding:2rem 0; scroll-margin-top:90px; }
+    .pw-donate-block h2, .pw-donate-block h3 { font-family:"Archivo","Poppins",sans-serif; color:var(--purple); margin:.2rem 0 .7rem; }
+    .pw-donate-block .intro { background:linear-gradient(140deg,#30165a 0%,#1b0e39 100%); color:#fff; text-align:center; }
+    .pw-donate-block .intro p { margin:.4rem auto 0; max-width:760px; }
+
+    .pw-donate-block .mission-grid { display:grid; grid-template-columns:1fr 1.4fr; gap:1rem; align-items:stretch; }
+    .pw-donate-block .card { background:#fff; border:1px solid rgba(40,16,78,.1); border-radius:16px; box-shadow:var(--shadow); padding:1.1rem; }
+    .pw-donate-block .mission-photo img { width:100%; height:100%; min-height:230px; object-fit:cover; border-radius:12px; }
+
+    .pw-donate-block .hotspot-wrap { position:relative; border-radius:14px; overflow:hidden; box-shadow:var(--shadow); }
+    .pw-donate-block .hotspot-image { width:100%; display:block; min-height:170px; object-fit:cover; }
+    .pw-donate-block .hotspots { position:absolute; inset:0; }
+    .pw-donate-block .hotspot-link {
+      position:absolute;
+      display:flex;
+      align-items:flex-end;
+      justify-content:flex-start;
+      text-decoration:none;
+      color:#fff;
+      font-family:"Archivo","Poppins",sans-serif;
+      font-size:clamp(1rem,2.1vw,2rem);
+      line-height:1;
+      letter-spacing:.02em;
+      text-shadow:0 2px 4px rgba(0,0,0,.55);
+      padding:.6rem;
+      border:1px solid rgba(255,255,255,.2);
+      background:rgba(0,0,0,.08);
+    }
+    .pw-donate-block .hotspot-link:focus-visible { outline:3px solid #fff; outline-offset:-3px; }
+    .pw-donate-block .hotspot-online { left:0; top:0; width:31%; height:100%; }
+    .pw-donate-block .hotspot-mail { left:31%; top:0; width:25%; height:100%; }
+    .pw-donate-block .hotspot-campaigns { left:56%; top:0; width:24%; height:100%; }
+
+    .pw-donate-block .widgets-grid { display:grid; grid-template-columns:2fr 1fr; gap:1rem; align-items:start; }
+    .pw-donate-block .widget-shell { background:#fff; border-radius:16px; border:1px solid rgba(40,16,78,.1); padding:1rem; box-shadow:var(--shadow); }
+    .pw-donate-block #pw-givelively .gl-branded-donation-widget { min-height:760px; width:100% !important; display:block; }
+    .pw-donate-block #pw-ig-widget { min-height:560px; }
+    .pw-donate-block details { background:#fff; border:1px solid rgba(40,16,78,.14); border-radius:14px; padding:.9rem 1rem; }
+
+    .pw-donate-block .carousel { background:#fff; border-radius:16px; border:1px solid rgba(40,16,78,.1); padding:1rem; box-shadow:var(--shadow); }
+    .pw-donate-block .slides { position:relative; min-height:290px; }
+    .pw-donate-block .slide { display:none; }
+    .pw-donate-block .slide.active { display:block; }
+    .pw-donate-block .carousel-controls { display:flex; justify-content:space-between; align-items:center; margin-top:.8rem; gap:.7rem; }
+    .pw-donate-block .c-btn { border:0; background:var(--purple); color:#fff; border-radius:999px; padding:.5rem .95rem; cursor:pointer; }
+
+    .pw-donate-block .reports { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:.8rem; }
+    .pw-donate-block .report-card { background:#fff; border-radius:14px; border:1px solid rgba(40,16,78,.1); padding:1rem; }
+
+    @media (max-width:900px){
+      .pw-donate-block .mission-grid,.pw-donate-block .widgets-grid{grid-template-columns:1fr;}
+      .pw-donate-block .hotspot-link { font-size:clamp(.95rem,5.2vw,1.5rem); }
+      .pw-donate-block .reports{grid-template-columns:1fr;}
+    }
+  </style>
+</head>
+<body>
+  <main class="pw-donate-block" id="pw-donate-root" aria-label="Louisville Youth Group donation content">
+    <section class="section intro" id="support-kentuckiana">
+      <div class="wrap">
+        <h2>Support LGBTQIA+ Youth in Kentuckiana</h2>
+        <p>Your gift provides safe spaces, mental health support, and life-changing programs for young people at Louisville Youth Group.</p>
+      </div>
+    </section>
+
+    <section class="section" id="mission">
+      <div class="wrap mission-grid">
+        <article class="card">
+          <h3>Our Mission</h3>
+          <p>Louisville Youth Group creates space for LGBTQIA+ youth to thrive, connect, and build a brighter future through affirming support, advocacy, and community.</p>
+        </article>
+        <figure class="card mission-photo">
+          <img src="https://louisvilleyouthgroup.org/wp-content/uploads/2025/07/D9A8754-e1519512245455-1.jpg" alt="Youth participating in Louisville Youth Group programming">
+        </figure>
+      </div>
+    </section>
+
+    <section class="section" id="donate-links">
+      <div class="wrap">
+        <div class="hotspot-wrap" aria-label="Donation quick links image map">
+          <img class="hotspot-image" src="https://louisvilleyouthgroup.org/wp-content/uploads/2026/03/LYG-Donation-Page-Background-3.png" alt="Donation navigation artwork with three hotspot areas: Donate Online, Mailing Address, and Campaigns.">
+          <div class="hotspots" role="navigation" aria-label="Donation section links">
+            <a class="hotspot-link hotspot-online" href="#online-widgets" aria-label="Go to Donate Online widgets">DONATE ONLINE</a>
+            <a class="hotspot-link hotspot-mail" href="#mailing-instructions" aria-label="Go to Mailing Address section">Mailing Address</a>
+            <a class="hotspot-link hotspot-campaigns" href="#givebutter-campaigns" aria-label="Go to Campaigns section">Campaigns</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="online-widgets">
+      <div class="wrap">
+        <h3>Online Donations</h3>
+        <div class="widgets-grid">
+          <article class="widget-shell" id="givelively-widget-block" aria-label="GiveLively donations">
+            <h3>GiveLively</h3>
+            <div id="pw-givelively">
+              <!-- Begin Give Lively Fundraising Widget -->
+              <script>gl=document.createElement('script');gl.src='https://secure.givelively.org/widgets/branded_donation/louisville-youth-group-inc.js';document.getElementsByTagName('head')[0].appendChild(gl);</script><div data-widget-src='https://secure.givelively.org/donate/louisville-youth-group-inc?ref=sd_widget' id="give-lively-widget" class="gl-branded-donation-widget"></div>
+              <!-- End Give Lively Fundraising Widget -->
+            </div>
+          </article>
+
+          <article class="widget-shell" id="infinite-giving-widget-block" aria-label="Infinite Giving stock and DAF donations">
+            <h3>Infinite Giving (Stock / DAF / Matching)</h3>
+            <!--Infinite Giving Gifting Widget-->
+            <div id="ig-widget"></div>
+            <script>
+              window.igSettings = { appId: "EFSW8DDWQ" };
+            </script>
+            <script src="https://cdn.infinitegiving.com/widget/production.bundle.js" async></script>
+            <!--End IG Widget-->
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="mailing-instructions">
+      <div class="wrap">
+        <details>
+          <summary><strong>Physical Mailing Instructions</strong></summary>
+          <p><strong>Louisville Youth Group, Inc.</strong><br>417 E Broadway<br>Louisville, KY 40202</p>
+          <p>Please include your email or phone number so we can send a receipt for tax purposes.</p>
+        </details>
+      </div>
+    </section>
+
+    <section class="section" id="givebutter-campaigns">
+      <div class="wrap carousel" data-pw-carousel>
+        <h3>Givebutter Campaigns</h3>
+        <div class="slides">
+          <div class="slide active">[givebutter-widget id="gGzZxL"]</div>
+          <div class="slide">[givebutter-widget id="pXqWNj"]</div>
+          <div class="slide">[givebutter-widget id="pzrx3p"]</div>
+        </div>
+        <div class="carousel-controls">
+          <button class="c-btn" type="button" data-prev>Prev</button>
+          <span aria-live="polite" data-count>1 / 3</span>
+          <button class="c-btn" type="button" data-next>Next</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="lgl-form">
+      <div class="wrap card">
+        <h3>LGL Special Events Form</h3>
+        <script type="text/javascript" src="https://secure.lglforms.com/form_engine/s/Y782T61BxvDzK3bfES1M3Q.js"></script>
+        <noscript><a href="https://secure.lglforms.com/form_engine/s/Y782T61BxvDzK3bfES1M3Q">Support LYG's special events!</a><br></noscript>
+      </div>
+    </section>
+
+    <section class="section" id="transparency">
+      <div class="wrap">
+        <h3>Transparency</h3>
+        <p><strong>Tax ID:</strong> 61-1340329 &nbsp;|&nbsp; 501(c)(3) nonprofit</p>
+        <div class="reports" aria-label="Annual 990 links">
+          <article class="report-card"><h3>Form 990 (2024)</h3><p><a href="#" target="_blank" rel="noopener">View 2024 990</a></p></article>
+          <article class="report-card"><h3>Form 990 (2023)</h3><p><a href="#" target="_blank" rel="noopener">View 2023 990</a></p></article>
+          <article class="report-card"><h3>Form 990 (2022)</h3><p><a href="#" target="_blank" rel="noopener">View 2022 990</a></p></article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    (function () {
+      var root = document.getElementById('pw-donate-root');
+      if (!root) return;
+      var carousel = root.querySelector('[data-pw-carousel]');
+      if (!carousel) return;
+      var slides = Array.prototype.slice.call(carousel.querySelectorAll('.slide'));
+      var prev = carousel.querySelector('[data-prev]');
+      var next = carousel.querySelector('[data-next]');
+      var count = carousel.querySelector('[data-count]');
+      var i = 0;
+      function render() {
+        slides.forEach(function (s, idx) { s.classList.toggle('active', idx === i); });
+        if (count) count.textContent = (i + 1) + ' / ' + slides.length;
+      }
+      if (prev) prev.addEventListener('click', function () { i = (i - 1 + slides.length) % slides.length; render(); });
+      if (next) next.addEventListener('click', function () { i = (i + 1) % slides.length; render(); });
+      render();
+    })();
+  </script>
+</body>
+</html>
+
+<!-- /wp:html --></div>
+<!-- /wp:group -->
+
+<!-- wp:columns -->
+<div class="wp-block-columns"><!-- wp:column {"width":"66.66%"} -->
+<div class="wp-block-column" style="flex-basis:66.66%"><!-- wp:html -->
+<!-- Begin Give Lively Fundraising Widget -->
+<script>gl=document.createElement('script');gl.src='https://secure.givelively.org/widgets/branded_donation/louisville-youth-group-inc.js';document.getElementsByTagName('head')[0].appendChild(gl);</script><div data-widget-src='https://secure.givelively.org/donate/louisville-youth-group-inc?ref=sd_widget' id="give-lively-widget" class="gl-branded-donation-widget"></div>
+<!-- End Give Lively Fundraising Widget -->
+<!-- /wp:html --></div>
+<!-- /wp:column -->
+
+<!-- wp:column {"width":"33.33%"} -->
+<div class="wp-block-column" style="flex-basis:33.33%"><!-- wp:html -->
+<!--Infinite Giving Gifting Widget-->
+              <div id="ig-widget"></div>
+              <script>
+                window.igSettings = { appId: "EFSW8DDWQ" };
+              </script>
+              <script src="https://cdn.infinitegiving.com/widget/production.bundle.js" async></script>
+              <!--End IG Widget-->
+<!-- /wp:html -->
+
+<!-- wp:html -->
+[givebutter-widget id="gGzZxL"]
+<!-- /wp:html -->
+
+<!-- wp:html -->
+[givebutter-widget id="pXqWNj"]
+<!-- /wp:html -->
+
+<!-- wp:html -->
+[givebutter-widget id="pzrx3p"]
+<!-- /wp:html --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns -->
+
+<!-- wp:html /-->

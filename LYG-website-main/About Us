@@ -1,0 +1,102 @@
+<!-- wp:cover {"url":"https://louisvilleyouthgroup.org/wp-content/uploads/2025/07/LYG_17-1-e1519273197615-1024x683.jpg","id":127,"dimRatio":50,"customOverlayColor":"#453c34","isUserOverlayColor":false,"focalPoint":{"x":0.5,"y":0.1000000000000000055511151231257827021181583404541015625},"minHeight":500,"contentPosition":"top center","sizeSlug":"large","align":"full","style":{"spacing":{"padding":{"top":"0","bottom":"0"}}},"fontSize":"large","layout":{"type":"constrained"}} -->
+<div class="wp-block-cover alignfull has-custom-content-position is-position-top-center has-large-font-size" style="padding-top:0;padding-bottom:0;min-height:500px"><img class="wp-block-cover__image-background wp-image-127 size-large" alt="" src="https://louisvilleyouthgroup.org/wp-content/uploads/2025/07/LYG_17-1-e1519273197615-1024x683.jpg" style="object-position:50% 10%" data-object-fit="cover" data-object-position="50% 10%"/><span aria-hidden="true" class="wp-block-cover__background has-background-dim" style="background-color:#453c34"></span><div class="wp-block-cover__inner-container"><!-- wp:heading {"textAlign":"left","level":1,"style":{"spacing":{"padding":{"top":"var:preset|spacing|10","bottom":"var:preset|spacing|10"}}},"fontSize":"xx-large"} -->
+<h1 class="wp-block-heading has-text-align-left has-xx-large-font-size" style="padding-top:var(--wp--preset--spacing--10);padding-bottom:var(--wp--preset--spacing--10)">Meet Our Team</h1>
+<!-- /wp:heading --></div></div>
+<!-- /wp:cover -->
+
+<!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|50","left":"var:preset|spacing|50","right":"var:preset|spacing|50"},"margin":{"top":"0","bottom":"0"}}},"backgroundColor":"base","layout":{"type":"constrained"}} -->
+<div class="wp-block-group has-base-background-color has-background" style="margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--50);padding-right:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--50)"><!-- wp:columns {"align":"full","style":{"spacing":{"blockGap":{"top":"var:preset|spacing|40","left":"var:preset|spacing|30"}}}} -->
+<div class="wp-block-columns alignfull"><!-- wp:column {"width":"50%","style":{"spacing":{"padding":{"top":"var:preset|spacing|10","bottom":"var:preset|spacing|10","left":"var:preset|spacing|10","right":"var:preset|spacing|10"}}},"backgroundColor":"base"} -->
+<div class="wp-block-column has-base-background-color has-background" style="padding-top:var(--wp--preset--spacing--10);padding-right:var(--wp--preset--spacing--10);padding-bottom:var(--wp--preset--spacing--10);padding-left:var(--wp--preset--spacing--10);flex-basis:50%"><!-- wp:html -->
+<div style="position: relative; width: 100%; height: 0; padding-top: 75.0000%;
+ padding-bottom: 48px; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+ border-radius: 8px; will-change: transform;">
+  <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;" src="https://www.canva.com/design/DADtikrHbbE/view?embed">
+  </iframe>
+</div>
+<!-- /wp:html -->
+
+<!-- wp:paragraph -->
+<p><a href="https://www.canva.com/design/DADtikrHbbE/view?utm_content=DADtikrHbbE&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener"></a></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Drop Us a Line</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Use these links to connect with different departments at LYG.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>If you have Programming questions, check out our Programming Page.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>If you have a question about fundraising for LYG or a donation, visit our Development Page.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>If you are interested in connecting with us about our Community Education and Outreach Training, GSTA Development Programming, or other Youth Outreach opportunities, please contact us through our Outreach Page.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>If you are interested in Mentoring, Volunteering, or Serving on our Board, look for applications on our Volunteer Page.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">History</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Louisville Youth Group Inc was established in the late 80s by local community members and PFLAG. They recognized the need to provide safe and affirming space for Kentuckiana’s LGBTQIA+ youth. Since then, LYG has served thousands of young people from Kentuckiana and the surrounding area. In addition to our standard programming, we annually host a Pasta Dinner/Talent Show, Prom, Youth Leadership Retreat, New Year’s Eve Lock-in, and actively participate in Kentuckiana’s Pride Month celebrations and Pride visibility opportunities. LYG is in the midst of a period of expansion. The need for our services grows every year, requiring us to design new programs and invest in additional services. LYG must grow our staff to properly meet the needs of our youth, and begin the search for new, ADA-accessible space. We are grateful to our community who continues to support our work, and whose love and gifts will ensure our legacy continues far into the future.&nbsp;</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:column -->
+
+<!-- wp:column {"width":"50%","style":{"spacing":{"padding":{"top":"var:preset|spacing|10","bottom":"var:preset|spacing|10","left":"var:preset|spacing|10","right":"var:preset|spacing|10"}}},"backgroundColor":"base"} -->
+<div class="wp-block-column has-base-background-color has-background" style="padding-top:var(--wp--preset--spacing--10);padding-right:var(--wp--preset--spacing--10);padding-bottom:var(--wp--preset--spacing--10);padding-left:var(--wp--preset--spacing--10);flex-basis:50%"><!-- wp:heading -->
+<h2 class="wp-block-heading">Our Mission</h2>
+<!-- /wp:heading -->
+
+<!-- wp:embed {"url":"https://youtu.be/0qUZJSUFJeM","type":"video","providerNameSlug":"youtube","responsive":true,"className":"wp-embed-aspect-16-9 wp-has-aspect-ratio"} -->
+<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
+https://youtu.be/0qUZJSUFJeM
+</div></figure>
+<!-- /wp:embed -->
+
+<!-- wp:heading {"level":4} -->
+<h4 class="wp-block-heading"><strong>VISION:&nbsp;</strong></h4>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"className":"wp-embed-aspect-16-9 wp-has-aspect-ratio"} -->
+<p class="wp-embed-aspect-16-9 wp-has-aspect-ratio">A community where youth of all genders and sexualities thrive.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":4} -->
+<h4 class="wp-block-heading"><strong>MISSION:&nbsp;</strong></h4>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>LYG empowers QTBIPoC/LGBTQIA+ youth to grow into healthy and resilient leaders through community connection, life skills education, and social advocacy.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list {"ordered":true} -->
+<ol class="wp-block-list"><!-- wp:list-item {"style":{"elements":{"link":{"color":{"text":"#5933c2"}}},"color":{"text":"#5933c2"}}} -->
+<li class="has-text-color has-link-color" style="color:#5933c2"><strong>Be a Brave Space –&nbsp;</strong>Create a transformative community of courageous growth, encouraging our youth to expand self-awareness, develop new perspectives, increase empathy, and cultivate hope.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item {"style":{"elements":{"link":{"color":{"text":"#478b92"}}},"color":{"text":"#478b92"}}} -->
+<li class="has-text-color has-link-color" style="color:#478b92"><strong>Be Youth Centered</strong> –&nbsp;Rooted in the needs and interests of our youth and lead by their experience and direction.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item {"style":{"color":{"text":"#b21919"},"elements":{"link":{"color":{"text":"#b21919"}}}}} -->
+<li class="has-text-color has-link-color" style="color:#b21919"><strong>Be Community Minded</strong> – Instill a sense of respect and responsibility for our world and fellow humankind through service, advocacy and activism.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item {"style":{"elements":{"link":{"color":{"text":"#8a8f26"}}},"color":{"text":"#8a8f26"}}} -->
+<li class="has-text-color has-link-color" style="color:#8a8f26"><strong>Be Anti-Racist</strong> –&nbsp;Actively dismantle racism within ourselves, our organization, and our community.</li>
+<!-- /wp:list-item --></ol>
+<!-- /wp:list --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns --></div>
+<!-- /wp:group -->

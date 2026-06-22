@@ -1,0 +1,99 @@
+<!-- wp:group {"style":{"spacing":{"padding":{"top":"0.25rem","bottom":"0.25rem","left":"0.25rem","right":"0.25rem"}}},"backgroundColor":"accent-5","layout":{"type":"constrained"}} -->
+<div class="wp-block-group has-accent-5-background-color has-background" style="padding-top:0.25rem;padding-right:0.25rem;padding-bottom:0.25rem;padding-left:0.25rem"><!-- wp:columns {"verticalAlignment":null,"align":"full","style":{"spacing":{"blockGap":{"top":"0","left":"0.25rem"},"padding":{"right":"0.25rem","left":"0.25rem"}}}} -->
+<div class="wp-block-columns alignfull" style="padding-right:0.25rem;padding-left:0.25rem"><!-- wp:column {"verticalAlignment":"stretch","width":"50%","style":{"spacing":{"padding":{"top":"var:preset|spacing|10","bottom":"var:preset|spacing|10","left":"var:preset|spacing|10","right":"var:preset|spacing|10"}}},"backgroundColor":"base"} -->
+<div class="wp-block-column is-vertically-aligned-stretch has-base-background-color has-background" style="padding-top:var(--wp--preset--spacing--10);padding-right:var(--wp--preset--spacing--10);padding-bottom:var(--wp--preset--spacing--10);padding-left:var(--wp--preset--spacing--10);flex-basis:50%"><!-- wp:heading -->
+<h2 class="wp-block-heading">PFLAG LOUISVILLE</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Vision:&nbsp;We, the parents, families and friends of lesbian, gay, bisexual and transgender persons, celebrate diversity and envision a society that embraces everyone, including those of diverse sexual orientations and gender identities. Only with respect, dignity and equality for all will we reach our full potential as human beings, individually and collectively. PFLAG welcomes the participation and support of all who share in, and hope to realize this vision.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons"><!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="http://www.pflaglouisville.org/PFLAG_Louisville/Home.html">VISIT</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons --></div>
+<!-- /wp:column -->
+
+<!-- wp:column {"verticalAlignment":"stretch","width":"50%","style":{"spacing":{"padding":{"top":"var:preset|spacing|10","bottom":"var:preset|spacing|10","left":"var:preset|spacing|10","right":"var:preset|spacing|10"}}},"backgroundColor":"base"} -->
+<div class="wp-block-column is-vertically-aligned-stretch has-base-background-color has-background" style="padding-top:var(--wp--preset--spacing--10);padding-right:var(--wp--preset--spacing--10);padding-bottom:var(--wp--preset--spacing--10);padding-left:var(--wp--preset--spacing--10);flex-basis:50%"><!-- wp:heading -->
+<h2 class="wp-block-heading">THE TREVOR PROJECT</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Founded in 1998 by the creators of the Academy Award®-winning short film TREVOR, The Trevor Project is the leading national organization providing crisis intervention and suicide prevention services to lesbian, gay, bisexual, transgender and questioning (LGBTQ) young people ages 13-24.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons"><!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="https://www.thetrevorproject.org/">VISIT</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns -->
+
+<!-- wp:columns {"verticalAlignment":null,"align":"full","style":{"spacing":{"blockGap":{"top":"0","left":"0.25rem"},"padding":{"right":"0.25rem","left":"0.25rem"}}}} -->
+<div class="wp-block-columns alignfull" style="padding-right:0.25rem;padding-left:0.25rem"><!-- wp:column {"verticalAlignment":"stretch","width":"50%","style":{"spacing":{"padding":{"top":"var:preset|spacing|10","bottom":"var:preset|spacing|10","left":"var:preset|spacing|10","right":"var:preset|spacing|10"}}},"backgroundColor":"base"} -->
+<div class="wp-block-column is-vertically-aligned-stretch has-base-background-color has-background" style="padding-top:var(--wp--preset--spacing--10);padding-right:var(--wp--preset--spacing--10);padding-bottom:var(--wp--preset--spacing--10);padding-left:var(--wp--preset--spacing--10);flex-basis:50%"><!-- wp:heading -->
+<h2 class="wp-block-heading">FAMILY ACCEPTANCE PROJECT</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>The Family Acceptance Project® (FAP) is directed by Dr. Caitlin Ryan at the Marian Wright Edelman Institute at San Francisco State University, and was developed by Caitlin Ryan and Rafael Dìaz in 2002. It includes the first comprehensive study of LGBT youth and their families.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons"><!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="https://familyproject.sfsu.edu/overview">VISIT</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons --></div>
+<!-- /wp:column -->
+
+<!-- wp:column {"verticalAlignment":"stretch","width":"50%","style":{"spacing":{"padding":{"top":"var:preset|spacing|10","bottom":"var:preset|spacing|10","left":"var:preset|spacing|10","right":"var:preset|spacing|10"}}},"backgroundColor":"base"} -->
+<div class="wp-block-column is-vertically-aligned-stretch has-base-background-color has-background" style="padding-top:var(--wp--preset--spacing--10);padding-right:var(--wp--preset--spacing--10);padding-bottom:var(--wp--preset--spacing--10);padding-left:var(--wp--preset--spacing--10);flex-basis:50%"><!-- wp:heading -->
+<h2 class="wp-block-heading">The LGBT Center at UofL</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>The LGBT Center at the University of Louisville is a resource for all students, faculty, staff, alumni and guests and aims to create a safe, inclusive community for everyone regardless of sexual orientation or gender identity/expression.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons"><!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="http://louisville.edu/lgbt/">VISIT</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons -->
+
+<!-- wp:paragraph -->
+<p>For a list of local, affirming mental health providers, reach out to us through our <a href="http://louisvilleyouthgroup.org/?page_id=25000">contact form</a>.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns -->
+
+<!-- wp:columns {"verticalAlignment":null,"align":"full","style":{"spacing":{"blockGap":{"top":"0","left":"0.25rem"},"padding":{"right":"0.25rem","left":"0.25rem"}}}} -->
+<div class="wp-block-columns alignfull" style="padding-right:0.25rem;padding-left:0.25rem"><!-- wp:column {"verticalAlignment":"stretch","width":"50%","style":{"spacing":{"padding":{"top":"var:preset|spacing|10","bottom":"var:preset|spacing|10","left":"var:preset|spacing|10","right":"var:preset|spacing|10"}}},"backgroundColor":"base"} -->
+<div class="wp-block-column is-vertically-aligned-stretch has-base-background-color has-background" style="padding-top:var(--wp--preset--spacing--10);padding-right:var(--wp--preset--spacing--10);padding-bottom:var(--wp--preset--spacing--10);padding-left:var(--wp--preset--spacing--10);flex-basis:50%"><!-- wp:heading -->
+<h2 class="wp-block-heading">UofL PHYSICIANS LGBTQ+ CARE</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>UofL Physicians and the UofL School of Medicine have joined together with the <a href="http://louisville.edu/lgbt">LGBT Center</a> and community members to develop an important initiative focused on addressing the health care needs of the LGBTQ community.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons"><!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="http://www.uoflphysicians.com/lgbtq-care">VISIT</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons --></div>
+<!-- /wp:column -->
+
+<!-- wp:column {"verticalAlignment":"stretch","width":"50%","style":{"spacing":{"padding":{"top":"var:preset|spacing|10","bottom":"var:preset|spacing|10","left":"var:preset|spacing|10","right":"var:preset|spacing|10"}}},"backgroundColor":"base"} -->
+<div class="wp-block-column is-vertically-aligned-stretch has-base-background-color has-background" style="padding-top:var(--wp--preset--spacing--10);padding-right:var(--wp--preset--spacing--10);padding-bottom:var(--wp--preset--spacing--10);padding-left:var(--wp--preset--spacing--10);flex-basis:50%"></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns --></div>
+<!-- /wp:group -->
+
+<!-- wp:paragraph -->
+<p></p>
+<!-- /wp:paragraph -->

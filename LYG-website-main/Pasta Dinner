@@ -1,0 +1,545 @@
+<!-- wp:paragraph {"align":"center"} -->
+<p class="has-text-align-center"><a href="https://louisvilleyouthgroup.org/wp-content/uploads/2026/02/‘.pdf">View sponsorship Pdf</a></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LYG Pasta Dinner 2026 Blocks</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    html,
+    body {
+      min-height: 100%;
+    }
+
+    body {
+      margin: 0;
+      background-color: #f7ad00;
+      position: relative;
+    }
+
+    body::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      height: 100%;
+      left: 50%;
+      width: min(94vw, 860px);
+      transform: translateX(-50%);
+      z-index: 0;
+      background-image: url("https://louisvilleyouthgroup.org/wp-content/uploads/2026/02/Pasta-Background-1-scaled.png");
+      background-repeat: repeat-y;
+      background-size: 100% auto;
+      background-position: center 0;
+      animation: pw-scroll-bg 18s linear infinite;
+      opacity: 0.9;
+      pointer-events: none;
+    }
+
+    @keyframes pw-scroll-bg {
+      from {
+        background-position: center 0;
+      }
+      to {
+        background-position: center 1400px;
+      }
+    }
+
+    .pw-pasta-2026 {
+      position: relative;
+      --pw-bg: #120042;
+      --pw-text: #000000;
+      --pw-muted: #000000;
+      --pw-primary: #ff4b45;
+      --pw-secondary: #63dde1;
+      --pw-accent: #ffc429;
+      --pw-border: rgba(255, 255, 255, 0.18);
+      --pw-shadow: 0 16px 40px rgba(10, 0, 40, 0.4);
+      --pw-font: "Montserrat", "Avenir Next", "Segoe UI", Arial, sans-serif;
+
+      font-family: var(--pw-font);
+      color: var(--pw-text);
+      background: transparent;
+      padding: clamp(1rem, 2vw, 2rem) 1rem;
+      scroll-margin-top: 1rem;
+    }
+
+    .pw-pasta-2026 .pw-container {
+      max-width: 1040px;
+      margin: 0 auto;
+      text-align: center;
+      position: relative;
+      z-index: 2;
+    }
+
+    .pw-pasta-2026:not(.pw-hero) .pw-container {
+      background: rgba(255, 238, 212, 0.9);
+      border: 2px solid rgba(0, 0, 0, 0.14);
+      border-radius: 18px;
+      padding: 1rem;
+      box-shadow: 0 10px 26px rgba(0, 0, 0, 0.16);
+    }
+
+    .pw-pasta-2026 h2 {
+      color: #000000;
+      font-size: clamp(1.9rem, 4vw, 2.8rem);
+      line-height: 1.15;
+      font-weight: 800;
+      letter-spacing: 0.01em;
+      margin: 0 0 1.25rem;
+      text-wrap: balance;
+    }
+
+    .pw-pasta-2026 p,
+    .pw-pasta-2026 li,
+    .pw-pasta-2026 a {
+      font-size: clamp(1rem, 2.1vw, 1.16rem);
+      line-height: 1.65;
+    }
+
+    .pw-pasta-2026 .pw-lead {
+      margin: 0 auto;
+      font-size: clamp(1.25rem, 3vw, 1.75rem);
+      font-weight: 700;
+      max-width: 760px;
+      color: #000000;
+      text-wrap: balance;
+    }
+
+    .pw-pasta-2026 .pw-button-row {
+      margin-top: 1.5rem;
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      align-items: center;
+      gap: 0.8rem;
+      max-width: 860px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .pw-pasta-2026 .pw-image-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 999px;
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.28);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      line-height: 0;
+    }
+
+    .pw-pasta-2026 .pw-image-btn:hover,
+    .pw-pasta-2026 .pw-image-btn:focus-visible {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 26px rgba(0, 0, 0, 0.35);
+      outline: none;
+    }
+
+    .pw-pasta-2026 .pw-image-btn img {
+      display: block;
+      width: min(100%, 220px);
+      max-width: 100%;
+      height: auto;
+      margin: 0 auto;
+    }
+
+    .pw-pasta-2026 .pw-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 48px;
+      padding: 0.78rem 1.35rem;
+      border-radius: 999px;
+      border: 2px solid transparent;
+      text-decoration: none;
+      font-size: clamp(0.95rem, 1.8vw, 1.05rem);
+      font-weight: 700;
+      letter-spacing: 0.01em;
+      transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+    }
+
+    .pw-pasta-2026 .pw-btn:focus-visible,
+    .pw-pasta-2026 .pw-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 24px rgba(0, 0, 0, 0.24);
+    }
+
+    .pw-pasta-2026 .pw-btn-primary {
+      background: var(--pw-primary);
+      color: #000000;
+    }
+
+    .pw-pasta-2026 .pw-btn-secondary {
+      border-color: var(--pw-secondary);
+      color: #000000;
+      background: rgba(99, 221, 225, 0.1);
+    }
+
+    .pw-pasta-2026 .pw-hero-grid,
+    .pw-pasta-2026 .pw-host-grid {
+      display: grid;
+      gap: 1.5rem;
+      align-items: center;
+      justify-items: center;
+    }
+
+    .pw-pasta-2026 .pw-details-grid,
+    .pw-pasta-2026 .pw-sponsorship-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 1rem;
+      margin: 0.75rem auto;
+      max-width: 900px;
+    }
+
+    .pw-pasta-2026 .pw-detail-card,
+    .pw-pasta-2026 .pw-details-copy,
+    .pw-pasta-2026 .pw-embed,
+    .pw-pasta-2026 .pw-host-content,
+    .pw-pasta-2026 .pw-host-media,
+    .pw-pasta-2026 .pw-sponsorship-card,
+    .pw-pasta-2026 .pw-games-card {
+      background: #ffeed4;
+      border: 1px solid rgba(57, 0, 64, 0.18);
+      border-radius: 16px;
+      box-shadow: 0 12px 28px rgba(57, 0, 64, 0.18);
+    }
+
+    .pw-pasta-2026 .pw-detail-card,
+    .pw-pasta-2026 .pw-sponsorship-card {
+      padding: 1rem;
+      text-align: center;
+    }
+
+    .pw-pasta-2026 .pw-detail-ravioli {
+      width: 100%;
+      max-width: 180px;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+      border-radius: 10px;
+    }
+
+    .pw-pasta-2026 .pw-detail-label {
+      font-size: 0.85rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin: 0;
+      color: #000000;
+    }
+
+    .pw-pasta-2026 .pw-detail-value {
+      margin: 0.5rem 0 0;
+      font-size: clamp(1.05rem, 2.2vw, 1.3rem);
+      font-weight: 700;
+    }
+
+    .pw-pasta-2026 .pw-detail-sub,
+    .pw-pasta-2026 .pw-sponsor-copy {
+      margin: 0.3rem 0 0;
+      color: var(--pw-muted);
+      font-size: 0.95rem;
+    }
+
+    .pw-pasta-2026 .pw-sponsor-title {
+      margin: 0;
+      font-size: clamp(1.05rem, 2vw, 1.2rem);
+      font-weight: 700;
+      color: #000000;
+    }
+
+    .pw-pasta-2026 .pw-sponsorship-hotspots {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 0.75rem;
+      max-width: 920px;
+      margin: 0.75rem auto;
+      position: relative;
+      z-index: 3;
+    }
+
+    .pw-pasta-2026 .pw-sponsorship-link {
+      display: block;
+      background: #fff7ea;
+      border: 1px solid rgba(57, 0, 64, 0.24);
+      border-radius: 16px;
+      box-shadow: 0 12px 28px rgba(57, 0, 64, 0.2);
+      overflow: hidden;
+      line-height: 0;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .pw-pasta-2026 .pw-sponsorship-link:hover,
+    .pw-pasta-2026 .pw-sponsorship-link:focus-visible {
+      transform: translateY(-2px);
+      box-shadow: 0 16px 32px rgba(57, 0, 64, 0.28);
+      outline: 3px solid rgba(255, 196, 41, 0.72);
+      outline-offset: 2px;
+    }
+
+    .pw-pasta-2026 .pw-sponsorship-link img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .pw-pasta-2026 .pw-sponsorship-link-head-chef {
+      grid-column: 1 / -1;
+    }
+
+    .pw-pasta-2026 .pw-details-copy {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 1.2rem 1.2rem 1.2rem 1.6rem;
+      text-align: left;
+    }
+
+    .pw-pasta-2026 .pw-details-copy > p {
+      margin-top: 0;
+      text-align: center;
+    }
+
+    .pw-pasta-2026 .pw-list {
+      margin: 0.75rem 0 0;
+      color: #000000;
+    }
+
+    .pw-pasta-2026 .pw-list li::marker {
+      color: var(--pw-accent);
+    }
+
+    .pw-pasta-2026 .pw-embed {
+      max-width: 840px;
+      margin: 0 auto;
+      padding: clamp(0.75rem, 2vw, 1.25rem);
+      min-height: 300px;
+      display: grid;
+      place-items: center;
+      background: rgba(255, 238, 212, 0.97);
+      border: 1px solid rgba(57, 0, 64, 0.22);
+      border-radius: 16px;
+      box-shadow: 0 14px 30px rgba(57, 0, 64, 0.2);
+      overflow: hidden;
+    }
+
+    .pw-pasta-2026 .pw-givebutter-inline {
+      width: 100%;
+      max-width: 780px;
+      margin: 0 auto;
+    }
+
+    .pw-pasta-2026 .pw-givebutter-inline iframe,
+    .pw-pasta-2026 .pw-givebutter-inline > div,
+    .pw-pasta-2026 .pw-givebutter-inline [id^="givebutter"],
+    .pw-pasta-2026 .pw-givebutter-inline [class*="givebutter"] {
+      width: 100% !important;
+      max-width: 100% !important;
+      margin-left: auto !important;
+      margin-right: auto !important;
+      box-sizing: border-box;
+    }
+
+    .pw-pasta-2026 .pw-note {
+      margin: 1rem 0;
+      color: #000000;
+      font-size: 0.98rem;
+    }
+
+    .pw-pasta-2026 .pw-games-card {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 1rem;
+    }
+
+    .pw-pasta-2026 .pw-games-image {
+      width: 100%;
+      border-radius: 12px;
+      display: block;
+      height: auto;
+    }
+
+    .pw-pasta-2026 .pw-host-grid {
+      grid-template-columns: minmax(220px, 320px) minmax(260px, 640px);
+      max-width: 980px;
+      margin: 0 auto;
+    }
+
+    .pw-pasta-2026 .pw-host-media {
+      padding: 0.75rem;
+      width: 100%;
+    }
+
+    .pw-pasta-2026 .pw-host-media img {
+      width: 100%;
+      aspect-ratio: 4 / 5;
+      object-fit: cover;
+      border-radius: 12px;
+      display: block;
+    }
+
+    .pw-pasta-2026 .pw-host-content {
+      padding: 1.5rem;
+      width: 100%;
+      text-align: center;
+      background: #ffeed4;
+      border-color: rgba(57, 0, 64, 0.18);
+      color: #000000;
+    }
+
+    .pw-pasta-2026 .pw-host-content h2 {
+      color: #000000;
+    }
+
+    .pw-pasta-2026 .pw-host-bio {
+      margin: 0 0 1rem;
+      color: #000000;
+    }
+
+    @media (max-width: 760px) {
+      .pw-pasta-2026 .pw-host-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .pw-pasta-2026 .pw-details-copy {
+        padding-left: 1.2rem;
+      }
+
+      .pw-pasta-2026 .pw-image-btn img {
+        width: min(100%, 165px);
+      }
+
+      .pw-pasta-2026 .pw-button-row,
+      .pw-pasta-2026 .pw-details-grid {
+        gap: 0.65rem;
+      }
+
+      .pw-pasta-2026 .pw-sponsorship-hotspots {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Block 1 -->
+  <section class="pw-pasta-2026 pw-hero" aria-labelledby="pw-hero-title">
+    <div class="pw-container">
+      <div class="pw-hero-grid">
+        <div class="pw-hero-content">
+          <h2 id="pw-hero-title">Pasta Dinner 2026</h2>
+          <p class="pw-lead">Support LGBTQIA+ youth programs. All are welcome!</p>
+          <div class="pw-button-row" role="navigation" aria-label="Pasta Dinner quick links">
+            <a class="pw-image-btn" href="#pw-givebutter" aria-label="Jump to tickets and donations section">
+              <img src="https://louisvilleyouthgroup.org/wp-content/uploads/2026/02/BECOME-A-SPONSOR-3.png" alt="Get Tickets / Donate">
+            </a>
+            <a class="pw-image-btn" href="#pw-sponsorship" aria-label="Jump to sponsorship section">
+              <img src="https://louisvilleyouthgroup.org/wp-content/uploads/2026/02/BECOME-A-SPONSOR.png" alt="Become a Sponsor">
+            </a>
+            <a class="pw-image-btn" href="#pw-games" aria-label="Jump to this year's games section">
+              <img src="https://louisvilleyouthgroup.org/wp-content/uploads/2026/02/BECOME-A-SPONSOR-1.png" alt="This Year's Games">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Block 2 -->
+  <section class="pw-pasta-2026 pw-details" aria-labelledby="pw-details-title">
+    <div class="pw-container">
+      <h2 id="pw-details-title">Event Details</h2>
+      <div class="pw-details-grid">
+        <div class="pw-detail-card">
+          <img class="pw-detail-ravioli" src="https://louisvilleyouthgroup.org/wp-content/uploads/2026/02/BECOME-A-SPONSOR-4.png" alt="Date card: April 11, 2026" loading="lazy">
+        </div>
+        <div class="pw-detail-card">
+          <img class="pw-detail-ravioli" src="https://louisvilleyouthgroup.org/wp-content/uploads/2026/02/BECOME-A-SPONSOR-5.png" alt="Time card: 5:00 PM to 8:00 PM" loading="lazy">
+        </div>
+        <div class="pw-detail-card">
+          <img class="pw-detail-ravioli" src="https://louisvilleyouthgroup.org/wp-content/uploads/2026/02/BECOME-A-SPONSOR-6.png" alt="Location card: First U, 809 York Street, Louisville, Kentucky" loading="lazy">
+        </div>
+      </div>
+      <div class="pw-details-copy">
+        <p>Enjoy a relaxed night with a comforting meal, community connection, and opportunities to support LYG. Expect warm hospitality and space to celebrate LYG’s mission together.</p>
+        <ul class="pw-list">
+          <li>Family-style pasta dinner and refreshments</li>
+          <li>Community gathering and program highlights</li>
+          <li>Fun extras and opportunities to participate</li>
+          <li>Accessibility accommodations available on request</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Block 3 -->
+  <section class="pw-pasta-2026 pw-givebutter" id="pw-givebutter" aria-labelledby="pw-givebutter-title">
+    <div class="pw-container">
+      <h2 id="pw-givebutter-title">Tickets &amp; Donations</h2>
+      <div class="pw-embed">
+        <div class="pw-givebutter-inline">
+          [givebutter-widget id="LZmoZj"]
+        </div>
+      </div>
+      <p class="pw-note">If the widget doesn’t load, use the button below.</p>
+      <a class="pw-btn pw-btn-primary" href="https://givebutter.com/PastaDinner2026" aria-label="Open Givebutter ticket and donation page">Open Givebutter</a>
+    </div>
+  </section>
+
+  <section class="pw-pasta-2026 pw-games" id="pw-games" aria-labelledby="pw-games-title">
+    <div class="pw-container">
+      <h2 id="pw-games-title">This Year's Games</h2>
+      <div class="pw-games-card">
+        <img class="pw-games-image" src="https://louisvilleyouthgroup.org/wp-content/uploads/2026/02/BECOME-A-SPONSOR-2.png" alt="2026 Pasta Dinner games list image" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+<section class="pw-pasta-2026 pw-sponsorship" id="pw-sponsorship" aria-labelledby="pw-sponsorship-title">
+    <div class="pw-container">
+      <h2 id="pw-sponsorship-title">Sponsorship Opportunities</h2>
+      <div class="pw-sponsorship-hotspots" role="list" aria-label="Sponsorship level options">
+        <a class="pw-sponsorship-link pw-sponsorship-link-head-chef" href="https://secure.lglforms.com/form_engine/s/Y782T61BxvDzK3bfES1M3Q" target="_blank" rel="noopener" aria-label="Head Chef sponsorship - open sponsorship form" role="listitem">
+          <img src="https://louisvilleyouthgroup.org/wp-content/uploads/2026/02/Head-Chef.png" alt="Head Chef sponsorship level" loading="lazy">
+        </a>
+        <a class="pw-sponsorship-link" href="https://secure.lglforms.com/form_engine/s/Y782T61BxvDzK3bfES1M3Q" target="_blank" rel="noopener" aria-label="Care Catalyst sponsorship - open sponsorship form" role="listitem">
+          <img src="https://louisvilleyouthgroup.org/wp-content/uploads/2026/02/Care-Catalyst-1.png" alt="Care Catalyst sponsorship level" loading="lazy">
+        </a>
+        <a class="pw-sponsorship-link" href="https://secure.lglforms.com/form_engine/s/Y782T61BxvDzK3bfES1M3Q" target="_blank" rel="noopener" aria-label="Empowerment Advocate sponsorship - open sponsorship form" role="listitem">
+          <img src="https://louisvilleyouthgroup.org/wp-content/uploads/2026/02/Empowerment-Advocate.png" alt="Empowerment Advocate sponsorship level" loading="lazy">
+        </a>
+        <a class="pw-sponsorship-link" href="https://secure.lglforms.com/form_engine/s/Y782T61BxvDzK3bfES1M3Q" target="_blank" rel="noopener" aria-label="Change Champion sponsorship - open sponsorship form" role="listitem">
+          <img src="https://louisvilleyouthgroup.org/wp-content/uploads/2026/02/Change-Champion.png" alt="Change Champion sponsorship level" loading="lazy">
+        </a>
+        <a class="pw-sponsorship-link" href="https://secure.lglforms.com/form_engine/s/Y782T61BxvDzK3bfES1M3Q" target="_blank" rel="noopener" aria-label="Affirming Ally sponsorship - open sponsorship form" role="listitem">
+          <img src="https://louisvilleyouthgroup.org/wp-content/uploads/2026/02/Affirming-Ally-1.png" alt="Affirming Ally sponsorship level" loading="lazy">
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Block 4 -->
+  <section class="pw-pasta-2026 pw-host" aria-labelledby="pw-host-title">
+    <div class="pw-container">
+      <div class="pw-host-grid">
+        <div class="pw-host-media">
+          <img src="https://louisvilleyouthgroup.org/wp-content/uploads/2026/02/Berto.png" alt="Host Berto Love" loading="lazy">
+        </div>
+        <div class="pw-host-content">
+          <h2 id="pw-host-title">Hosted by Berto Love</h2>
+          <p class="pw-host-bio">Berto Love is a dynamic community voice and advocate who brings warmth, humor, and authenticity to every stage.</p>
+          <p class="pw-host-bio">As host for this evening, Berto helps center joy, inclusion, and connection while uplifting Louisville Youth Group’s mission.</p>
+          <a class="pw-btn pw-btn-primary" href="https://givebutter.com/PastaDinner2026" aria-label="Get tickets or donate via Givebutter">Get Tickets / Donate</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
+<!-- /wp:html -->

@@ -1,0 +1,335 @@
+<!-- wp:html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Flags for Trans Futures</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
+  <style>
+    :root {
+      --trans-blue: #5bcefa;
+      --trans-pink: #f5a9b8;
+      --trans-white: #ffffff;
+      --primary-dark: #3b2466;
+      --highlight: #fcaf20;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--trans-white);
+      color: var(--primary-dark);
+      line-height: 1.6;
+      margin: 0;
+    }
+
+    .hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url("https://louisvilleyouthgroup.org/wp-content/uploads/2025/06/Flags-for-Trans-Futures-2.png") no-repeat center center fixed;
+  background-size: contain;
+  background-color: var(--trans-white);
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  text-align: center;
+  padding: 2rem;
+  animation: fadeIn 2s ease-in;
+  overflow: hidden;
+}
+.hero::before {
+  content: '';
+  position: absolute;
+  left: 0; right: 0; top: 0; bottom: 0;
+  background: linear-gradient(to top, rgba(59,36,102,0.65) 0%, rgba(59,36,102,0.3) 35%, rgba(255,255,255,0) 80%);
+  z-index: 1;
+  pointer-events: none;
+}
+.hero > div, .scroll-indicator {
+  position: relative;
+  z-index: 2;
+}
+
+
+    .hero h1, .hero p {
+      background-color: rgba(255, 255, 255, 0.85);
+      padding: 0.5rem 1rem;
+      margin: 0.5rem 0;
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+      font-weight: bold;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+    }
+
+    .btn-primary {
+      background-color: var(--primary-dark);
+      border-color: var(--primary-dark);
+      color: var(--trans-white);
+      font-size: 1.1rem;
+      padding: 0.6rem 1.5rem;
+      margin-top: 1rem;
+    }
+
+    .scroll-indicator {
+      position: absolute;
+      bottom: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 2rem;
+      color: var(--primary-dark);
+      animation: bounce 2s infinite;
+    }
+
+    @keyframes bounce {
+      0%, 20%, 50%, 80%, 100% {
+        transform: translateX(-50%) translateY(0);
+      }
+      40% {
+        transform: translateX(-50%) translateY(-10px);
+      }
+      60% {
+        transform: translateX(-50%) translateY(-5px);
+      }
+    }
+
+    .section {
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+
+    .section:nth-child(even) {
+      background-color: #f7f7f7;
+    }
+
+    .section h2 {
+      color: var(--primary-dark);
+      margin-bottom: 1.5rem;
+    }
+
+    .goals .icon { font-size: 6rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .partner-logo {
+      max-width: 120px;
+      margin: 1rem;
+    }
+
+    .donation-bar {
+      background-color: var(--trans-blue);
+      height: 1.5rem;
+      width: 50%;
+      margin: 0 auto;
+    }
+
+    .donation-links a {
+      display: inline-block;
+      margin: 1rem;
+      font-size: 1rem;
+      color: var(--primary-dark);
+      text-decoration: underline;
+    }
+
+    footer {
+      background-color: var(--primary-dark);
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 2rem;
+      }
+
+      .hero p {
+        font-size: 1rem;
+      }
+
+      .btn-primary {
+        font-size: 1rem;
+        padding: 0.5rem 1rem;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.001s !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.001s !important;
+        scroll-behavior: auto !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <section class="hero">
+    <div>
+      <h1>Flags for Trans Futures</h1>
+      <p>3,500 flags. 3,500 lives. Stand with Kentucky’s trans youth.</p>
+      <a href="https://givebutter.com/HXX71s" class="btn btn-primary">Donate to trans youth</a>
+    </div>
+    <div class="scroll-indicator">&#x25BC;</div>
+  </section>
+
+  
+<section class="section" id="stakes">
+  <div class="container">
+    <h2>What’s at Stake</h2>
+    <p>The Supreme Court's decision in <strong>U.S. v. Skrmetti</strong> will set legal precedent around whether state governments can ban access to medically necessary care for transgender youth. This case challenges Tennessee's SB1, a law that prohibits hormone therapy for trans minors — despite its wide endorsement by medical and psychological associations across the nation.</p>
+    <p>The Court will weigh two critical questions:</p>
+    <ul class="text-start mx-auto" style="max-width: 720px;">
+      <li><strong>Does SB1 discriminate on the basis of sex or transgender status?</strong> The plaintiffs argue it does, as it bans treatment for trans youth that is allowed for cisgender youth.</li>
+      <li><strong>Should this case be evaluated under heightened scrutiny?</strong> If so, the state must prove a compelling interest — something no court has yet upheld for these bans.</li>
+    </ul>
+    <p>This case could either reinforce or dismantle the legal framework protecting trans youth nationwide. Over 25 states have introduced or passed similar bans. What happens in this case affects the future of trans rights, bodily autonomy, and equal protection under the law across the U.S.</p>
+    <p><a href="https://www.aclu.org/news/lgbtq-rights/the-supreme-court-case-on-trans-health-care-explained" target="_blank" rel="noopener noreferrer">Read the ACLU’s explainer on the case →</a></p>
+  </div>
+</section>
+
+<section class="section" id="carousel">
+  <div class="container">
+    <div class="row align-items-center justify-content-center">
+      <!-- Carousel Column -->
+      <div class="col-lg-7 mb-4 mb-lg-0">
+        <div id="messageCarousel" class="carousel slide rounded shadow" data-bs-ride="carousel" style="background:#192c41;">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="https://louisvilleyouthgroup.org/wp-content/uploads/2025/06/12.png" class="d-block w-100 rounded" alt="Supreme Court will soon rule on U.S. v. Skrmetti, a landmark case for trans rights." loading="lazy">
+            </div>
+            <div class="carousel-item">
+              <img src="https://louisvilleyouthgroup.org/wp-content/uploads/2025/06/13.png" class="d-block w-100 rounded" alt="ACLU and Lambda Legal took Tennessee to court over its ban on gender-affirming care. This decision will impact more than Tennessee." loading="lazy">
+            </div>
+            <div class="carousel-item">
+              <img src="https://louisvilleyouthgroup.org/wp-content/uploads/2025/06/14.png" class="d-block w-100 rounded" alt="Since 2021, 25 states have banned gender-affirming care for transgender youth." loading="lazy">
+            </div>
+            <div class="carousel-item">
+              <img src="https://louisvilleyouthgroup.org/wp-content/uploads/2025/06/15.png" class="d-block w-100 rounded" alt="Tennessee's ban bans specific health care from trans people and no one else. It's unconstitutional discrimination." loading="lazy">
+            </div>
+            <div class="carousel-item">
+              <img src="https://louisvilleyouthgroup.org/wp-content/uploads/2025/06/16.png" class="d-block w-100 rounded" alt="This case will decide whether these laws violate the Equal Protection Clause. Lawyers argue the bans require heightened scrutiny." loading="lazy">
+            </div>
+            <div class="carousel-item">
+              <img src="https://louisvilleyouthgroup.org/wp-content/uploads/2025/06/17.png" class="d-block w-100 rounded" alt="Health care should stay between families and doctors—not politicians." loading="lazy">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#messageCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#messageCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+      <!-- ACLU Link Column -->
+      <div class="col-lg-5 d-flex flex-column align-items-center justify-content-center">
+        <a href="https://www.aclu.org/news/lgbtq-rights/the-supreme-court-case-on-trans-health-care-explained"
+           target="_blank"
+           rel="noopener noreferrer"
+           style="font-size: 48px; font-weight: bold; color: #3b2466; text-decoration: underline; text-align: center; margin-top: 2rem; margin-bottom: 2rem; display: block;">
+          Learn more at the ACLU
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <section class="section goals">
+    <div class="container">
+      <h2>Our Goals</h2>
+      <div class="row text-center">
+        <div class="col-md-4">
+          <div class="icon">🫂</div>
+          <h4>Solidarity</h4>
+          <p>Affirm the dignity and humanity of transgender youth.</p>
+        </div>
+        <div class="col-md-4">
+          <div class="icon">👁️</div>
+          <h4>Visibility</h4>
+          <p>Raise awareness and counteract marginalization.</p>
+        </div>
+        <div class="col-md-4">
+          <div class="icon">💖</div>
+          <h4>Support</h4>
+          <p>Spread hope and community involvement.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="flag-yard" style="background: #f7f7f7;">
+  <div class="container">
+    <figure style="max-width: 900px; margin: 0 auto;">
+      <img 
+        src="https://louisvilleyouthgroup.org/wp-content/uploads/2025/06/flag-yard.png"
+        alt="Rows of small transgender pride flags on display in grass"
+        style="width:100%; height:auto; border-radius: 1rem; box-shadow: 0 2px 24px 0 rgba(59,36,102,0.07);"
+        loading="lazy"
+      >
+      <figcaption style="color: #3b2466; font-size: 1.1rem; margin-top: 0.5rem;">
+        <strong>Flags for Trans Futures:</strong> Each flag represents one transgender youth in Kentucky—standing for dignity, hope, and the right to thrive.
+      </figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="section" id="installations">
+  <div class="container">
+    <h2>Installation Details</h2>
+    <p><strong>Number of Flags:</strong> 3,500 small transgender pride flags (approx. 5" x 8") — each representing one trans youth aged 13–18 in Kentucky.</p>
+    <p><strong>Locations:</strong> Seven sites across the state — including civic, nonprofit, and private properties — will host coordinated installations. Final sites will be shared following the Supreme Court decision.</p>
+    <p><strong>Timing:</strong> The installation will occur the <em>first Saturday</em> following the Court’s decision (expected between late June and early July 2025).</p>
+    <p><strong>Duration:</strong> Each installation will remain in place for one week, after which volunteers will respectfully remove and recycle the materials.</p>
+    <p><strong>Community Care:</strong> The displays are peaceful, affirming, and non-disruptive — designed to honor trans lives and preserve the dignity of public space. Local youth, families, and allies are invited to help install the flags and share their stories.</p>
+    <p><strong>Educational Materials:</strong> QR-coded signage at each site will link to resources about the Skrmetti case, trans healthcare, and how to take action in support of LGBTQ+ youth.</p>
+  </div>
+</section>
+
+  <section class="section" id="support-partners">
+  <div class="container text-center">
+    <h2>Support Kentucky’s Trans Youth<br><span style="font-size:1.2rem; font-weight:400;">Advocacy • Community • Wellness</span></h2>
+    <div class="d-flex flex-wrap justify-content-center align-items-center gap-4 mt-4 mb-4">
+      <a href="https://www.kentuckyhealthjusticenetwork.org/donate.html" target="_blank" rel="noopener" title="Support KHJN">
+        <img src="https://www.kentuckyhealthjusticenetwork.org/uploads/2/0/8/0/20801010/published/aaa.png?1654008419" alt="Kentucky Health Justice Network logo" class="partner-logo" style="max-width:160px; transition:transform .15s;" loading="lazy" onmouseover="this.style.transform='scale(1.08)'" onmouseout="this.style.transform='scale(1)'" />
+        <div style="font-size:1.1rem; margin-top:.5rem; color:#3b2466;">Wellness</div>
+      </a>
+      <a href="https://louisvilleyouthgroup.org/donate/" target="_blank" rel="noopener" title="Support Louisville Youth Group">
+        <img src="https://louisvilleyouthgroup.org/wp-content/uploads/thegem-logos/logo_a3fa48c63e8be8f6aaded395cdd1f946_3x.png" alt="Louisville Youth Group logo" class="partner-logo" style="max-width:160px; transition:transform .15s;" loading="lazy" onmouseover="this.style.transform='scale(1.08)'" onmouseout="this.style.transform='scale(1)'" />
+        <div style="font-size:1.1rem; margin-top:.5rem; color:#3b2466;">Community</div>
+      </a>
+      <a href="https://www.aclu-ky.org/en/donate" target="_blank" rel="noopener" title="Support ACLU Kentucky">
+        <img src="https://www.aclu-ky.org/sites/default/files/field_site_logo/2025_70th_logo_web_final.png" alt="ACLU of Kentucky logo" class="partner-logo" style="max-width:160px; transition:transform .15s;" loading="lazy" onmouseover="this.style.transform='scale(1.08)'" onmouseout="this.style.transform='scale(1)'" />
+        <div style="font-size:1.1rem; margin-top:.5rem; color:#3b2466;">Legal Advocacy</div>
+      </a>
+      <a href="https://www.fairness.org/donate/" target="_blank" rel="noopener" title="Support Fairness Campaign">
+        <img src="https://www.fairness.org/wp-content/themes/fairness-website/img/logo.png" alt="Fairness Campaign logo" class="partner-logo" style="max-width:160px; transition:transform .15s;" loading="lazy" onmouseover="this.style.transform='scale(1.08)'" onmouseout="this.style.transform='scale(1)'" />
+        <div style="font-size:1.1rem; margin-top:.5rem; color:#3b2466;">Advocacy</div>
+      </a>
+      <a href="https://www.mandalalouisville.com/donate" target="_blank" rel="noopener" title="Support Mandala House">
+        <img src="https://images.squarespace-cdn.com/content/v1/573bd2454c2f858fc8ed34ec/e434b1a1-cf0f-403b-807f-d13b26eceedc/MH+LogoHorizontalwSubtitleANDptp+032723-01.png?format=750w" alt="Mandala House logo" class="partner-logo" style="max-width:160px; transition:transform .15s;" loading="lazy" onmouseover="this.style.transform='scale(1.08)'" onmouseout="this.style.transform='scale(1)'" />
+        <div style="font-size:1.1rem; margin-top:.5rem; color:#3b2466;">Wellness</div>
+      </a>
+    </div>
+    <p class="mt-4" style="max-width:700px; margin:auto;">Your support funds urgent advocacy, youth programs, and access to affirming healthcare across Kentucky. Thank you for standing with trans youth!</p>
+  </div>
+</section>
+
+  <footer>
+    <p>Flags for Trans Futures &copy; 2025. In partnership with ACLU-KY and community allies.</p>
+  </footer>
+</body>
+</html>
+<!-- /wp:html -->

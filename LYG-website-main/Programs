@@ -1,0 +1,151 @@
+<!-- wp:paragraph -->
+<p>Louisville Youth Group creates programs that invite young people to explore their identities and live with authenticity. All programs and services are provided to the youth at no cost, and offer an affirming and supportive space for social growth, leadership development, and community connection.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>LYG’s programs and events are published on our program calendar, communicated through the Remind text system, and through our social media accounts and Discord Server.&nbsp; Sign up below to stay up to date on all the fun things we are doing.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Click&nbsp;<a href="https://drive.google.com/file/d/1P-A3g6NHR6owWAc5JjorwA_kDJv6wXcL/view?usp=drive_link">Here</a>&nbsp;to Download a printable PDF of our 2025 Program Calendar.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:group {"align":"full","className":"hide-on-mobile","layout":{"type":"default"}} -->
+<div class="wp-block-group alignfull hide-on-mobile"><!-- wp:html -->
+<center>
+<div class="responsiveCal">
+<iframe src="https://calendar.google.com/calendar/embed?src=louisvilleyouthgroup.org_dsuqb6s982mabolcjioivdu5pk%40group.calendar.google.com&ctz=America%2FNew_York" style="border: 0" width="1100" height="600" frameborder="0" scrolling="no"></iframe>
+</div>
+</center>
+<!-- /wp:html --></div>
+<!-- /wp:group -->
+
+<!-- wp:columns -->
+<div class="wp-block-columns"><!-- wp:column -->
+<div class="wp-block-column"><!-- wp:heading -->
+<h2 class="wp-block-heading"><strong>Stay in the know with Text Updates!</strong></h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Sign-up to be notified by text message about program updates, cancellations or delays. Standard message rates and data charges from your carrier apply when sending and/or receiving messages.&nbsp; Click the button below to sign up!</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons"><!-- wp:button {"width":100,"style":{"color":{"background":"#41bdea"}}} -->
+<div class="wp-block-button has-custom-width wp-block-button__width-100"><a class="wp-block-button__link has-background wp-element-button" href="https://www.remind.com/join/teenlyg" style="background-color:#41bdea">Teens (ages 13-17)</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons"><!-- wp:button {"width":100,"style":{"color":{"background":"#86bc62"}}} -->
+<div class="wp-block-button has-custom-width wp-block-button__width-100"><a class="wp-block-button__link has-background wp-element-button" href="http://remind.com/join/riselyg" style="background-color:#86bc62">Rising Adult (ages 18-24)</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons"><!-- wp:button {"width":100,"style":{"color":{"background":"#a970dc"}}} -->
+<div class="wp-block-button has-custom-width wp-block-button__width-100"><a class="wp-block-button__link has-background wp-element-button" href="http://remind.com/join/lygparents" style="background-color:#a970dc">Caregivers / Parents</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons"><!-- wp:button {"width":100,"style":{"color":{"background":"#ec7262"}}} -->
+<div class="wp-block-button has-custom-width wp-block-button__width-100"><a class="wp-block-button__link has-background wp-element-button" href="http://remind.com/join/kygsas" style="background-color:#ec7262">Teachers / GSA Leaders</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons"><!-- wp:button {"backgroundColor":"contrast-2","width":100} -->
+<div class="wp-block-button has-custom-width wp-block-button__width-100"><a class="wp-block-button__link has-contrast-2-background-color has-background wp-element-button" href="http://remind.com/join/lygvillage">Service Providers</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons --></div>
+<!-- /wp:column -->
+
+<!-- wp:column -->
+<div class="wp-block-column"><!-- wp:heading -->
+<h2 class="wp-block-heading"><strong>New to LYG?&nbsp; We are here to help.</strong></h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p><strong>Use this form to contact our program team. They’re excited to meet you and answer all of your questions!</strong></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:wpforms/form-selector {"clientId":"c64fe4a5-44b3-44ae-a889-85a801e1cca5","formId":"111","theme":"classic-copy-1","themeName":"Classic (Copy)","labelSize":"small","labelColor":"#eae3ff","labelSublabelColor":"#ffffff","labelErrorColor":"#ff0000","pageBreakColor":"#dddddd","copyPasteJsonValue":"{\u0022displayTitle\u0022:false,\u0022displayDesc\u0022:false,\u0022theme\u0022:\u0022classic-copy-1\u0022,\u0022themeName\u0022:\u0022Classic (Copy)\u0022,\u0022fieldSize\u0022:\u0022medium\u0022,\u0022backgroundImage\u0022:\u0022none\u0022,\u0022backgroundPosition\u0022:\u0022center center\u0022,\u0022backgroundRepeat\u0022:\u0022no-repeat\u0022,\u0022backgroundSizeMode\u0022:\u0022cover\u0022,\u0022backgroundSize\u0022:\u0022cover\u0022,\u0022backgroundWidth\u0022:\u0022100px\u0022,\u0022backgroundHeight\u0022:\u0022100px\u0022,\u0022backgroundUrl\u0022:\u0022url()\u0022,\u0022backgroundColor\u0022:\u0022rgba( 0, 0, 0, 0 )\u0022,\u0022fieldBorderRadius\u0022:\u00220px\u0022,\u0022fieldBorderStyle\u0022:\u0022solid\u0022,\u0022fieldBorderSize\u0022:\u00221px\u0022,\u0022fieldBackgroundColor\u0022:\u0022#ffffff\u0022,\u0022fieldBorderColor\u0022:\u0022#cccccc\u0022,\u0022fieldTextColor\u0022:\u0022#ffffff\u0022,\u0022fieldMenuColor\u0022:\u0022#ffffff\u0022,\u0022labelSize\u0022:\u0022small\u0022,\u0022labelColor\u0022:\u0022#eae3ff\u0022,\u0022labelSublabelColor\u0022:\u0022#ffffff\u0022,\u0022labelErrorColor\u0022:\u0022#ff0000\u0022,\u0022buttonSize\u0022:\u0022medium\u0022,\u0022buttonBorderStyle\u0022:\u0022solid\u0022,\u0022buttonBorderSize\u0022:\u00221px\u0022,\u0022buttonBorderRadius\u0022:\u00220px\u0022,\u0022buttonBackgroundColor\u0022:\u0022#dddddd\u0022,\u0022buttonTextColor\u0022:\u0022#666666\u0022,\u0022buttonBorderColor\u0022:\u0022#cccccc\u0022,\u0022pageBreakColor\u0022:\u0022#dddddd\u0022,\u0022containerPadding\u0022:\u00220px\u0022,\u0022containerBorderStyle\u0022:\u0022none\u0022,\u0022containerBorderWidth\u0022:\u00221px\u0022,\u0022containerBorderColor\u0022:\u0022#000000\u0022,\u0022containerBorderRadius\u0022:\u00223px\u0022,\u0022containerShadowSize\u0022:\u0022none\u0022,\u0022customCss\u0022:\u0022\u0022}","fieldBorderRadius":"0px","fieldBorderColor":"#cccccc","fieldTextColor":"#ffffff","buttonBorderStyle":"solid","buttonBorderRadius":"0px","buttonBackgroundColor":"#dddddd","buttonTextColor":"#666666","buttonBorderColor":"#cccccc"} /--></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns -->
+
+<!-- wp:heading {"textAlign":"center","level":1} -->
+<h1 class="wp-block-heading has-text-align-center"><strong>Program &amp; Event Guide</strong></h1>
+<!-- /wp:heading -->
+
+<!-- wp:group {"style":{"spacing":{"padding":{"top":"0.25rem","bottom":"0.25rem","left":"2rem","right":"2rem"},"blockGap":"5px"}},"backgroundColor":"accent","layout":{"type":"default"}} -->
+<div class="wp-block-group has-accent-background-color has-background" style="padding-top:0.25rem;padding-right:2rem;padding-bottom:0.25rem;padding-left:2rem"><!-- wp:details {"className":"is-style-default","style":{"spacing":{"blockGap":"var:preset|spacing|10"}},"backgroundColor":"base","fontSize":"small"} -->
+<details class="wp-block-details is-style-default has-base-background-color has-background has-small-font-size"><summary><strong> Junior Group (AGES 5-10)</strong></summary><!-- wp:paragraph {"placeholder":"Type / to add a hidden block"} -->
+<p>Junior group is for LGBTQIA+ youth between the ages of 5-10 and their caregivers. This group creates a welcoming space for youth and their family members to explore their identities, make friends, and build a supportive community. Adult mentors help bridge the gap between the newly identifying LGBTQIA+ young people and their families by providing insight, wisdom, and resources in a fun and engaging environment.</p>
+<!-- /wp:paragraph --></details>
+<!-- /wp:details -->
+
+<!-- wp:details {"className":"is-style-default","style":{"spacing":{"blockGap":"var:preset|spacing|10"}},"backgroundColor":"base","fontSize":"small"} -->
+<details class="wp-block-details is-style-default has-base-background-color has-background has-small-font-size"><summary><strong> Tween Group (Ages 11-13)</strong></summary><!-- wp:paragraph {"placeholder":"Type / to add a hidden block"} -->
+<p>Tween group is for LGBTQIA+ youth between the ages of 11-13. This group creates a welcoming space for youth to explore their identities, make friends, and build self-esteem with a supportive community.&nbsp; This group is driven by the needs and suggestions of the youth involved, and facilitated by Adult Mentors. Activities &amp; Topics Include: Arts &amp; Crafts, Social and Emotional Development, Games, Identity Exploration, Healthy Relationships, and Comprehensive Health Education (just to name a few!)</p>
+<!-- /wp:paragraph --></details>
+<!-- /wp:details -->
+
+<!-- wp:details {"className":"is-style-default","style":{"spacing":{"blockGap":"var:preset|spacing|10"}},"backgroundColor":"base","fontSize":"small"} -->
+<details class="wp-block-details is-style-default has-base-background-color has-background has-small-font-size"><summary><strong> Teen Group (Ages 14-18)</strong></summary><!-- wp:paragraph {"placeholder":"Type / to add a hidden block"} -->
+<p>Teen Group brings together LGBTQIA+ youth between the ages of 14-18 in an affirming, fun and relaxing setting. Youth have the opportunity to explore their gender and sexuality, build self-worth and healthy relationships, and connect with the broader LGBTQIA+ community. This group is driven by the needs and suggestions of the youth involved, and facilitated by Adult Mentors and members of our Youth Leadership Council. Activities &amp; Topics Include: Game night, Queer History, Arts &amp; Crafts, Mental Health First-aid, Gender Expression &amp; Euphoria, Healthy Relationships and Comprehensive Health Education (just to name a few!)</p>
+<!-- /wp:paragraph --></details>
+<!-- /wp:details -->
+
+<!-- wp:details {"className":"is-style-default","style":{"spacing":{"blockGap":"var:preset|spacing|10"}},"backgroundColor":"base","fontSize":"small"} -->
+<details class="wp-block-details is-style-default has-base-background-color has-background has-small-font-size"><summary><strong> LYG Rising (Ages 18-24)</strong></summary><!-- wp:paragraph {"placeholder":"Type / to add a hidden block"} -->
+<p>LYG Rising is a monthly meetup for LGBTQIA+ Young Adults (ages 18-24) to socialize, learn life skills, and to develop the tools needed to build community and act as agents of change.</p>
+<!-- /wp:paragraph --></details>
+<!-- /wp:details -->
+
+<!-- wp:details {"className":"is-style-default","style":{"spacing":{"blockGap":"var:preset|spacing|10"}},"backgroundColor":"base","fontSize":"small"} -->
+<details class="wp-block-details is-style-default has-base-background-color has-background has-small-font-size"><summary><strong> Melanin MagiQ (Ages 13-19)</strong></summary><!-- wp:paragraph {"placeholder":"Type / to add a hidden block"} -->
+<p>Melanin MagiQ is a group for LGBTQIA2S+ Youth of the Global Majority - This group is specifically for Black, Indigenous, Latiné, Asian, Multi-Racial, and other Melanated youth, and is led by Mentors who also represent these racial &amp; ethnic identities. The Melanin MagiQ group provides a brave and affirming space for young people to discuss the unique ways that their identities intersect, build self-worth and healthy relationships, and grow into joyful and connected young adults.</p>
+<!-- /wp:paragraph --></details>
+<!-- /wp:details -->
+
+<!-- wp:details {"className":"is-style-default","style":{"spacing":{"blockGap":"var:preset|spacing|10"}},"backgroundColor":"base","fontSize":"small"} -->
+<details class="wp-block-details is-style-default has-base-background-color has-background has-small-font-size"><summary><strong> Trans, Non-Binary, and Intersex Group (Ages 13-19)</strong></summary><!-- wp:paragraph {"placeholder":"Type / to add a hidden block"} -->
+<p>Trans, Non-Binary, and Intersex Group is focused on the social, emotional, legal, and medical needs of gender expansive teens.&nbsp; Trans and NonBinary mentors provide support and help guide youth through the complexities of their own self-discovery and the practical steps toward realizing and affirming their gender identity and expression.</p>
+<!-- /wp:paragraph --></details>
+<!-- /wp:details -->
+
+<!-- wp:details {"className":"is-style-default","style":{"spacing":{"blockGap":"var:preset|spacing|10"}},"backgroundColor":"base","fontSize":"small"} -->
+<details class="wp-block-details is-style-default has-base-background-color has-background has-small-font-size"><summary><strong> Youth Leadership Council</strong></summary><!-- wp:paragraph {"placeholder":"Type / to add a hidden block"} -->
+<p>Our Youth Leadership Council (YLC) provides an opportunity to develop advocacy and leadership skills through collaborative organizing, peer education and support, and community service.&nbsp; The YLC serves as the guiding youth voice and vision for all of LYG's programs and events, and works closely with LYG staff and adult mentors to keep the needs of our youth centered.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"placeholder":"Type / to add a hidden block"} -->
+<p>Council members must be at least 13 years old, and are selected through an application process.&nbsp; For more information or to apply, please email our <a href="programs@louisvilleyouthgroup.org"><strong>Program Team</strong></a>.</p>
+<!-- /wp:paragraph --></details>
+<!-- /wp:details -->
+
+<!-- wp:details {"className":"is-style-default","style":{"spacing":{"blockGap":"var:preset|spacing|10"}},"backgroundColor":"base","fontSize":"small"} -->
+<details class="wp-block-details is-style-default has-base-background-color has-background has-small-font-size"><summary><strong> Beyond Labels and Resource Closet</strong></summary><!-- wp:paragraph {"placeholder":"Type / to add a hidden block"} -->
+<p>Tween group is for LGBTQIA+ youth between the ages of 11-13. This group creates a welcoming space for youth to explore their identities, make friends, and build self-esteem with a supportive community.&nbsp; This group is driven by the needs and suggestions of the youth involved, and facilitated by Adult Mentors. Activities &amp; Topics Include: Arts &amp; Crafts, Social and Emotional Development, Games, Identity Exploration, Healthy Relationships, and Comprehensive Health Education (just to name a few!)</p>
+<!-- /wp:paragraph --></details>
+<!-- /wp:details -->
+
+<!-- wp:details {"className":"is-style-default","style":{"spacing":{"blockGap":"var:preset|spacing|10"}},"backgroundColor":"base","fontSize":"small"} -->
+<details class="wp-block-details is-style-default has-base-background-color has-background has-small-font-size"><summary><strong> Pride Prom + Lavender Graduation (Spring)</strong></summary><!-- wp:paragraph {"placeholder":"Type / to add a hidden block"} -->
+<p>We provide a safe and celebratory space for LGBTQIA+ and allied youth (ages 14-24) to enjoy a fun evening with friends, old and new.&nbsp; During our prom, we hold a graduation ceremony to affirm and uplift our students who are graduating from home schooling, NTI, GED programs, trade school, traditional high school, and undergraduate programs.</p>
+<!-- /wp:paragraph --></details>
+<!-- /wp:details -->
+
+<!-- wp:details {"className":"is-style-default","style":{"spacing":{"blockGap":"var:preset|spacing|10"}},"backgroundColor":"base","fontSize":"small"} -->
+<details class="wp-block-details is-style-default has-base-background-color has-background has-small-font-size"><summary><strong> Youth Empowerment Camp (Fall)</strong></summary><!-- wp:paragraph {"placeholder":"Type / to add a hidden block"} -->
+<p>LYG Camp is a fun weekend to socialize, develop leadership skills, and enjoy nature. Activities include campfires, night hikes, challenge course initiatives, and lots of lively conversation.</p>
+<!-- /wp:paragraph --></details>
+<!-- /wp:details -->
+
+<!-- wp:details {"className":"is-style-default","style":{"spacing":{"blockGap":"var:preset|spacing|10"}},"backgroundColor":"base","fontSize":"small"} -->
+<details class="wp-block-details is-style-default has-base-background-color has-background has-small-font-size"><summary><strong> New Year's Eve Lock-In (Winter)</strong></summary><!-- wp:paragraph {"placeholder":"Type / to add a hidden block"} -->
+<p>LYG provides a safe and sober over-night event for youth to celebrate the New Year.&nbsp; Activities include board games, video games, movies, arts &amp; crafts, a new year ritual, and sparkling cider at midnight.&nbsp; Dinner, Dessert, and Breakfast are provided.</p>
+<!-- /wp:paragraph --></details>
+<!-- /wp:details --></div>
+<!-- /wp:group -->

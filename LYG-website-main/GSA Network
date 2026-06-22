@@ -1,0 +1,153 @@
+<!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap"}} -->
+<div class="wp-block-group"><!-- wp:image {"id":329,"width":"326px","height":"auto","sizeSlug":"large","linkDestination":"none"} -->
+<figure class="wp-block-image size-large is-resized"><img src="https://louisvilleyouthgroup.org/wp-content/uploads/2025/11/GSA-CONFERENCE-Graphic-2-1024x1024.jpg" alt="" class="wp-image-329" style="width:326px;height:auto"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|contrast"}}},"layout":{"selfStretch":"fill","flexSize":null}},"textColor":"contrast","fontSize":"x-large"} -->
+<p class="has-contrast-color has-text-color has-link-color has-x-large-font-size">Student power. Safer schools.<br>Solidarity.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"align":"full","style":{"spacing":{"margin":{"top":"0","bottom":"0"},"padding":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|50","left":"var:preset|spacing|50","right":"var:preset|spacing|50"}}},"backgroundColor":"accent","layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignfull has-accent-background-color has-background" style="margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--50);padding-right:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--50)"><!-- wp:columns {"align":"wide","style":{"spacing":{"blockGap":{"top":"0","left":"0"},"padding":{"top":"0","bottom":"0"}}}} -->
+<div class="wp-block-columns alignwide" style="padding-top:0;padding-bottom:0"><!-- wp:column {"verticalAlignment":"stretch","width":"50%"} -->
+<div class="wp-block-column is-vertically-aligned-stretch" style="flex-basis:50%"><!-- wp:group {"style":{"dimensions":{"minHeight":"100%"}},"layout":{"type":"flex","orientation":"vertical","justifyContent":"stretch","verticalAlignment":"space-between"}} -->
+<div class="wp-block-group" style="min-height:100%"><!-- wp:paragraph {"style":{"typography":{"lineHeight":"1.2"},"layout":{"selfStretch":"fill","flexSize":null}},"fontSize":"large","fontFamily":"archivo"} -->
+<p class="has-archivo-font-family has-large-font-size" style="line-height:1.2">*Start or strengthen your GSA.<br>*Connect other schools across Kentucky.<br>*Toolkits, meeting plans and training.<br>*Learn your rights. Share what works.<br>*Skills and safety strategies.<br>*Rural and urban</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:group {"layout":{"type":"constrained","contentSize":"300px","justifyContent":"left"}} -->
+<div class="wp-block-group"><!-- wp:paragraph {"style":{"layout":{"selfStretch":"fixed","flexSize":"50%"},"elements":{"link":{"color":{"text":"var:preset|color|base"}}}},"textColor":"base","fontSize":"medium","fontFamily":"system-sans-serif"} -->
+<p class="has-base-color has-text-color has-link-color has-system-sans-serif-font-family has-medium-font-size">Creating the leaders of tomorrow.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:buttons {"align":"full","layout":{"type":"flex","justifyContent":"center"}} -->
+<div class="wp-block-buttons alignfull"><!-- wp:button {"textColor":"base","className":"is-style-fill","style":{"elements":{"link":{"color":{"text":"var:preset|color|base"}}},"spacing":{"padding":{"top":"0","bottom":"0"}}},"fontSize":"large","fontFamily":"archivo-black"} -->
+<div class="wp-block-button is-style-fill"><a class="wp-block-button__link has-base-color has-text-color has-link-color has-archivo-black-font-family has-large-font-size has-custom-font-size wp-element-button" href="https://secure.lglforms.com/form_engine/s/4NxAdIG-KZ8b-798Q6zhCg" style="padding-top:0;padding-bottom:0">Be part of the network</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group --></div>
+<!-- /wp:column -->
+
+<!-- wp:column {"verticalAlignment":"center","width":"50%"} -->
+<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:50%"><!-- wp:columns -->
+<div class="wp-block-columns"><!-- wp:column {"width":"66.66%"} -->
+<div class="wp-block-column" style="flex-basis:66.66%"><!-- wp:image {"id":261,"aspectRatio":"16/9","scale":"cover","sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="https://louisvilleyouthgroup.org/wp-content/uploads/2025/09/O5C8367-scaled.jpg" alt="" class="wp-image-261" style="aspect-ratio:16/9;object-fit:cover"/></figure>
+<!-- /wp:image --></div>
+<!-- /wp:column -->
+
+<!-- wp:column {"width":"33.33%"} -->
+<div class="wp-block-column" style="flex-basis:33.33%"><!-- wp:image {"id":331,"sizeSlug":"large","linkDestination":"none"} -->
+<figure class="wp-block-image size-large"><img src="https://louisvilleyouthgroup.org/wp-content/uploads/2025/11/GSA-CONFERENCE-Graphic-2-1-971x1024.gif" alt="" class="wp-image-331"/></figure>
+<!-- /wp:image --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns -->
+
+<!-- wp:group {"align":"full","style":{"spacing":{"margin":{"top":"0","bottom":"0"},"padding":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|50","left":"var:preset|spacing|50","right":"var:preset|spacing|50"}}},"backgroundColor":"base","layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignfull has-base-background-color has-background" style="margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--50);padding-right:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--50)"><!-- wp:buttons {"align":"full","layout":{"type":"flex","justifyContent":"center","verticalAlignment":"top"}} -->
+<div class="wp-block-buttons alignfull"><!-- wp:button {"backgroundColor":"contrast","textColor":"base","width":25,"className":"is-style-fill","style":{"elements":{"link":{"color":{"text":"var:preset|color|base"}}},"border":{"width":"0px","style":"none"},"spacing":{"padding":{"left":"0","right":"0","top":"0","bottom":"0"}}},"fontSize":"large","fontFamily":"archivo-black"} -->
+<div class="wp-block-button has-custom-width wp-block-button__width-25 is-style-fill"><a class="wp-block-button__link has-base-color has-contrast-background-color has-text-color has-background has-link-color has-archivo-black-font-family has-large-font-size has-custom-font-size wp-element-button" href="https://secure.lglforms.com/form_engine/s/4NxAdIG-KZ8b-798Q6zhCg" style="border-style:none;border-width:0px;padding-top:0;padding-right:0;padding-bottom:0;padding-left:0">Register today</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons -->
+
+<!-- wp:columns {"align":"wide","style":{"spacing":{"blockGap":{"top":"var:preset|spacing|40","left":"var:preset|spacing|50"}}}} -->
+<div class="wp-block-columns alignwide"><!-- wp:column {"verticalAlignment":"stretch","width":"50%"} -->
+<div class="wp-block-column is-vertically-aligned-stretch" style="flex-basis:50%"><!-- wp:group {"style":{"dimensions":{"minHeight":"100%"}},"layout":{"type":"flex","orientation":"vertical","justifyContent":"stretch","verticalAlignment":"space-between"}} -->
+<div class="wp-block-group" style="min-height:100%"><!-- wp:image {"id":314,"width":"361px","height":"auto","sizeSlug":"large","linkDestination":"none","style":{"spacing":{"margin":{"top":"var:preset|spacing|10","bottom":"var:preset|spacing|10","left":"var:preset|spacing|10","right":"var:preset|spacing|10"}},"layout":{"selfStretch":"fit","flexSize":null}}} -->
+<figure class="wp-block-image size-large is-resized" style="margin-top:var(--wp--preset--spacing--10);margin-right:var(--wp--preset--spacing--10);margin-bottom:var(--wp--preset--spacing--10);margin-left:var(--wp--preset--spacing--10)"><img src="https://louisvilleyouthgroup.org/wp-content/uploads/2025/11/GSA-CONFERENCE-Graphic-1-932x1024.gif" alt="" class="wp-image-314" style="width:361px;height:auto"/></figure>
+<!-- /wp:image --></div>
+<!-- /wp:group --></div>
+<!-- /wp:column -->
+
+<!-- wp:column {"verticalAlignment":"stretch","width":"50%"} -->
+<div class="wp-block-column is-vertically-aligned-stretch" style="flex-basis:50%"><!-- wp:group {"style":{"dimensions":{"minHeight":"100%"}},"layout":{"type":"flex","orientation":"vertical","justifyContent":"stretch","verticalAlignment":"space-between"}} -->
+<div class="wp-block-group" style="min-height:100%"><!-- wp:image {"lightbox":{"enabled":false},"id":323,"width":"365px","height":"auto","sizeSlug":"large","linkDestination":"custom","style":{"spacing":{"margin":{"top":"0","bottom":"0","left":"0","right":"0"}}}} -->
+<figure class="wp-block-image size-large is-resized" style="margin-top:0;margin-right:0;margin-bottom:0;margin-left:0"><a href="https://secure.lglforms.com/form_engine/s/4NxAdIG-KZ8b-798Q6zhCg\"><img src="https://louisvilleyouthgroup.org/wp-content/uploads/2025/11/GSA-CONFERENCE-Graphic-1-1024x1024.png" alt="" class="wp-image-323" style="width:365px;height:auto"/></a></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph {"align":"center","style":{"typography":{"fontStyle":"normal","fontWeight":"700"},"layout":{"selfStretch":"fill","flexSize":null}},"fontSize":"medium"} -->
+<p class="has-text-align-center has-medium-font-size" style="font-style:normal;font-weight:700">January 24, 11AM. Register for link</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:column -->
+
+<!-- wp:column {"verticalAlignment":"center","width":"50%"} -->
+<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:50%"><!-- wp:paragraph {"align":"center","style":{"typography":{"lineHeight":"1.2"},"elements":{"link":{"color":{"text":"var:preset|color|contrast"}}}},"textColor":"contrast","fontSize":"x-large","fontFamily":"archivo-black"} -->
+<p class="has-text-align-center has-contrast-color has-text-color has-link-color has-archivo-black-font-family has-x-large-font-size" style="line-height:1.2">LYG's KY GSA Summit</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"style":{"layout":{"selfStretch":"fill","flexSize":null}},"fontSize":"medium","fontFamily":"archivo"} -->
+<p class="has-archivo-font-family has-medium-font-size">LYG’s <strong>Statewide GSA Summit</strong> returns December 6, 11AM -Register for video link</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"style":{"layout":{"selfStretch":"fill","flexSize":null}},"fontSize":"medium","fontFamily":"archivo"} -->
+<p class="has-archivo-font-family has-medium-font-size">A <strong>free</strong> day of workshops, GSA organizing labs, art-making, and statewide connection for LGBTQIA+ youth and allies (typically ages 14–19). Building on last year’s model of hands-on sessions, community lunch, and a celebratory social to close, the Summit centers student leadership, safety, and practical tools you can take back to your school. Join us to learn, plan, and recharge with GSAs from across Kentucky.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"metadata":{"name":"FAQs"},"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|50","left":"var:preset|spacing|50","right":"var:preset|spacing|50"},"margin":{"top":"0","bottom":"0"}},"elements":{"link":{"color":{"text":"var:preset|color|base"}}}},"backgroundColor":"contrast","textColor":"base","layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignfull has-base-color has-contrast-background-color has-text-color has-background has-link-color" style="margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--50);padding-right:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--50)"><!-- wp:heading {"align":"wide","style":{"elements":{"link":{"color":{"text":"var:preset|color|base"}}},"typography":{"fontSize":"10rem","letterSpacing":"-0.02em"}},"textColor":"base"} -->
+<h2 class="wp-block-heading alignwide has-base-color has-text-color has-link-color" style="font-size:10rem;letter-spacing:-0.02em">FAQs</h2>
+<!-- /wp:heading -->
+
+<!-- wp:group {"align":"wide","layout":{"type":"default"}} -->
+<div class="wp-block-group alignwide"><!-- wp:separator {"className":"is-style-wide","style":{"spacing":{"margin":{"top":"var:preset|spacing|30","bottom":"var:preset|spacing|30"}}},"backgroundColor":"base"} -->
+<hr class="wp-block-separator has-text-color has-base-color has-alpha-channel-opacity has-base-background-color has-background is-style-wide" style="margin-top:var(--wp--preset--spacing--30);margin-bottom:var(--wp--preset--spacing--30)"/>
+<!-- /wp:separator -->
+
+<!-- wp:heading {"level":3,"align":"wide","style":{"elements":{"link":{"color":{"text":"var:preset|color|base-2"}}}},"textColor":"base-2"} -->
+<h3 class="wp-block-heading alignwide has-base-2-color has-text-color has-link-color">How to start a GSA at my school?</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"placeholder":"Type / to add a hidden block","style":{"elements":{"link":{"color":{"text":"var:preset|color|contrast-1"}}}},"textColor":"contrast-1"} -->
+<p class="has-contrast-1-color has-text-color has-link-color">Find 2–3 students, ask a supportive staff member to advise, and submit your school’s club form. Keep meetings student-led and use district-approved messages. Need a template? Use our “Start a GSA” kit.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:separator {"className":"is-style-wide","style":{"spacing":{"margin":{"top":"var:preset|spacing|30","bottom":"var:preset|spacing|30"}}},"backgroundColor":"base"} -->
+<hr class="wp-block-separator has-text-color has-base-color has-alpha-channel-opacity has-base-background-color has-background is-style-wide" style="margin-top:var(--wp--preset--spacing--30);margin-bottom:var(--wp--preset--spacing--30)"/>
+<!-- /wp:separator -->
+
+<!-- wp:heading {"level":3,"align":"wide","style":{"elements":{"link":{"color":{"text":"var:preset|color|base-2"}}}},"textColor":"base-2"} -->
+<h3 class="wp-block-heading alignwide has-base-2-color has-text-color has-link-color"><strong>Are GSAs safe and private for students?</strong></h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"placeholder":"Type / to add a hidden block","style":{"elements":{"link":{"color":{"text":"var:preset|color|contrast-1"}}}},"textColor":"contrast-1"} -->
+<p class="has-contrast-1-color has-text-color has-link-color">Yes—adults supervise, rosters aren’t public, and photos are opt-in. Privacy has limits: adults must act if someone may be unsafe. • Crisis help: 988, Trevor 1-866-488-7386, Trans Lifeline 877-565-8860.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:separator {"className":"is-style-wide","style":{"spacing":{"margin":{"top":"var:preset|spacing|30","bottom":"var:preset|spacing|30"}}},"backgroundColor":"base"} -->
+<hr class="wp-block-separator has-text-color has-base-color has-alpha-channel-opacity has-base-background-color has-background is-style-wide" style="margin-top:var(--wp--preset--spacing--30);margin-bottom:var(--wp--preset--spacing--30)"/>
+<!-- /wp:separator -->
+
+<!-- wp:heading {"level":3,"align":"wide","style":{"elements":{"link":{"color":{"text":"var:preset|color|base-2"}}}},"textColor":"base-2"} -->
+<h3 class="wp-block-heading alignwide has-base-2-color has-text-color has-link-color"><strong>GSA advisor training</strong></h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"placeholder":"Type / to add a hidden block","style":{"elements":{"link":{"color":{"text":"var:preset|color|contrast-1"}}}},"textColor":"contrast-1"} -->
+<p class="has-contrast-1-color has-text-color has-link-color">Advisors are school employees who supervise and follow district rules (background checks may apply). Students lead; advisors support and use school-approved platforms. </p>
+<!-- /wp:paragraph -->
+
+<!-- wp:separator {"className":"is-style-wide","style":{"spacing":{"margin":{"top":"var:preset|spacing|30","bottom":"var:preset|spacing|30"}}},"backgroundColor":"base"} -->
+<hr class="wp-block-separator has-text-color has-base-color has-alpha-channel-opacity has-base-background-color has-background is-style-wide" style="margin-top:var(--wp--preset--spacing--30);margin-bottom:var(--wp--preset--spacing--30)"/>
+<!-- /wp:separator -->
+
+<!-- wp:heading {"level":3,"align":"wide","style":{"elements":{"link":{"color":{"text":"var:preset|color|base-2"}}}},"textColor":"base-2"} -->
+<h3 class="wp-block-heading alignwide has-base-2-color has-text-color has-link-color"><strong>Inclusive language guide for students and teachers</strong></h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"placeholder":"Type / to add a hidden block","style":{"elements":{"link":{"color":{"text":"var:preset|color|contrast-1"}}}},"textColor":"contrast-1"} -->
+<p class="has-contrast-1-color has-text-color has-link-color">Use the name and pronouns someone shares. Avoid gendered greetings—say “everyone.” Don’t out people. If you slip, correct yourself and move on.  Ask us for our Guide for GSA Advisors.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:spacer {"height":"var:preset|spacing|10","style":{"spacing":{"margin":{"top":"var:preset|spacing|10","bottom":"0"}}}} -->
+<div style="margin-top:var(--wp--preset--spacing--10);margin-bottom:0;height:var(--wp--preset--spacing--10)" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- /wp:spacer --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->

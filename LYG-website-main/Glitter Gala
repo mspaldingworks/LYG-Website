@@ -1,0 +1,839 @@
+<!-- wp:html -->
+<section class="gg26-standalone" id="cosmologala-2026">
+  <style>
+    .gg26-standalone {
+      --cosmo-deep: #080816;
+      --cosmo-purple: #240044;
+      --cosmo-violet: #76005D;
+      --cosmo-pink: #FF2F92;
+      --cosmo-gold: #F7D774;
+      --cosmo-aqua: #47E1E8;
+      --cosmo-white: #FFFFFF;
+      --cosmo-muted: #DED8FF;
+      --cosmo-card: rgba(255,255,255,0.08);
+      --cosmo-card-strong: rgba(255,255,255,0.14);
+      --cosmo-line: rgba(255,255,255,0.18);
+      --cosmo-radius: 22px;
+
+      margin: 0;
+      color: var(--cosmo-white);
+      font: 16px/1.5 system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, "Helvetica Neue", Arial, sans-serif;
+      background:
+        radial-gradient(circle at 15% 5%, rgba(255,47,146,0.28), transparent 32%),
+        radial-gradient(circle at 85% 15%, rgba(71,225,232,0.18), transparent 34%),
+        radial-gradient(circle at 50% 100%, rgba(247,215,116,0.13), transparent 40%),
+        linear-gradient(135deg, #080816 0%, #14002e 52%, #240044 100%);
+      overflow: hidden;
+      position: relative;
+      isolation: isolate;
+    }
+
+    .gg26-standalone * {
+      box-sizing: border-box;
+    }
+
+    .gg26-standalone::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-image:
+        radial-gradient(circle, rgba(255,255,255,0.95) 1px, transparent 1.5px),
+        radial-gradient(circle, rgba(247,215,116,0.65) 1px, transparent 1.6px),
+        radial-gradient(circle, rgba(71,225,232,0.45) 1px, transparent 1.7px);
+      background-size: 78px 78px, 132px 132px, 190px 190px;
+      background-position: 0 0, 42px 64px, 95px 28px;
+      opacity: 0.18;
+      pointer-events: none;
+      z-index: -2;
+    }
+
+    .gg26-standalone::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(115deg, transparent 0%, rgba(255,255,255,0.06) 48%, transparent 56%),
+        radial-gradient(circle at center, transparent 0%, rgba(0,0,0,0.25) 100%);
+      pointer-events: none;
+      z-index: -1;
+    }
+
+    .gg26-container {
+      max-width: 1140px;
+      margin-inline: auto;
+      padding: 0 1rem;
+      position: relative;
+      z-index: 1;
+    }
+
+    .gg26-nav {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      background: rgba(8,8,22,0.78);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--cosmo-line);
+    }
+
+    .gg26-nav-inner {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      min-height: 64px;
+    }
+
+    .gg26-brand {
+      font-weight: 950;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: var(--cosmo-gold);
+    }
+
+    .gg26-navlinks {
+      margin-left: auto;
+      display: none;
+      gap: 1.1rem;
+    }
+
+    .gg26-nav a {
+      color: var(--cosmo-white);
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    @media (min-width: 800px) {
+      .gg26-navlinks {
+        display: flex;
+      }
+    }
+
+    .gg26-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      border: none;
+      border-radius: 999px;
+      padding: 0.85rem 1.25rem;
+      font-weight: 900;
+      cursor: pointer;
+      text-decoration: none !important;
+      line-height: 1.1;
+      transition: transform 0.2s ease, opacity 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .gg26-btn:hover {
+      transform: translateY(-2px);
+      opacity: 0.94;
+      box-shadow: 0 14px 34px rgba(0,0,0,0.28);
+    }
+
+    .gg26-btn-primary {
+      background: linear-gradient(135deg, var(--cosmo-gold), #ffffff);
+      color: #080816 !important;
+    }
+
+    .gg26-btn-secondary {
+      background: rgba(255,255,255,0.11);
+      border: 1px solid var(--cosmo-line);
+      color: var(--cosmo-white) !important;
+    }
+
+    .gg26-btn-accent {
+      background: linear-gradient(135deg, var(--cosmo-pink), #9b6dff);
+      color: var(--cosmo-white) !important;
+    }
+
+    .gg26-hero {
+      min-height: 84vh;
+      display: flex;
+      align-items: center;
+      padding: 6rem 0;
+      position: relative;
+    }
+
+    .gg26-eyebrow {
+      display: inline-block;
+      margin-bottom: 1rem;
+      padding: 0.5rem 0.9rem;
+      border: 1px solid var(--cosmo-line);
+      border-radius: 999px;
+      color: var(--cosmo-gold);
+      background: rgba(255,255,255,0.08);
+      font-size: 0.88rem;
+      font-weight: 900;
+      letter-spacing: 0.09em;
+      text-transform: uppercase;
+    }
+
+    .gg26-headline {
+      max-width: 950px;
+      font-size: clamp(3rem, 8vw, 7rem);
+      font-weight: 950;
+      line-height: 0.9;
+      letter-spacing: -0.06em;
+      margin: 0 0 1rem;
+      color: var(--cosmo-white);
+    }
+
+    .gg26-headline span {
+      background: linear-gradient(90deg, var(--cosmo-gold), var(--cosmo-pink), var(--cosmo-aqua));
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    .gg26-subtitle {
+      max-width: 820px;
+      color: var(--cosmo-muted);
+      font-size: clamp(1.15rem, 2.2vw, 1.65rem);
+      line-height: 1.35;
+      margin: 0 0 1.4rem;
+      font-weight: 700;
+    }
+
+    .gg26-button-row {
+      display: flex;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+      margin-top: 1.25rem;
+    }
+
+    .gg26-goal {
+      margin-top: 1.5rem;
+      max-width: 620px;
+    }
+
+    .gg26-goal-row {
+      display: flex;
+      justify-content: space-between;
+      gap: 1rem;
+      font-size: 0.92rem;
+      color: var(--cosmo-muted);
+    }
+
+    .gg26-bar {
+      height: 0.78rem;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.2);
+      overflow: hidden;
+      margin: 0.4rem 0;
+    }
+
+    .gg26-bar > i {
+      display: block;
+      height: 100%;
+      background: linear-gradient(90deg, var(--cosmo-pink), var(--cosmo-gold), var(--cosmo-aqua));
+      width: 0;
+    }
+
+    .gg26-section {
+      padding: 4.5rem 0;
+      scroll-margin-top: 92px;
+    }
+
+    .gg26-section h2 {
+      font-size: clamp(2rem, 4vw, 3.6rem);
+      line-height: 1;
+      letter-spacing: -0.045em;
+      margin: 0 0 1rem;
+      color: var(--cosmo-white);
+      font-weight: 950;
+    }
+
+    .gg26-section p {
+      color: var(--cosmo-muted);
+    }
+
+    .gg26-subtle {
+      color: var(--cosmo-muted);
+      opacity: 0.92;
+    }
+
+    .gg26-grid {
+      display: grid;
+      gap: 1rem;
+    }
+
+    @media (min-width: 768px) {
+      .gg26-grid-2 {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .gg26-grid-3 {
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      .gg26-grid-4 {
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
+
+    .gg26-card {
+      background: var(--cosmo-card);
+      backdrop-filter: blur(8px);
+      border: 1px solid var(--cosmo-line);
+      border-radius: var(--cosmo-radius);
+      padding: 1.4rem;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.22);
+      color: var(--cosmo-white);
+    }
+
+    .gg26-card-strong {
+      background: var(--cosmo-card-strong);
+      border-color: rgba(247,215,116,0.5);
+    }
+
+    .gg26-card h3 {
+      margin: 0 0 0.5rem;
+      font-size: 1.35rem;
+      line-height: 1.15;
+      color: var(--cosmo-white);
+      font-weight: 950;
+    }
+
+    .gg26-card h4 {
+      margin: 0 0 0.5rem;
+      font-size: 0.95rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--cosmo-gold);
+      font-weight: 950;
+    }
+
+    .gg26-list {
+      padding-left: 1.25rem;
+      color: var(--cosmo-muted);
+    }
+
+    .gg26-list li {
+      margin: 0.35rem 0;
+    }
+
+    .gg26-price {
+      font-size: 2rem;
+      font-weight: 950;
+      margin: 0.35rem 0 0.75rem;
+      color: var(--cosmo-gold);
+    }
+
+    .gg26-fmv {
+      opacity: 0.85;
+      font-size: 0.88rem;
+      color: var(--cosmo-muted);
+      margin-bottom: 1rem;
+    }
+
+    details.gg26-card summary {
+      cursor: pointer;
+      list-style: none;
+    }
+
+    details.gg26-card summary::-webkit-details-marker {
+      display: none;
+    }
+
+    details.gg26-card[open] {
+      background: rgba(255,255,255,0.11);
+    }
+
+    .gg26-timeline {
+      position: relative;
+      border-left: 1px solid rgba(255,255,255,0.25);
+      padding-left: 1rem;
+    }
+
+    .gg26-timeline-item {
+      position: relative;
+      margin-bottom: 1.1rem;
+    }
+
+    .gg26-timeline-item::before {
+      content: "";
+      position: absolute;
+      left: -1.42rem;
+      top: 0.35rem;
+      width: 12px;
+      height: 12px;
+      border-radius: 999px;
+      background: linear-gradient(90deg, var(--cosmo-aqua), var(--cosmo-gold), var(--cosmo-pink));
+    }
+
+    .gg26-quote {
+      margin-top: 1.5rem;
+      padding: 1.8rem;
+      border-left: 5px solid var(--cosmo-gold);
+      border-radius: 18px;
+      background: rgba(255,255,255,0.09);
+      color: var(--cosmo-white);
+      font-size: clamp(1.25rem, 2.5vw, 2rem);
+      line-height: 1.3;
+      font-weight: 900;
+    }
+
+    .gg26-center {
+      text-align: center;
+    }
+
+    .gg26-center .gg26-button-row {
+      justify-content: center;
+    }
+
+    .gg26-footer-note {
+      padding: 2rem 0;
+      color: rgba(255,255,255,0.75);
+      text-align: center;
+      border-top: 1px solid var(--cosmo-line);
+    }
+
+    @media (max-width: 768px) {
+      .gg26-hero {
+        min-height: auto;
+        padding: 4rem 0;
+      }
+
+      .gg26-section {
+        padding: 3rem 0;
+      }
+
+      .gg26-button-row {
+        flex-direction: column;
+      }
+
+      .gg26-btn {
+        width: 100%;
+      }
+
+      .gg26-goal-row {
+        flex-direction: column;
+      }
+    }
+  </style>
+
+  <header class="gg26-nav">
+    <div class="gg26-container gg26-nav-inner">
+      <div class="gg26-brand">Glitter Gala 2026</div>
+      <nav class="gg26-navlinks" aria-label="CosmoloGala navigation">
+        <a href="#gg26-about">About</a>
+        <a href="#gg26-tickets">Tickets</a>
+        <a href="#gg26-sponsor">Sponsorships</a>
+        <a href="#gg26-campaign">Annual Campaign</a>
+      </nav>
+      <a class="gg26-btn gg26-btn-accent" href="#gg26-tickets">Get Tickets ✶</a>
+      <a class="gg26-btn gg26-btn-secondary" href="#gg26-sponsor">Sponsorships</a>
+    </div>
+  </header>
+
+  <div class="gg26-hero" aria-label="Glitter Gala 2026 CosmoloGala hero section">
+    <div class="gg26-container">
+      <span class="gg26-eyebrow">Louisville Youth Group presents</span>
+      <h1 class="gg26-headline">Glitter Gala 2026: <span>CosmoloGala</span></h1>
+      <p class="gg26-subtitle">
+        A night of queer myth, starlight, and constellations of care — launching LYG’s 2027 Annual Campaign for LGBTQIA+ youth.
+      </p>
+
+      <div class="gg26-button-row">
+        <a class="gg26-btn gg26-btn-primary" href="#gg26-tickets">Get Tickets</a>
+        <a class="gg26-btn gg26-btn-secondary" href="#gg26-sponsor">Become a Sponsor</a>
+        <a class="gg26-btn gg26-btn-accent" href="#gg26-campaign">Join the Constellation of Care</a>
+      </div>
+
+      <div class="gg26-goal" aria-live="polite">
+        <div class="gg26-goal-row">
+          <small>Goal: $36,000 to launch 2027 programs</small>
+          <small>Raised: <span id="gg26-raised">$0</span></small>
+        </div>
+        <div class="gg26-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+          <i id="gg26-bar" style="width:0%"></i>
+        </div>
+        <small id="gg26-remaining" class="gg26-subtle">0% to goal · $36,000 to go · Building the 2027 Constellation of Care</small>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <section class="gg26-section" id="gg26-about">
+      <div class="gg26-container">
+        <h2>About the Event</h2>
+        <div class="gg26-card gg26-card-strong">
+          <p>
+            Glitter Gala 2026 becomes <strong>CosmoloGala</strong>: a celestial celebration of queer youth, chosen family, community care, and the kind of light that cannot be touched by the darkness of the world.
+          </p>
+          <p>
+            This year’s Gala launches <strong>The 2027 Constellation of Care</strong>, LYG’s Annual Campaign to sustain free programs, resources, leadership opportunities, and affirming spaces for LGBTQIA+ youth across Kentucky and Southern Indiana.
+          </p>
+        </div>
+
+        <div class="gg26-quote">
+          Galaxies are made of small lights. Movements are made of small acts. Together, we are building the constellation LGBTQIA+ youth deserve.
+        </div>
+      </div>
+    </section>
+
+    <section class="gg26-section" id="gg26-theme">
+      <div class="gg26-container">
+        <h2>What to Expect</h2>
+        <div class="gg26-grid gg26-grid-2">
+          <div class="gg26-card">
+            <h3>A Celestial Night of Queer Joy</h3>
+            <ul class="gg26-list">
+              <li>Celestial glam, queer myth, cosmic cocktail, glitter formal, or come as the star you are</li>
+              <li>Drag, performance, music, photo moments, raffle, auction, and community celebration</li>
+              <li>A donor constellation wall where guests can name stars, honor loved ones, and make gifts</li>
+              <li>Youth-centered storytelling through anonymous reflections, art, affirmations, and mission moments</li>
+            </ul>
+          </div>
+
+          <div class="gg26-card">
+            <h3>Mission in Motion</h3>
+            <p>
+              Every ticket, sponsorship, raffle entry, auction bid, honorary gift, and monthly donation helps LYG provide free affirming programs and resources for LGBTQIA+ youth.
+            </p>
+            <p>
+              This is more than a gala. It is the launchpad for LYG’s next year of youth programs, family support, leadership development, resource access, and community care.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="gg26-section" id="gg26-tickets">
+      <div class="gg26-container">
+        <h2>Tickets & Tables</h2>
+        <p class="gg26-subtle">
+          Reserve your place in the constellation. Ticket links will be updated when registration opens.
+        </p>
+
+        <div class="gg26-grid gg26-grid-3">
+          <div class="gg26-card">
+            <h3>Individual Ticket</h3>
+            <div class="gg26-price">$75</div>
+            <ul class="gg26-list">
+              <li>Admission for one guest</li>
+              <li>Access to event experiences</li>
+              <li>Silent auction, raffle, performances, and mission program</li>
+            </ul>
+            <div class="gg26-fmv">FMV to be determined</div>
+            <a class="gg26-btn gg26-btn-primary" href="#ticket-link">Select Individual Ticket</a>
+          </div>
+
+          <div class="gg26-card">
+            <h3>Pair of Stars</h3>
+            <div class="gg26-price">$140</div>
+            <ul class="gg26-list">
+              <li>Admission for two guests</li>
+              <li>A small discount for coming together</li>
+              <li>Perfect for friends, partners, or chosen family</li>
+            </ul>
+            <div class="gg26-fmv">FMV to be determined</div>
+            <a class="gg26-btn gg26-btn-primary" href="#ticket-link">Select Pair of Stars</a>
+          </div>
+
+          <div class="gg26-card">
+            <h3>Chosen Family Four-Pack</h3>
+            <div class="gg26-price">$260</div>
+            <ul class="gg26-list">
+              <li>Admission for four guests</li>
+              <li>Designed for families, friends, and small groups</li>
+              <li>Celebrate together while supporting LYG youth</li>
+            </ul>
+            <div class="gg26-fmv">FMV to be determined</div>
+            <a class="gg26-btn gg26-btn-primary" href="#ticket-link">Select Four-Pack</a>
+          </div>
+
+          <div class="gg26-card">
+            <h3>Reserved Table of 8</h3>
+            <div class="gg26-price">$600</div>
+            <ul class="gg26-list">
+              <li>Reserved seating for eight guests</li>
+              <li>Great for friend groups, businesses, families, and ERGs</li>
+            </ul>
+            <div class="gg26-fmv">FMV to be determined</div>
+            <a class="gg26-btn gg26-btn-primary" href="#ticket-link">Reserve a Table</a>
+          </div>
+
+          <div class="gg26-card gg26-card-strong">
+            <h3>VIP Celestial Table</h3>
+            <div class="gg26-price">$1,000</div>
+            <ul class="gg26-list">
+              <li>Premium reserved seating</li>
+              <li>Elevated recognition for your group</li>
+              <li>Ideal for sponsors, donor circles, and community leaders</li>
+            </ul>
+            <div class="gg26-fmv">FMV to be determined</div>
+            <a class="gg26-btn gg26-btn-accent" href="#ticket-link">Select VIP Table</a>
+          </div>
+
+          <div class="gg26-card">
+            <h3>Sponsor-a-Seat Gift</h3>
+            <div class="gg26-price">$75</div>
+            <ul class="gg26-list">
+              <li>Helps make the event more accessible</li>
+              <li>Supports volunteer, alumni, young adult, or community access</li>
+            </ul>
+            <div class="gg26-fmv">Fully charitable gift unless benefits are received</div>
+            <a class="gg26-btn gg26-btn-secondary" href="#seat-sponsor-link">Sponsor a Seat</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="gg26-section" id="gg26-details">
+      <div class="gg26-container">
+        <h2>Event Details</h2>
+        <div class="gg26-grid gg26-grid-4">
+          <div class="gg26-card"><strong>📅 Date</strong><br> Coming soon</div>
+          <div class="gg26-card"><strong>🕔 Time</strong><br> Coming soon</div>
+          <div class="gg26-card"><strong>📍 Venue</strong><br> Coming soon</div>
+          <div class="gg26-card"><strong>✨ Dress Code</strong><br> Celestial glam, queer myth, cosmic cocktail, glitter formal, or come as the star you are</div>
+        </div>
+
+        <div class="gg26-grid gg26-grid-2" style="margin-top:1rem">
+          <div class="gg26-card"><strong>♿ Accessibility</strong><br> Accessibility details and request options will be added when the venue is confirmed.</div>
+          <div class="gg26-card"><strong>🎟️ Tickets</strong><br> Ticketing and sponsorship checkout links will be added when registration opens.</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="gg26-section" id="gg26-sponsor">
+      <div class="gg26-container">
+        <h2>Sponsorships</h2>
+        <p class="gg26-subtle">
+          Expand a tier to view benefits. Sponsorships place your company, ERG, family, foundation, or community group in LYG’s 2027 Constellation of Care.
+        </p>
+
+        <div class="gg26-grid gg26-grid-2">
+          <details class="gg26-card gg26-card-strong" open>
+            <summary><strong>🌟 The North Star</strong> — $15,000</summary>
+            <ul class="gg26-list">
+              <li>Recognition as presenting sponsor: “CosmoloGala Presented by [Sponsor]”</li>
+              <li>Premier logo placement on webpage, event materials, emails, social media, and event signage</li>
+              <li>Stage recognition during opening, mission moment, and closing</li>
+              <li>Dedicated pre-event and post-event sponsor spotlight</li>
+              <li>12 VIP tickets or 2 reserved tables of 6</li>
+              <li>Recognition on the 2027 Constellation of Care donor wall</li>
+              <li>Option to underwrite a named mission constellation</li>
+            </ul>
+            <a class="gg26-btn gg26-btn-accent" href="#sponsor-form">Select North Star</a>
+          </details>
+
+          <details class="gg26-card gg26-card-strong">
+            <summary><strong>🌌 Galaxy Sponsor</strong> — $10,000</summary>
+            <ul class="gg26-list">
+              <li>Premier logo placement on event webpage and sponsor materials</li>
+              <li>Recognition as a Galaxy Sponsor in major event promotions</li>
+              <li>Logo on main stage slideshow and event signage</li>
+              <li>Dedicated social media sponsor spotlight</li>
+              <li>10 VIP tickets or 1 reserved table of 10</li>
+              <li>Featured placement on the Majestic Donor Sky</li>
+              <li>Option to sponsor a major event feature</li>
+            </ul>
+            <a class="gg26-btn gg26-btn-accent" href="#sponsor-form">Select Galaxy Sponsor</a>
+          </details>
+
+          <details class="gg26-card">
+            <summary><strong>✨ Constellation Sponsor</strong> — $5,000</summary>
+            <ul class="gg26-list">
+              <li>Logo on event webpage and sponsor signage</li>
+              <li>Logo in event slideshow</li>
+              <li>Group recognition on social media</li>
+              <li>Stage recognition during sponsor acknowledgments</li>
+              <li>8 tickets with reserved seating</li>
+              <li>Recognition on the Constellation of Care donor wall</li>
+              <li>Option to sponsor one LYG program constellation</li>
+            </ul>
+            <a class="gg26-btn gg26-btn-accent" href="#sponsor-form">Select Constellation Sponsor</a>
+          </details>
+
+          <details class="gg26-card">
+            <summary><strong>💫 Nebula Sponsor</strong> — $2,500</summary>
+            <ul class="gg26-list">
+              <li>Logo/name on event webpage</li>
+              <li>Logo/name on sponsor slideshow</li>
+              <li>Recognition in group sponsor social media post</li>
+              <li>Stage recognition during sponsor acknowledgments</li>
+              <li>6 tickets</li>
+              <li>Recognition on the donor wall</li>
+              <li>Option to support décor, entertainment, accessibility, volunteer hospitality, or event experiences</li>
+            </ul>
+            <a class="gg26-btn gg26-btn-accent" href="#sponsor-form">Select Nebula Sponsor</a>
+          </details>
+
+          <details class="gg26-card">
+            <summary><strong>⭐ Starlight Sponsor</strong> — $1,000</summary>
+            <ul class="gg26-list">
+              <li>Name/logo on event webpage</li>
+              <li>Name/logo in event slideshow</li>
+              <li>Group thank-you on social media</li>
+              <li>4 tickets</li>
+              <li>Recognition on the Starlight Supporters section of the donor wall</li>
+            </ul>
+            <a class="gg26-btn gg26-btn-accent" href="#sponsor-form">Select Starlight Sponsor</a>
+          </details>
+
+          <details class="gg26-card">
+            <summary><strong>🌙 Moonbeam Sponsor</strong> — $500</summary>
+            <ul class="gg26-list">
+              <li>Name listed on event webpage</li>
+              <li>Name listed in event slideshow</li>
+              <li>2 tickets</li>
+              <li>Recognition on the donor wall</li>
+            </ul>
+            <a class="gg26-btn gg26-btn-accent" href="#sponsor-form">Select Moonbeam Sponsor</a>
+          </details>
+
+          <details class="gg26-card">
+            <summary><strong>☄️ Shooting Star Sponsor</strong> — $250</summary>
+            <ul class="gg26-list">
+              <li>Name listed on event webpage</li>
+              <li>Name listed in event slideshow</li>
+              <li>1 ticket</li>
+              <li>Recognition on the donor wall</li>
+            </ul>
+            <a class="gg26-btn gg26-btn-accent" href="#sponsor-form">Select Shooting Star Sponsor</a>
+          </details>
+        </div>
+
+        <p class="gg26-subtle" style="margin-top:1rem">
+          Need an invoice, W-9, or custom sponsorship package? Email <a href="mailto:development@louisvilleyouthgroup.org">development@louisvilleyouthgroup.org</a>.
+        </p>
+      </div>
+    </section>
+
+    <section class="gg26-section" id="gg26-campaign">
+      <div class="gg26-container">
+        <h2>The 2027 Constellation of Care</h2>
+        <p class="gg26-subtle">
+          Glitter Gala 2026 launches LYG’s Annual Campaign to sustain free programs, resources, leadership, and belonging for LGBTQIA+ youth in 2027.
+        </p>
+
+        <div class="gg26-grid gg26-grid-3">
+          <div class="gg26-card">
+            <h3>36 New Monthly Donors</h3>
+            <p>Help LYG build reliable support that keeps programs in orbit all year.</p>
+          </div>
+
+          <div class="gg26-card">
+            <h3>$36,000 by Year-End</h3>
+            <p>Launch LYG’s 2027 programs with community support already in motion.</p>
+          </div>
+
+          <div class="gg26-card">
+            <h3>$1,990 Founding Star Gifts</h3>
+            <p>Honor the year Louisville Youth Group was founded by making a leadership gift.</p>
+          </div>
+        </div>
+
+        <div class="gg26-button-row">
+          <a class="gg26-btn gg26-btn-primary" href="#donation-link">Make a Gift</a>
+          <a class="gg26-btn gg26-btn-secondary" href="#monthly-link">Become a Monthly Donor</a>
+          <a class="gg26-btn gg26-btn-accent" href="#honor-link">Honor a Star</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="gg26-section" id="gg26-schedule">
+      <div class="gg26-container">
+        <h2>Event Schedule</h2>
+        <p class="gg26-subtle">Schedule is subject to update once venue and program details are finalized.</p>
+
+        <div class="gg26-grid gg26-grid-2">
+          <div class="gg26-card">
+            <div class="gg26-timeline">
+              <div class="gg26-timeline-item"><small>Time TBD</small><br><strong>VIP / Sponsor Arrival</strong></div>
+              <div class="gg26-timeline-item"><small>Time TBD</small><br><strong>Doors, Auction, Raffle & Constellation Wall</strong></div>
+              <div class="gg26-timeline-item"><small>Time TBD</small><br><strong>Welcome to CosmoloGala</strong></div>
+              <div class="gg26-timeline-item"><small>Time TBD</small><br><strong>Entertainment & Queer Myth Performances</strong></div>
+              <div class="gg26-timeline-item"><small>Time TBD</small><br><strong>Mission Moment & Annual Campaign Launch</strong></div>
+              <div class="gg26-timeline-item"><small>Time TBD</small><br><strong>Finale, Raffle Drawings & Photo Ops</strong></div>
+            </div>
+          </div>
+
+          <div class="gg26-card">
+            <h3>Featured Experiences</h3>
+            <ul class="gg26-list">
+              <li>The Constellation Wall</li>
+              <li>Youth Star Stories Installation</li>
+              <li>The Nebula Photo Booth</li>
+              <li>The Silent Auction Orbit</li>
+              <li>The Starfall Raffle</li>
+              <li>The Cosmic Mocktail Bar</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="gg26-section" id="gg26-policies">
+      <div class="gg26-container">
+        <h2>Policies & Fine Print</h2>
+        <div class="gg26-grid gg26-grid-2">
+          <div class="gg26-card">
+            <strong>Refunds</strong><br>
+            Tickets are nonrefundable but transferable.
+            <div style="height:.5rem"></div>
+            <strong>Age</strong><br>
+            Age policy will be determined by venue requirements.
+            <div style="height:.5rem"></div>
+            <strong>Tax Language</strong><br>
+            Louisville Youth Group is a 501(c)(3). The tax-deductible amount equals your payment minus the fair market value of goods/services received.
+          </div>
+
+          <div class="gg26-card">
+            <strong>Accessibility</strong><br>
+            Accessibility information and request options will be updated when the venue is confirmed.
+            <div style="height:.5rem"></div>
+            <strong>Health & Safety</strong><br>
+            LYG will follow current public health guidance and venue policies.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="gg26-section" id="gg26-contact">
+      <div class="gg26-container">
+        <h2>Join Us</h2>
+        <div class="gg26-card gg26-center">
+          <div style="font-size:1.25rem;font-weight:950;color:#F7D774;">Help launch LYG into 2027.</div>
+          <p>
+            Become a sponsor, buy tickets, make a gift, name a star, honor someone whose light guides you, or join the monthly giving orbit that keeps LYG shining all year.
+          </p>
+          <p>Contact: <a href="mailto:development@louisvilleyouthgroup.org">development@louisvilleyouthgroup.org</a></p>
+          <div class="gg26-button-row">
+            <a class="gg26-btn gg26-btn-primary" href="#gg26-tickets">Get Tickets</a>
+            <a class="gg26-btn gg26-btn-secondary" href="#gg26-sponsor">Become a Sponsor</a>
+            <a class="gg26-btn gg26-btn-accent" href="#donation-link">Donate</a>
+          </div>
+          <p class="gg26-subtle" style="margin-top:.75rem">
+            Goal: $36,000 · 36 new monthly donors · Launching the 2027 Constellation of Care
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="gg26-footer-note">
+    Louisville Youth Group • Glitter Gala 2026: CosmoloGala • A Night of Queer Myth, Starlight, and Constellations of Care
+  </div>
+
+  <script>
+    (function() {
+      const GOAL = 36000;
+      const raised = 0;
+      const pct = Math.min(100, Math.round((raised / GOAL) * 100));
+
+      const raisedEl = document.getElementById('gg26-raised');
+      const barEl = document.getElementById('gg26-bar');
+      const remainingEl = document.getElementById('gg26-remaining');
+
+      if (raisedEl && barEl && remainingEl) {
+        raisedEl.textContent = raised.toLocaleString('en-US', { style: 'currency', currency: 'USD' });
+        barEl.style.width = pct + '%';
+
+        const remaining = Math.max(0, GOAL - raised);
+        remainingEl.textContent = `${pct}% to goal · ${remaining.toLocaleString('en-US', { style: 'currency', currency: 'USD' })} to go · Building the 2027 Constellation of Care`;
+      }
+    })();
+  </script>
+</section>
+<!-- /wp:html -->
