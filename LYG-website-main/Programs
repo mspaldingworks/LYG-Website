@@ -9,10 +9,16 @@
    LYG PROGRAMS PAGE — everything scoped under #lyg-programs-root
    so it cannot affect any other page. To re-skin, edit the
    custom properties in the next block.
+
+   NOTE ON SPECIFICITY: the base link rule below is ID-scoped
+   (#lyg-programs-root a). Any component that is itself a link
+   (buttons, cards) MUST also prefix #lyg-programs-root on its
+   color rule, or the link color wins and text becomes
+   unreadable. Keep that prefix when editing colors.
    ========================================================= */
 #lyg-programs-root{
   --lyg-teal:#41bdea;          /* brand accent */
-  --lyg-teal-dark:#2a93bb;
+  --lyg-teal-dark:#1f7fa6;
   --lyg-navy:#10243a;          /* deep surface */
   --lyg-navy-2:#173453;
   --lyg-navy-3:#1f4368;
@@ -53,6 +59,7 @@
   letter-spacing:-.01em;
   line-height:1.05;
   margin:0 0 .6rem;
+  color:var(--lyg-text-invert);          /* default: dark sections -> light heading */
 }
 #lyg-programs-root h1{font-size:clamp(2.6rem,7vw,5rem);text-transform:uppercase}
 #lyg-programs-root h2{font-size:clamp(1.8rem,4.2vw,3rem)}
@@ -61,9 +68,15 @@
 
 .lyg-wrap{width:min(1180px,92vw);margin-inline:auto}
 .lyg-section{padding:clamp(2.5rem,6vw,4.5rem) 0}
+
+/* Light sections: dark text + dark headings for contrast on cream */
 .lyg-section--light{background:var(--lyg-cream);color:var(--lyg-text)}
-.lyg-section--light a{color:var(--lyg-teal-dark)}
-.lyg-section--light a:hover{color:var(--lyg-navy)}
+#lyg-programs-root .lyg-section--light h1,
+#lyg-programs-root .lyg-section--light h2,
+#lyg-programs-root .lyg-section--light h3{color:var(--lyg-text)}
+#lyg-programs-root .lyg-section--light a{color:var(--lyg-teal-dark)}
+#lyg-programs-root .lyg-section--light a:hover{color:var(--lyg-navy)}
+
 .lyg-eyebrow{
   display:inline-block;font-family:var(--lyg-font-display);font-weight:800;
   text-transform:uppercase;letter-spacing:.12em;font-size:.9rem;
@@ -73,7 +86,7 @@
 .lyg-h2-wrap{margin-bottom:2rem;text-align:center}
 .lyg-h2-wrap p{max-width:52ch;margin:0 auto;opacity:.9}
 
-/* Buttons */
+/* Buttons (links -> need #lyg-programs-root prefix to beat base link color) */
 .lyg-btn{
   display:inline-flex;align-items:center;justify-content:center;gap:.5rem;
   font-family:var(--lyg-font-display);font-weight:800;text-transform:uppercase;
@@ -82,12 +95,12 @@
   text-decoration:none;cursor:pointer;transition:transform 120ms ease,background 120ms ease;
 }
 .lyg-btn:hover{transform:translateY(-2px)}
-.lyg-btn--primary{background:var(--lyg-teal);color:var(--lyg-navy)}
-.lyg-btn--primary:hover{background:#5fccf2;color:var(--lyg-navy)}
-.lyg-btn--ghost{background:transparent;color:var(--lyg-cream);border-color:var(--lyg-cream)}
-.lyg-btn--ghost:hover{background:var(--lyg-cream);color:var(--lyg-navy)}
-.lyg-btn--gold{background:var(--lyg-gold);color:var(--lyg-navy)}
-.lyg-btn--gold:hover{background:#ffc658;color:var(--lyg-navy)}
+#lyg-programs-root .lyg-btn--primary{background:var(--lyg-teal);color:var(--lyg-navy)}
+#lyg-programs-root .lyg-btn--primary:hover{background:#5fccf2;color:var(--lyg-navy)}
+#lyg-programs-root .lyg-btn--ghost{background:transparent;color:var(--lyg-cream);border-color:var(--lyg-cream)}
+#lyg-programs-root .lyg-btn--ghost:hover{background:var(--lyg-cream);color:var(--lyg-navy)}
+#lyg-programs-root .lyg-btn--gold{background:var(--lyg-gold);color:var(--lyg-navy)}
+#lyg-programs-root .lyg-btn--gold:hover{background:#ffc658;color:var(--lyg-navy)}
 
 /* HERO CAROUSEL */
 .lyg-hero{position:relative;overflow:hidden;background:var(--lyg-navy)}
@@ -110,7 +123,7 @@
   background:linear-gradient(90deg,var(--lyg-coral) 0 20%,var(--lyg-gold) 20% 40%,var(--lyg-green) 40% 60%,var(--lyg-teal) 60% 80%,var(--lyg-purple) 80% 100%);
 }
 .lyg-hero__tick{display:block;width:64px;height:6px;background:var(--lyg-gold);margin-bottom:1rem;border-radius:2px}
-.lyg-hero__lede{font-size:clamp(1.05rem,1.8vw,1.35rem);max-width:44ch;margin-bottom:1.75rem}
+.lyg-hero__lede{font-size:clamp(1.05rem,1.8vw,1.35rem);max-width:44ch;margin-bottom:1.75rem;color:var(--lyg-cream)}
 .lyg-hero__cta{display:flex;gap:.75rem;flex-wrap:wrap}
 .lyg-hero__nav{
   position:absolute;z-index:3;bottom:1.4rem;right:max(4vw,1rem);
@@ -131,14 +144,14 @@
 /* QUICK ACTIONS */
 .lyg-quick{background:var(--lyg-navy-2);padding:1.25rem 0;border-bottom:6px solid var(--lyg-gold)}
 .lyg-quick__grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:.75rem}
-.lyg-quick__card{
+#lyg-programs-root .lyg-quick__card{
   display:flex;align-items:center;gap:.75rem;
   background:var(--lyg-navy-3);color:var(--lyg-cream);
   padding:1rem 1.1rem;border-radius:var(--lyg-radius);
   text-decoration:none;border:2px solid transparent;
   transition:transform 120ms ease,border-color 120ms ease;
 }
-.lyg-quick__card:hover{transform:translateY(-2px);border-color:var(--lyg-gold);color:var(--lyg-cream)}
+#lyg-programs-root .lyg-quick__card:hover{transform:translateY(-2px);border-color:var(--lyg-gold);color:var(--lyg-cream)}
 .lyg-quick__icon{
   flex:0 0 44px;width:44px;height:44px;border-radius:12px;
   display:grid;place-items:center;font-size:1.4rem;
@@ -146,7 +159,7 @@
 }
 .lyg-quick__card:nth-child(2) .lyg-quick__icon{background:var(--lyg-green);color:var(--lyg-navy)}
 .lyg-quick__card:nth-child(3) .lyg-quick__icon{background:var(--lyg-coral);color:var(--lyg-navy)}
-.lyg-quick__card:nth-child(4) .lyg-quick__icon{background:var(--lyg-purple);color:var(--lyg-navy)}
+.lyg-quick__card:nth-child(4) .lyg-quick__icon{background:var(--lyg-purple);color:#fff}
 .lyg-quick__title{font-family:var(--lyg-font-display);font-weight:800;text-transform:uppercase;font-size:1.05rem;line-height:1}
 .lyg-quick__sub{font-size:.83rem;opacity:.85;margin-top:.2rem;display:block}
 
@@ -164,12 +177,12 @@
 .lyg-cal__embed iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
 .lyg-cal__foot{
   display:flex;flex-wrap:wrap;gap:1rem;justify-content:space-between;align-items:center;
-  margin-top:1.25rem;font-size:.98rem;
+  margin-top:1.25rem;font-size:.98rem;color:var(--lyg-cream);
 }
 
-/* AGE-GROUP CARDS */
+/* AGE-GROUP CARDS (cards are links -> prefix color rules) */
 .lyg-groups__grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1.25rem}
-.lyg-group{
+#lyg-programs-root .lyg-group{
   display:flex;flex-direction:column;
   background:#fff;color:var(--lyg-text);
   border-radius:var(--lyg-radius-lg);overflow:hidden;
@@ -177,21 +190,21 @@
   text-decoration:none;box-shadow:0 2px 10px rgba(16,36,58,.08);
   transition:transform 150ms ease,box-shadow 150ms ease;
 }
-.lyg-group:hover{transform:translateY(-4px);box-shadow:var(--lyg-shadow);color:var(--lyg-text)}
+#lyg-programs-root .lyg-group:hover{transform:translateY(-4px);box-shadow:var(--lyg-shadow);color:var(--lyg-text)}
 .lyg-group__top{
   display:flex;align-items:flex-end;
   aspect-ratio:5/2;width:100%;padding:.9rem 1rem;
   background:var(--lyg-teal);
 }
 .lyg-group__body{padding:1.1rem 1.25rem 1.4rem}
-.lyg-group__age{
+#lyg-programs-root .lyg-group__age{
   display:inline-block;font-family:var(--lyg-font-display);font-weight:800;
   text-transform:uppercase;font-size:.8rem;letter-spacing:.06em;
   background:var(--lyg-navy);color:var(--lyg-cream);
   padding:.25rem .6rem;border-radius:999px;
 }
-.lyg-group__title{margin:.6rem 0 .4rem}
-.lyg-group__desc{font-size:.95rem;margin:0;opacity:.9}
+#lyg-programs-root .lyg-group__title{margin:.6rem 0 .4rem;color:var(--lyg-text)}
+#lyg-programs-root .lyg-group__desc{font-size:.95rem;margin:0;color:var(--lyg-text);opacity:.85}
 .lyg-group--junior  .lyg-group__top{background:var(--lyg-gold)}
 .lyg-group--junior  {border-bottom-color:var(--lyg-gold)}
 .lyg-group--tween   .lyg-group__top{background:var(--lyg-green)}
@@ -207,40 +220,53 @@
 .lyg-group--ylc     .lyg-group__top{background:var(--lyg-navy)}
 .lyg-group--ylc     {border-bottom-color:var(--lyg-navy)}
 
-/* TEXT-UPDATE SIGNUP */
+/* TEXT-UPDATE SIGNUP (links -> prefix color rules) */
 .lyg-texts__grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:.75rem;margin-top:1.5rem}
-.lyg-texts__btn{
+#lyg-programs-root .lyg-texts__btn{
   display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;
   min-height:120px;padding:1rem;border-radius:var(--lyg-radius);
   font-family:var(--lyg-font-display);font-weight:800;text-transform:uppercase;
   text-decoration:none;color:var(--lyg-navy);line-height:1.05;
   border:3px solid transparent;transition:transform 120ms ease,border-color 120ms ease;
 }
-.lyg-texts__btn:hover{transform:translateY(-3px);border-color:var(--lyg-navy);color:var(--lyg-navy)}
+#lyg-programs-root .lyg-texts__btn:hover{transform:translateY(-3px);border-color:var(--lyg-navy);color:var(--lyg-navy)}
 .lyg-texts__btn span{display:block;font-size:.78rem;font-family:var(--lyg-font-body);font-weight:500;text-transform:none;margin-top:.4rem;letter-spacing:0}
-.lyg-texts__btn--teen   {background:var(--lyg-blue)}
-.lyg-texts__btn--rising {background:var(--lyg-green)}
-.lyg-texts__btn--care   {background:var(--lyg-purple);color:#fff}
-.lyg-texts__btn--care:hover{color:#fff;border-color:#fff}
-.lyg-texts__btn--teach  {background:var(--lyg-coral)}
-.lyg-texts__btn--svc    {background:var(--lyg-gold)}
+#lyg-programs-root .lyg-texts__btn--teen   {background:var(--lyg-blue)}
+#lyg-programs-root .lyg-texts__btn--rising {background:var(--lyg-green)}
+#lyg-programs-root .lyg-texts__btn--care   {background:var(--lyg-purple);color:#fff}
+#lyg-programs-root .lyg-texts__btn--care:hover{color:#fff;border-color:#fff}
+#lyg-programs-root .lyg-texts__btn--teach  {background:var(--lyg-coral)}
+#lyg-programs-root .lyg-texts__btn--svc    {background:var(--lyg-gold)}
 
-/* CONTACT */
+/* CONTACT (light section -> light cards so all text stays dark & readable) */
 .lyg-contact__grid{display:grid;grid-template-columns:1.1fr .9fr;gap:2rem;align-items:start}
 .lyg-contact__form{
-  background:var(--lyg-navy-2);color:var(--lyg-cream);
+  background:#fff;color:var(--lyg-text);
   padding:1.5rem;border-radius:var(--lyg-radius-lg);border:4px solid var(--lyg-teal);
+  box-shadow:0 2px 10px rgba(16,36,58,.08);
 }
+/* Keep WPForms labels/inputs readable on the white card regardless of the form theme */
+#lyg-programs-root .lyg-contact__form label,
+#lyg-programs-root .lyg-contact__form .wpforms-field-label,
+#lyg-programs-root .lyg-contact__form .wpforms-field-sublabel,
+#lyg-programs-root .lyg-contact__form legend{color:var(--lyg-text)!important}
+#lyg-programs-root .lyg-contact__form input,
+#lyg-programs-root .lyg-contact__form textarea,
+#lyg-programs-root .lyg-contact__form select{color:var(--lyg-text)!important;background:#fff!important}
 .lyg-contact__side ul{list-style:none;padding:0;margin:0;display:grid;gap:.6rem}
-.lyg-contact__side li{
-  background:var(--lyg-navy-2);padding:.85rem 1rem;border-radius:var(--lyg-radius);
+#lyg-programs-root .lyg-contact__side li{
+  background:#fff;color:var(--lyg-text);
+  border:1px solid rgba(16,36,58,.12);
+  padding:.85rem 1rem;border-radius:var(--lyg-radius);
   display:flex;align-items:center;gap:.75rem;
 }
+#lyg-programs-root .lyg-contact__side a{color:var(--lyg-teal-dark)}
+#lyg-programs-root .lyg-contact__side a:hover{color:var(--lyg-navy)}
 .lyg-contact__side .ic{
   width:38px;height:38px;border-radius:9px;background:var(--lyg-teal);color:var(--lyg-navy);
   display:grid;place-items:center;font-size:1.05rem;font-weight:800;flex:0 0 38px;
 }
-.lyg-contact__note{font-size:.85rem;opacity:.8;margin:.6rem 0 0}
+.lyg-contact__note{font-size:.85rem;color:var(--lyg-text);opacity:.75;margin:.6rem 0 0}
 
 /* PROGRAM & EVENT GUIDE */
 .lyg-guide__list{display:grid;gap:.6rem}
