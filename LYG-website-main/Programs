@@ -1,151 +1,565 @@
-<!-- wp:paragraph -->
-<p>Louisville Youth Group creates programs that invite young people to explore their identities and live with authenticity. All programs and services are provided to the youth at no cost, and offer an affirming and supportive space for social growth, leadership development, and community connection.</p>
-<!-- /wp:paragraph -->
+<!-- wp:template-part {"slug":"header","theme":"twentytwentyfour","tagName":"header","area":"header"} /-->
 
-<!-- wp:paragraph -->
-<p>LYG’s programs and events are published on our program calendar, communicated through the Remind text system, and through our social media accounts and Discord Server.&nbsp; Sign up below to stay up to date on all the fun things we are doing.</p>
-<!-- /wp:paragraph -->
+<!-- wp:group {"tagName":"main","align":"full","style":{"spacing":{"margin":{"top":"0"},"padding":{"top":"0","bottom":"0"}}},"layout":{"type":"default"}} -->
+<main class="wp-block-group alignfull" style="margin-top:0;padding-top:0;padding-bottom:0"><!-- wp:html -->
+<div id="lyg-programs-root">
 
-<!-- wp:paragraph -->
-<p>Click&nbsp;<a href="https://drive.google.com/file/d/1P-A3g6NHR6owWAc5JjorwA_kDJv6wXcL/view?usp=drive_link">Here</a>&nbsp;to Download a printable PDF of our 2025 Program Calendar.</p>
-<!-- /wp:paragraph -->
+<style>
+/* =========================================================
+   LYG PROGRAMS PAGE — everything scoped under #lyg-programs-root
+   so it cannot affect any other page. To re-skin, edit the
+   custom properties in the next block.
+   ========================================================= */
+#lyg-programs-root{
+  --lyg-teal:#41bdea;          /* brand accent */
+  --lyg-teal-dark:#2a93bb;
+  --lyg-navy:#10243a;          /* deep surface */
+  --lyg-navy-2:#173453;
+  --lyg-navy-3:#1f4368;
+  --lyg-cream:#f4f9fc;
+  --lyg-text:#10243a;
+  --lyg-text-invert:#f4f9fc;
+  /* category colors reused from the existing Remind buttons */
+  --lyg-blue:#41bdea;
+  --lyg-green:#86bc62;
+  --lyg-purple:#a970dc;
+  --lyg-coral:#ec7262;
+  --lyg-gold:#f5b53f;
+  --lyg-radius:14px;
+  --lyg-radius-lg:22px;
+  --lyg-shadow:0 6px 24px rgba(16,36,58,.18);
+  --lyg-font-display:"Archivo","Archivo Narrow","Bebas Neue",system-ui,sans-serif;
+  --lyg-font-body:"Poppins","Inter","Helvetica Neue",system-ui,sans-serif;
 
-<!-- wp:group {"align":"full","className":"hide-on-mobile","layout":{"type":"default"}} -->
-<div class="wp-block-group alignfull hide-on-mobile"><!-- wp:html -->
-<center>
-<div class="responsiveCal">
-<iframe src="https://calendar.google.com/calendar/embed?src=louisvilleyouthgroup.org_dsuqb6s982mabolcjioivdu5pk%40group.calendar.google.com&ctz=America%2FNew_York" style="border: 0" width="1100" height="600" frameborder="0" scrolling="no"></iframe>
+  background:var(--lyg-navy);
+  color:var(--lyg-text-invert);
+  font-family:var(--lyg-font-body);
+  font-weight:500;
+  line-height:1.5;
+  isolation:isolate;
+  position:relative;
+  z-index:1;
+  display:block;
+  width:100%;
+}
+#lyg-programs-root *,#lyg-programs-root *::before,#lyg-programs-root *::after{box-sizing:border-box}
+#lyg-programs-root :focus-visible{outline:3px solid var(--lyg-gold);outline-offset:3px;border-radius:6px}
+#lyg-programs-root a{color:var(--lyg-teal);text-decoration:underline;text-underline-offset:3px}
+#lyg-programs-root a:hover{color:var(--lyg-gold)}
+#lyg-programs-root img{max-width:100%;display:block}
+#lyg-programs-root h1,#lyg-programs-root h2,#lyg-programs-root h3{
+  font-family:var(--lyg-font-display);
+  font-weight:800;
+  letter-spacing:-.01em;
+  line-height:1.05;
+  margin:0 0 .6rem;
+}
+#lyg-programs-root h1{font-size:clamp(2.6rem,7vw,5rem);text-transform:uppercase}
+#lyg-programs-root h2{font-size:clamp(1.8rem,4.2vw,3rem)}
+#lyg-programs-root h3{font-size:clamp(1.15rem,2.2vw,1.55rem)}
+#lyg-programs-root p{margin:0 0 1rem}
+
+.lyg-wrap{width:min(1180px,92vw);margin-inline:auto}
+.lyg-section{padding:clamp(2.5rem,6vw,4.5rem) 0}
+.lyg-section--light{background:var(--lyg-cream);color:var(--lyg-text)}
+.lyg-section--light a{color:var(--lyg-teal-dark)}
+.lyg-section--light a:hover{color:var(--lyg-navy)}
+.lyg-eyebrow{
+  display:inline-block;font-family:var(--lyg-font-display);font-weight:800;
+  text-transform:uppercase;letter-spacing:.12em;font-size:.9rem;
+  background:var(--lyg-teal);color:var(--lyg-navy);
+  padding:.35rem .75rem;border-radius:999px;margin-bottom:1rem;
+}
+.lyg-h2-wrap{margin-bottom:2rem;text-align:center}
+.lyg-h2-wrap p{max-width:52ch;margin:0 auto;opacity:.9}
+
+/* Buttons */
+.lyg-btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:.5rem;
+  font-family:var(--lyg-font-display);font-weight:800;text-transform:uppercase;
+  letter-spacing:.03em;font-size:1.02rem;
+  padding:.9rem 1.4rem;border-radius:999px;border:3px solid transparent;
+  text-decoration:none;cursor:pointer;transition:transform 120ms ease,background 120ms ease;
+}
+.lyg-btn:hover{transform:translateY(-2px)}
+.lyg-btn--primary{background:var(--lyg-teal);color:var(--lyg-navy)}
+.lyg-btn--primary:hover{background:#5fccf2;color:var(--lyg-navy)}
+.lyg-btn--ghost{background:transparent;color:var(--lyg-cream);border-color:var(--lyg-cream)}
+.lyg-btn--ghost:hover{background:var(--lyg-cream);color:var(--lyg-navy)}
+.lyg-btn--gold{background:var(--lyg-gold);color:var(--lyg-navy)}
+.lyg-btn--gold:hover{background:#ffc658;color:var(--lyg-navy)}
+
+/* HERO CAROUSEL */
+.lyg-hero{position:relative;overflow:hidden;background:var(--lyg-navy)}
+.lyg-hero__slides{position:absolute;inset:0}
+.lyg-hero__slide{
+  position:absolute;inset:0;background-size:cover;background-position:center;
+  opacity:0;transition:opacity 900ms ease;
+}
+.lyg-hero__slide.is-active{opacity:1}
+.lyg-hero__overlay{
+  position:absolute;inset:0;
+  background:linear-gradient(180deg,rgba(16,36,58,.45) 0%,rgba(16,36,58,.82) 100%);
+}
+.lyg-hero__inner{
+  position:relative;z-index:2;
+  padding:clamp(3.5rem,9vw,7rem) 0 clamp(4rem,10vw,8rem);
+}
+.lyg-hero::after{
+  content:"";position:absolute;inset:auto 0 0 0;height:8px;z-index:3;
+  background:linear-gradient(90deg,var(--lyg-coral) 0 20%,var(--lyg-gold) 20% 40%,var(--lyg-green) 40% 60%,var(--lyg-teal) 60% 80%,var(--lyg-purple) 80% 100%);
+}
+.lyg-hero__tick{display:block;width:64px;height:6px;background:var(--lyg-gold);margin-bottom:1rem;border-radius:2px}
+.lyg-hero__lede{font-size:clamp(1.05rem,1.8vw,1.35rem);max-width:44ch;margin-bottom:1.75rem}
+.lyg-hero__cta{display:flex;gap:.75rem;flex-wrap:wrap}
+.lyg-hero__nav{
+  position:absolute;z-index:3;bottom:1.4rem;right:max(4vw,1rem);
+  display:flex;align-items:center;gap:.6rem;
+}
+.lyg-hero__dot{
+  width:12px;height:12px;border-radius:50%;border:2px solid var(--lyg-cream);
+  background:transparent;cursor:pointer;padding:0;
+}
+.lyg-hero__dot.is-active{background:var(--lyg-gold);border-color:var(--lyg-gold)}
+.lyg-hero__arrow{
+  width:40px;height:40px;border-radius:50%;border:0;cursor:pointer;
+  background:rgba(244,249,252,.18);color:var(--lyg-cream);font-size:1.2rem;line-height:1;
+  display:grid;place-items:center;
+}
+.lyg-hero__arrow:hover{background:var(--lyg-teal);color:var(--lyg-navy)}
+
+/* QUICK ACTIONS */
+.lyg-quick{background:var(--lyg-navy-2);padding:1.25rem 0;border-bottom:6px solid var(--lyg-gold)}
+.lyg-quick__grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:.75rem}
+.lyg-quick__card{
+  display:flex;align-items:center;gap:.75rem;
+  background:var(--lyg-navy-3);color:var(--lyg-cream);
+  padding:1rem 1.1rem;border-radius:var(--lyg-radius);
+  text-decoration:none;border:2px solid transparent;
+  transition:transform 120ms ease,border-color 120ms ease;
+}
+.lyg-quick__card:hover{transform:translateY(-2px);border-color:var(--lyg-gold);color:var(--lyg-cream)}
+.lyg-quick__icon{
+  flex:0 0 44px;width:44px;height:44px;border-radius:12px;
+  display:grid;place-items:center;font-size:1.4rem;
+  background:var(--lyg-teal);color:var(--lyg-navy);
+}
+.lyg-quick__card:nth-child(2) .lyg-quick__icon{background:var(--lyg-green);color:var(--lyg-navy)}
+.lyg-quick__card:nth-child(3) .lyg-quick__icon{background:var(--lyg-coral);color:var(--lyg-navy)}
+.lyg-quick__card:nth-child(4) .lyg-quick__icon{background:var(--lyg-purple);color:var(--lyg-navy)}
+.lyg-quick__title{font-family:var(--lyg-font-display);font-weight:800;text-transform:uppercase;font-size:1.05rem;line-height:1}
+.lyg-quick__sub{font-size:.83rem;opacity:.85;margin-top:.2rem;display:block}
+
+/* INTRO STRIP */
+.lyg-intro{background:var(--lyg-teal);color:var(--lyg-navy);padding:1.6rem 0}
+.lyg-intro p{margin:0;font-size:clamp(1.05rem,2vw,1.35rem);font-weight:600;text-align:center}
+.lyg-intro strong{font-weight:800}
+
+/* CALENDAR */
+.lyg-cal__frame{
+  background:#fff;border-radius:var(--lyg-radius-lg);overflow:hidden;
+  box-shadow:var(--lyg-shadow);border:4px solid var(--lyg-teal);
+}
+.lyg-cal__embed{position:relative;width:100%;aspect-ratio:11/6;background:#f3f3f3}
+.lyg-cal__embed iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.lyg-cal__foot{
+  display:flex;flex-wrap:wrap;gap:1rem;justify-content:space-between;align-items:center;
+  margin-top:1.25rem;font-size:.98rem;
+}
+
+/* AGE-GROUP CARDS */
+.lyg-groups__grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1.25rem}
+.lyg-group{
+  display:flex;flex-direction:column;
+  background:#fff;color:var(--lyg-text);
+  border-radius:var(--lyg-radius-lg);overflow:hidden;
+  border-bottom:6px solid var(--lyg-teal);
+  text-decoration:none;box-shadow:0 2px 10px rgba(16,36,58,.08);
+  transition:transform 150ms ease,box-shadow 150ms ease;
+}
+.lyg-group:hover{transform:translateY(-4px);box-shadow:var(--lyg-shadow);color:var(--lyg-text)}
+.lyg-group__top{
+  display:flex;align-items:flex-end;
+  aspect-ratio:5/2;width:100%;padding:.9rem 1rem;
+  background:var(--lyg-teal);
+}
+.lyg-group__body{padding:1.1rem 1.25rem 1.4rem}
+.lyg-group__age{
+  display:inline-block;font-family:var(--lyg-font-display);font-weight:800;
+  text-transform:uppercase;font-size:.8rem;letter-spacing:.06em;
+  background:var(--lyg-navy);color:var(--lyg-cream);
+  padding:.25rem .6rem;border-radius:999px;
+}
+.lyg-group__title{margin:.6rem 0 .4rem}
+.lyg-group__desc{font-size:.95rem;margin:0;opacity:.9}
+.lyg-group--junior  .lyg-group__top{background:var(--lyg-gold)}
+.lyg-group--junior  {border-bottom-color:var(--lyg-gold)}
+.lyg-group--tween   .lyg-group__top{background:var(--lyg-green)}
+.lyg-group--tween   {border-bottom-color:var(--lyg-green)}
+.lyg-group--teen    .lyg-group__top{background:var(--lyg-teal)}
+.lyg-group--teen    {border-bottom-color:var(--lyg-teal)}
+.lyg-group--rising  .lyg-group__top{background:var(--lyg-purple)}
+.lyg-group--rising  {border-bottom-color:var(--lyg-purple)}
+.lyg-group--melanin .lyg-group__top{background:var(--lyg-coral)}
+.lyg-group--melanin {border-bottom-color:var(--lyg-coral)}
+.lyg-group--tnbi    .lyg-group__top{background:var(--lyg-navy-3)}
+.lyg-group--tnbi    {border-bottom-color:var(--lyg-navy-3)}
+.lyg-group--ylc     .lyg-group__top{background:var(--lyg-navy)}
+.lyg-group--ylc     {border-bottom-color:var(--lyg-navy)}
+
+/* TEXT-UPDATE SIGNUP */
+.lyg-texts__grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:.75rem;margin-top:1.5rem}
+.lyg-texts__btn{
+  display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;
+  min-height:120px;padding:1rem;border-radius:var(--lyg-radius);
+  font-family:var(--lyg-font-display);font-weight:800;text-transform:uppercase;
+  text-decoration:none;color:var(--lyg-navy);line-height:1.05;
+  border:3px solid transparent;transition:transform 120ms ease,border-color 120ms ease;
+}
+.lyg-texts__btn:hover{transform:translateY(-3px);border-color:var(--lyg-navy);color:var(--lyg-navy)}
+.lyg-texts__btn span{display:block;font-size:.78rem;font-family:var(--lyg-font-body);font-weight:500;text-transform:none;margin-top:.4rem;letter-spacing:0}
+.lyg-texts__btn--teen   {background:var(--lyg-blue)}
+.lyg-texts__btn--rising {background:var(--lyg-green)}
+.lyg-texts__btn--care   {background:var(--lyg-purple);color:#fff}
+.lyg-texts__btn--care:hover{color:#fff;border-color:#fff}
+.lyg-texts__btn--teach  {background:var(--lyg-coral)}
+.lyg-texts__btn--svc    {background:var(--lyg-gold)}
+
+/* CONTACT */
+.lyg-contact__grid{display:grid;grid-template-columns:1.1fr .9fr;gap:2rem;align-items:start}
+.lyg-contact__form{
+  background:var(--lyg-navy-2);color:var(--lyg-cream);
+  padding:1.5rem;border-radius:var(--lyg-radius-lg);border:4px solid var(--lyg-teal);
+}
+.lyg-contact__side ul{list-style:none;padding:0;margin:0;display:grid;gap:.6rem}
+.lyg-contact__side li{
+  background:var(--lyg-navy-2);padding:.85rem 1rem;border-radius:var(--lyg-radius);
+  display:flex;align-items:center;gap:.75rem;
+}
+.lyg-contact__side .ic{
+  width:38px;height:38px;border-radius:9px;background:var(--lyg-teal);color:var(--lyg-navy);
+  display:grid;place-items:center;font-size:1.05rem;font-weight:800;flex:0 0 38px;
+}
+.lyg-contact__note{font-size:.85rem;opacity:.8;margin:.6rem 0 0}
+
+/* PROGRAM & EVENT GUIDE */
+.lyg-guide__list{display:grid;gap:.6rem}
+.lyg-guide details{
+  background:var(--lyg-navy-2);border-radius:var(--lyg-radius);
+  border-left:6px solid var(--lyg-teal);overflow:hidden;scroll-margin-top:90px;
+}
+.lyg-guide details[open]{border-left-color:var(--lyg-gold)}
+.lyg-guide summary{
+  list-style:none;cursor:pointer;padding:1rem 1.2rem;
+  display:flex;align-items:center;justify-content:space-between;gap:1rem;
+  font-family:var(--lyg-font-display);font-weight:800;text-transform:uppercase;
+  font-size:1.05rem;color:var(--lyg-cream);
+}
+.lyg-guide summary::-webkit-details-marker{display:none}
+.lyg-guide summary::after{
+  content:"+";font-size:1.6rem;line-height:1;color:var(--lyg-gold);transition:transform 150ms ease;flex:0 0 auto;
+}
+.lyg-guide details[open] summary::after{content:"\2013"}
+.lyg-guide__body{padding:0 1.2rem 1.2rem;color:var(--lyg-cream);opacity:.95}
+.lyg-guide__todo{font-style:italic;opacity:.75}
+
+/* RESPONSIVE */
+@media (max-width:960px){
+  .lyg-quick__grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .lyg-groups__grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .lyg-texts__grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .lyg-contact__grid{grid-template-columns:1fr}
+}
+@media (max-width:600px){
+  .lyg-quick__grid{grid-template-columns:1fr}
+  .lyg-groups__grid{grid-template-columns:1fr}
+  .lyg-texts__grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .lyg-cal__embed{aspect-ratio:3/4}
+  .lyg-hero__cta{flex-direction:column;align-items:stretch}
+  .lyg-hero__cta .lyg-btn{width:100%}
+  .lyg-hero__nav{position:static;justify-content:center;margin-top:1.25rem}
+}
+@media (prefers-reduced-motion:reduce){
+  .lyg-hero__slide{transition:none}
+}
+</style>
+
+<!-- ============== HERO CAROUSEL ============== -->
+<section class="lyg-hero" aria-labelledby="lyg-h1" data-lyg-hero>
+  <div class="lyg-hero__slides" aria-hidden="true">
+    <div class="lyg-hero__slide is-active" style="background-image:url('https://louisvilleyouthgroup.org/wp-content/uploads/2026/06/Programs1-scaled.png')"></div>
+    <div class="lyg-hero__slide" style="background-image:url('https://louisvilleyouthgroup.org/wp-content/uploads/2026/06/Programs2-scaled.png')"></div>
+    <div class="lyg-hero__slide" style="background-image:url('https://louisvilleyouthgroup.org/wp-content/uploads/2026/06/Programs3-scaled.png')"></div>
+  </div>
+  <div class="lyg-hero__overlay" aria-hidden="true"></div>
+  <div class="lyg-hero__inner">
+    <div class="lyg-wrap">
+      <span class="lyg-hero__tick" aria-hidden="true"></span>
+      <h1 id="lyg-h1">Programs</h1>
+      <p class="lyg-hero__lede">
+        Free, affirming spaces where LGBTQIA+ youth in Louisville show up,
+        build community, and grow into themselves.
+      </p>
+      <div class="lyg-hero__cta">
+        <a class="lyg-btn lyg-btn--primary" href="#lyg-calendar">View this month's calendar</a>
+        <a class="lyg-btn lyg-btn--ghost" href="#lyg-texts">Get text updates</a>
+      </div>
+    </div>
+  </div>
+  <div class="lyg-hero__nav">
+    <button class="lyg-hero__arrow" type="button" data-lyg-prev aria-label="Previous slide">&#8249;</button>
+    <button class="lyg-hero__dot is-active" type="button" data-lyg-dot aria-label="Show slide 1"></button>
+    <button class="lyg-hero__dot" type="button" data-lyg-dot aria-label="Show slide 2"></button>
+    <button class="lyg-hero__dot" type="button" data-lyg-dot aria-label="Show slide 3"></button>
+    <button class="lyg-hero__arrow" type="button" data-lyg-next aria-label="Next slide">&#8250;</button>
+  </div>
+</section>
+
+<!-- ============== QUICK ACTIONS ============== -->
+<nav class="lyg-quick" aria-label="Quick actions">
+  <div class="lyg-wrap lyg-quick__grid">
+    <a class="lyg-quick__card" href="#lyg-calendar">
+      <span class="lyg-quick__icon" aria-hidden="true">&#128197;</span>
+      <span><span class="lyg-quick__title">Calendar</span><span class="lyg-quick__sub">See what's on this month</span></span>
+    </a>
+    <a class="lyg-quick__card" href="#lyg-texts">
+      <span class="lyg-quick__icon" aria-hidden="true">&#128172;</span>
+      <span><span class="lyg-quick__title">Text Updates</span><span class="lyg-quick__sub">Cancellations &amp; reminders</span></span>
+    </a>
+    <a class="lyg-quick__card" href="#lyg-contact">
+      <span class="lyg-quick__icon" aria-hidden="true">&#9995;</span>
+      <span><span class="lyg-quick__title">Contact Staff</span><span class="lyg-quick__sub">Talk to a real human</span></span>
+    </a>
+    <a class="lyg-quick__card" href="#lyg-groups">
+      <span class="lyg-quick__icon" aria-hidden="true">&#128106;</span>
+      <span><span class="lyg-quick__title">Find Your Group</span><span class="lyg-quick__sub">Programs by age + identity</span></span>
+    </a>
+  </div>
+</nav>
+
+<!-- ============== INTRO STRIP ============== -->
+<section class="lyg-intro">
+  <div class="lyg-wrap">
+    <p><strong>Every LYG program is free.</strong> No registration, no proof, no need to come out to anyone &mdash; just show up. We post everything on our program calendar and the Remind text system below.</p>
+  </div>
+</section>
+
+<!-- ============== CALENDAR ============== -->
+<section class="lyg-section" id="lyg-calendar" aria-labelledby="lyg-h2-cal">
+  <div class="lyg-wrap">
+    <div class="lyg-h2-wrap">
+      <span class="lyg-eyebrow">This month</span>
+      <h2 id="lyg-h2-cal">What's happening</h2>
+      <p>All groups meet at the LYG space unless noted. Times are Eastern.</p>
+    </div>
+
+    <div class="lyg-cal__frame">
+      <div class="lyg-cal__embed">
+        <iframe
+          title="LYG Program Calendar"
+          src="https://calendar.google.com/calendar/embed?src=louisvilleyouthgroup.org_dsuqb6s982mabolcjioivdu5pk%40group.calendar.google.com&ctz=America%2FNew_York"
+          loading="lazy"></iframe>
+      </div>
+    </div>
+
+    <div class="lyg-cal__foot">
+      <p style="margin:0">Need a printable copy?
+        <a href="https://drive.google.com/file/d/1P-A3g6NHR6owWAc5JjorwA_kDJv6wXcL/view?usp=drive_link">Download the 2025 program calendar (PDF)</a>.
+      </p>
+      <a class="lyg-btn lyg-btn--gold" href="https://calendar.google.com/calendar/r?cid=louisvilleyouthgroup.org_dsuqb6s982mabolcjioivdu5pk@group.calendar.google.com">Add to Google Calendar</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============== AGE GROUPS ============== -->
+<section class="lyg-section lyg-section--light" id="lyg-groups" aria-labelledby="lyg-h2-groups">
+  <div class="lyg-wrap">
+    <div class="lyg-h2-wrap">
+      <span class="lyg-eyebrow">Find your group</span>
+      <h2 id="lyg-h2-groups">Programs by age &amp; identity</h2>
+      <p>Pick the one that fits. Not sure? Message a staff member &mdash; we'll help you land in the right room.</p>
+    </div>
+
+    <div class="lyg-groups__grid">
+      <a class="lyg-group lyg-group--junior" href="#guide-junior">
+        <span class="lyg-group__top" aria-hidden="true"></span>
+        <div class="lyg-group__body">
+          <span class="lyg-group__age">Ages 5&ndash;10</span>
+          <h3 class="lyg-group__title">Junior Group</h3>
+          <p class="lyg-group__desc">Play, art, and community for our youngest crew and their caregivers.</p>
+        </div>
+      </a>
+      <a class="lyg-group lyg-group--tween" href="#guide-tween">
+        <span class="lyg-group__top" aria-hidden="true"></span>
+        <div class="lyg-group__body">
+          <span class="lyg-group__age">Ages 11&ndash;13</span>
+          <h3 class="lyg-group__title">Tween Group</h3>
+          <p class="lyg-group__desc">Friend-making, identity questions welcome, snacks always.</p>
+        </div>
+      </a>
+      <a class="lyg-group lyg-group--teen" href="#guide-teen">
+        <span class="lyg-group__top" aria-hidden="true"></span>
+        <div class="lyg-group__body">
+          <span class="lyg-group__age">Ages 14&ndash;18</span>
+          <h3 class="lyg-group__title">Teen Group</h3>
+          <p class="lyg-group__desc">Our biggest weekly drop-in: games, real talk, and chosen-family vibes.</p>
+        </div>
+      </a>
+      <a class="lyg-group lyg-group--rising" href="#guide-rising">
+        <span class="lyg-group__top" aria-hidden="true"></span>
+        <div class="lyg-group__body">
+          <span class="lyg-group__age">Ages 18&ndash;24</span>
+          <h3 class="lyg-group__title">LYG Rising</h3>
+          <p class="lyg-group__desc">Young-adult community, life skills, and the LYG family beyond high school.</p>
+        </div>
+      </a>
+      <a class="lyg-group lyg-group--melanin" href="#guide-melanin">
+        <span class="lyg-group__top" aria-hidden="true"></span>
+        <div class="lyg-group__body">
+          <span class="lyg-group__age">Ages 13&ndash;19</span>
+          <h3 class="lyg-group__title">Melanin MagiQ</h3>
+          <p class="lyg-group__desc">A brave, affirming space centering queer &amp; trans youth of the Global Majority.</p>
+        </div>
+      </a>
+      <a class="lyg-group lyg-group--tnbi" href="#guide-tnbi">
+        <span class="lyg-group__top" aria-hidden="true"></span>
+        <div class="lyg-group__body">
+          <span class="lyg-group__age">Ages 13&ndash;19</span>
+          <h3 class="lyg-group__title">Trans, Non-Binary &amp; Intersex Group</h3>
+          <p class="lyg-group__desc">Support for gender-expansive teens, led by trans and nonbinary mentors.</p>
+        </div>
+      </a>
+      <a class="lyg-group lyg-group--ylc" href="#guide-ylc">
+        <span class="lyg-group__top" aria-hidden="true"></span>
+        <div class="lyg-group__body">
+          <span class="lyg-group__age">By application</span>
+          <h3 class="lyg-group__title">Youth Leadership Council</h3>
+          <p class="lyg-group__desc">Youth-led advocacy that guides LYG's programs and events.</p>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============== TEXT UPDATES ============== -->
+<section class="lyg-section" id="lyg-texts" aria-labelledby="lyg-h2-texts">
+  <div class="lyg-wrap">
+    <div class="lyg-h2-wrap">
+      <span class="lyg-eyebrow">Stay in the know</span>
+      <h2 id="lyg-h2-texts">Get text updates</h2>
+      <p>Pick the list that fits you. We text about cancellations, schedule changes, and reminders. Standard message and data rates apply.</p>
+    </div>
+
+    <div class="lyg-texts__grid">
+      <a class="lyg-texts__btn lyg-texts__btn--teen"   href="https://www.remind.com/join/teenlyg">Teens<span>Ages 13&ndash;17</span></a>
+      <a class="lyg-texts__btn lyg-texts__btn--rising" href="https://remind.com/join/riselyg">Rising Adults<span>Ages 18&ndash;24</span></a>
+      <a class="lyg-texts__btn lyg-texts__btn--care"   href="https://remind.com/join/lygparents">Caregivers<span>Parents &amp; family</span></a>
+      <a class="lyg-texts__btn lyg-texts__btn--teach"  href="https://remind.com/join/kygsas">Teachers<span>GSA leaders</span></a>
+      <a class="lyg-texts__btn lyg-texts__btn--svc"    href="https://remind.com/join/lygvillage">Providers<span>Service partners</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ============== CONTACT ============== -->
+<section class="lyg-section lyg-section--light" id="lyg-contact" aria-labelledby="lyg-h2-contact">
+  <div class="lyg-wrap">
+    <div class="lyg-h2-wrap">
+      <span class="lyg-eyebrow">We're here</span>
+      <h2 id="lyg-h2-contact">New to LYG? Talk to our program team</h2>
+      <p>Have a question? Need to flag something? Use the form, call us, or DM us &mdash; whatever's easiest. They're excited to meet you.</p>
+    </div>
+
+    <div class="lyg-contact__grid">
+      <div class="lyg-contact__form">
+        [wpforms id="111"]
+      </div>
+      <div class="lyg-contact__side">
+        <ul>
+          <li><span class="ic" aria-hidden="true">&#9742;</span><a href="tel:+15024302016">(502) 430-2016</a></li>
+          <li><span class="ic" aria-hidden="true">&#9993;</span><a href="mailto:programs@louisvilleyouthgroup.org">programs@louisvilleyouthgroup.org</a></li>
+          <li><span class="ic" aria-hidden="true">&#127968;</span>417 East Broadway, Louisville, KY 40202</li>
+          <li><span class="ic" aria-hidden="true">f</span><a href="https://www.facebook.com/wearelyg">Louisville Youth Group on Facebook</a></li>
+          <li><span class="ic" aria-hidden="true">&#9737;</span><a href="https://www.instagram.com/wearelyg/">@wearelyg on Instagram</a></li>
+        </ul>
+        <p class="lyg-contact__note">Calling? For programming questions, dial 1 when you hear the auto-attendant.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============== PROGRAM & EVENT GUIDE ============== -->
+<section class="lyg-section lyg-guide" id="lyg-guide" aria-labelledby="lyg-h2-guide">
+  <div class="lyg-wrap">
+    <div class="lyg-h2-wrap">
+      <span class="lyg-eyebrow">Reference</span>
+      <h2 id="lyg-h2-guide">Program &amp; event guide</h2>
+      <p>Full descriptions of every group, event, and resource.</p>
+    </div>
+
+    <div class="lyg-guide__list">
+      <details id="guide-junior"><summary>Junior Group (Ages 5&ndash;10)</summary><div class="lyg-guide__body"><p>Junior group is for LGBTQIA+ youth between the ages of 5-10 and their caregivers. This group creates a welcoming space for youth and their family members to explore their identities, make friends, and build a supportive community. Adult mentors help bridge the gap between the newly identifying LGBTQIA+ young people and their families by providing insight, wisdom, and resources in a fun and engaging environment.</p></div></details>
+
+      <details id="guide-tween"><summary>Tween Group (Ages 11&ndash;13)</summary><div class="lyg-guide__body"><p>Tween group is for LGBTQIA+ youth between the ages of 11-13. This group creates a welcoming space for youth to explore their identities, make friends, and build self-esteem with a supportive community. This group is driven by the needs and suggestions of the youth involved, and facilitated by Adult Mentors. Activities &amp; Topics Include: Arts &amp; Crafts, Social and Emotional Development, Games, Identity Exploration, Healthy Relationships, and Comprehensive Health Education (just to name a few!)</p></div></details>
+
+      <details id="guide-teen"><summary>Teen Group (Ages 14&ndash;18)</summary><div class="lyg-guide__body"><p>Teen Group brings together LGBTQIA+ youth between the ages of 14-18 in an affirming, fun and relaxing setting. Youth have the opportunity to explore their gender and sexuality, build self-worth and healthy relationships, and connect with the broader LGBTQIA+ community. This group is driven by the needs and suggestions of the youth involved, and facilitated by Adult Mentors and members of our Youth Leadership Council. Activities &amp; Topics Include: Game night, Queer History, Arts &amp; Crafts, Mental Health First-aid, Gender Expression &amp; Euphoria, Healthy Relationships and Comprehensive Health Education (just to name a few!)</p></div></details>
+
+      <details id="guide-rising"><summary>LYG Rising (Ages 18&ndash;24)</summary><div class="lyg-guide__body"><p>LYG Rising is a monthly meetup for LGBTQIA+ Young Adults (ages 18-24) to socialize, learn life skills, and to develop the tools needed to build community and act as agents of change.</p></div></details>
+
+      <details id="guide-melanin"><summary>Melanin MagiQ (Ages 13&ndash;19)</summary><div class="lyg-guide__body"><p>Melanin MagiQ is a group for LGBTQIA2S+ Youth of the Global Majority - This group is specifically for Black, Indigenous, Latin&eacute;, Asian, Multi-Racial, and other Melanated youth, and is led by Mentors who also represent these racial &amp; ethnic identities. The Melanin MagiQ group provides a brave and affirming space for young people to discuss the unique ways that their identities intersect, build self-worth and healthy relationships, and grow into joyful and connected young adults.</p></div></details>
+
+      <details id="guide-tnbi"><summary>Trans, Non-Binary &amp; Intersex Group (Ages 13&ndash;19)</summary><div class="lyg-guide__body"><p>Trans, Non-Binary, and Intersex Group is focused on the social, emotional, legal, and medical needs of gender expansive teens. Trans and NonBinary mentors provide support and help guide youth through the complexities of their own self-discovery and the practical steps toward realizing and affirming their gender identity and expression.</p></div></details>
+
+      <details id="guide-ylc"><summary>Youth Leadership Council</summary><div class="lyg-guide__body"><p>Our Youth Leadership Council (YLC) provides an opportunity to develop advocacy and leadership skills through collaborative organizing, peer education and support, and community service. The YLC serves as the guiding youth voice and vision for all of LYG's programs and events, and works closely with LYG staff and adult mentors to keep the needs of our youth centered.</p><p>Council members must be at least 13 years old, and are selected through an application process. For more information or to apply, please email our <a href="mailto:programs@louisvilleyouthgroup.org"><strong>Program Team</strong></a>.</p></div></details>
+
+      <details id="guide-bl"><summary>Beyond Labels &amp; Resource Closet</summary><div class="lyg-guide__body"><p>Beyond Labels is our free Resource Closet, open to youth during all of our programming. Stop by to pick up free clothing and gender-affirming items &mdash; no cost, no questions, and no need to explain yourself. We want every young person to be able to show up as their fullest self.</p><p>Available items include binder fittings, trans tape, gaffs, wigs, cosmetics, and more. If there's something you need that you don't see, just ask a staff member or mentor &mdash; we'll do our best to help.</p></div></details>
+
+      <details id="guide-prom"><summary>Pride Prom + Lavender Graduation (Spring)</summary><div class="lyg-guide__body"><p>We provide a safe and celebratory space for LGBTQIA+ and allied youth (ages 14-24) to enjoy a fun evening with friends, old and new. During our prom, we hold a graduation ceremony to affirm and uplift our students who are graduating from home schooling, NTI, GED programs, trade school, traditional high school, and undergraduate programs.</p></div></details>
+
+      <details id="guide-camp"><summary>Youth Empowerment Camp (Fall)</summary><div class="lyg-guide__body"><p>LYG Camp is a fun weekend to socialize, develop leadership skills, and enjoy nature. Activities include campfires, night hikes, challenge course initiatives, and lots of lively conversation.</p></div></details>
+
+      <details id="guide-nye"><summary>New Year's Eve Lock-In (Winter)</summary><div class="lyg-guide__body"><p>LYG provides a safe and sober over-night event for youth to celebrate the New Year. Activities include board games, video games, movies, arts &amp; crafts, a new year ritual, and sparkling cider at midnight. Dinner, Dessert, and Breakfast are provided.</p></div></details>
+    </div>
+  </div>
+</section>
+
+<script>
+(function () {
+  var root = document.getElementById('lyg-programs-root');
+  if (!root) return;
+  var hero = root.querySelector('[data-lyg-hero]');
+  if (!hero) return;
+  var slides = Array.prototype.slice.call(hero.querySelectorAll('.lyg-hero__slide'));
+  var dots = Array.prototype.slice.call(hero.querySelectorAll('[data-lyg-dot]'));
+  var prev = hero.querySelector('[data-lyg-prev]');
+  var next = hero.querySelector('[data-lyg-next]');
+  var i = 0, timer = null;
+  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  function show(n) {
+    i = (n + slides.length) % slides.length;
+    slides.forEach(function (s, idx) { s.classList.toggle('is-active', idx === i); });
+    dots.forEach(function (d, idx) { d.classList.toggle('is-active', idx === i); });
+  }
+  function start() {
+    if (reduce || slides.length < 2) return;
+    stop();
+    timer = setInterval(function () { show(i + 1); }, 6000);
+  }
+  function stop() { if (timer) { clearInterval(timer); timer = null; } }
+
+  if (prev) prev.addEventListener('click', function () { show(i - 1); start(); });
+  if (next) next.addEventListener('click', function () { show(i + 1); start(); });
+  dots.forEach(function (d, idx) { d.addEventListener('click', function () { show(idx); start(); }); });
+  hero.addEventListener('mouseenter', stop);
+  hero.addEventListener('mouseleave', start);
+
+  show(0);
+  start();
+})();
+</script>
+
 </div>
-</center>
-<!-- /wp:html --></div>
+<!-- /wp:html --></main>
 <!-- /wp:group -->
 
-<!-- wp:columns -->
-<div class="wp-block-columns"><!-- wp:column -->
-<div class="wp-block-column"><!-- wp:heading -->
-<h2 class="wp-block-heading"><strong>Stay in the know with Text Updates!</strong></h2>
-<!-- /wp:heading -->
-
-<!-- wp:paragraph -->
-<p>Sign-up to be notified by text message about program updates, cancellations or delays. Standard message rates and data charges from your carrier apply when sending and/or receiving messages.&nbsp; Click the button below to sign up!</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:buttons -->
-<div class="wp-block-buttons"><!-- wp:button {"width":100,"style":{"color":{"background":"#41bdea"}}} -->
-<div class="wp-block-button has-custom-width wp-block-button__width-100"><a class="wp-block-button__link has-background wp-element-button" href="https://www.remind.com/join/teenlyg" style="background-color:#41bdea">Teens (ages 13-17)</a></div>
-<!-- /wp:button --></div>
-<!-- /wp:buttons -->
-
-<!-- wp:buttons -->
-<div class="wp-block-buttons"><!-- wp:button {"width":100,"style":{"color":{"background":"#86bc62"}}} -->
-<div class="wp-block-button has-custom-width wp-block-button__width-100"><a class="wp-block-button__link has-background wp-element-button" href="http://remind.com/join/riselyg" style="background-color:#86bc62">Rising Adult (ages 18-24)</a></div>
-<!-- /wp:button --></div>
-<!-- /wp:buttons -->
-
-<!-- wp:buttons -->
-<div class="wp-block-buttons"><!-- wp:button {"width":100,"style":{"color":{"background":"#a970dc"}}} -->
-<div class="wp-block-button has-custom-width wp-block-button__width-100"><a class="wp-block-button__link has-background wp-element-button" href="http://remind.com/join/lygparents" style="background-color:#a970dc">Caregivers / Parents</a></div>
-<!-- /wp:button --></div>
-<!-- /wp:buttons -->
-
-<!-- wp:buttons -->
-<div class="wp-block-buttons"><!-- wp:button {"width":100,"style":{"color":{"background":"#ec7262"}}} -->
-<div class="wp-block-button has-custom-width wp-block-button__width-100"><a class="wp-block-button__link has-background wp-element-button" href="http://remind.com/join/kygsas" style="background-color:#ec7262">Teachers / GSA Leaders</a></div>
-<!-- /wp:button --></div>
-<!-- /wp:buttons -->
-
-<!-- wp:buttons -->
-<div class="wp-block-buttons"><!-- wp:button {"backgroundColor":"contrast-2","width":100} -->
-<div class="wp-block-button has-custom-width wp-block-button__width-100"><a class="wp-block-button__link has-contrast-2-background-color has-background wp-element-button" href="http://remind.com/join/lygvillage">Service Providers</a></div>
-<!-- /wp:button --></div>
-<!-- /wp:buttons --></div>
-<!-- /wp:column -->
-
-<!-- wp:column -->
-<div class="wp-block-column"><!-- wp:heading -->
-<h2 class="wp-block-heading"><strong>New to LYG?&nbsp; We are here to help.</strong></h2>
-<!-- /wp:heading -->
-
-<!-- wp:paragraph -->
-<p><strong>Use this form to contact our program team. They’re excited to meet you and answer all of your questions!</strong></p>
-<!-- /wp:paragraph -->
-
-<!-- wp:wpforms/form-selector {"clientId":"c64fe4a5-44b3-44ae-a889-85a801e1cca5","formId":"111","theme":"classic-copy-1","themeName":"Classic (Copy)","labelSize":"small","labelColor":"#eae3ff","labelSublabelColor":"#ffffff","labelErrorColor":"#ff0000","pageBreakColor":"#dddddd","copyPasteJsonValue":"{\u0022displayTitle\u0022:false,\u0022displayDesc\u0022:false,\u0022theme\u0022:\u0022classic-copy-1\u0022,\u0022themeName\u0022:\u0022Classic (Copy)\u0022,\u0022fieldSize\u0022:\u0022medium\u0022,\u0022backgroundImage\u0022:\u0022none\u0022,\u0022backgroundPosition\u0022:\u0022center center\u0022,\u0022backgroundRepeat\u0022:\u0022no-repeat\u0022,\u0022backgroundSizeMode\u0022:\u0022cover\u0022,\u0022backgroundSize\u0022:\u0022cover\u0022,\u0022backgroundWidth\u0022:\u0022100px\u0022,\u0022backgroundHeight\u0022:\u0022100px\u0022,\u0022backgroundUrl\u0022:\u0022url()\u0022,\u0022backgroundColor\u0022:\u0022rgba( 0, 0, 0, 0 )\u0022,\u0022fieldBorderRadius\u0022:\u00220px\u0022,\u0022fieldBorderStyle\u0022:\u0022solid\u0022,\u0022fieldBorderSize\u0022:\u00221px\u0022,\u0022fieldBackgroundColor\u0022:\u0022#ffffff\u0022,\u0022fieldBorderColor\u0022:\u0022#cccccc\u0022,\u0022fieldTextColor\u0022:\u0022#ffffff\u0022,\u0022fieldMenuColor\u0022:\u0022#ffffff\u0022,\u0022labelSize\u0022:\u0022small\u0022,\u0022labelColor\u0022:\u0022#eae3ff\u0022,\u0022labelSublabelColor\u0022:\u0022#ffffff\u0022,\u0022labelErrorColor\u0022:\u0022#ff0000\u0022,\u0022buttonSize\u0022:\u0022medium\u0022,\u0022buttonBorderStyle\u0022:\u0022solid\u0022,\u0022buttonBorderSize\u0022:\u00221px\u0022,\u0022buttonBorderRadius\u0022:\u00220px\u0022,\u0022buttonBackgroundColor\u0022:\u0022#dddddd\u0022,\u0022buttonTextColor\u0022:\u0022#666666\u0022,\u0022buttonBorderColor\u0022:\u0022#cccccc\u0022,\u0022pageBreakColor\u0022:\u0022#dddddd\u0022,\u0022containerPadding\u0022:\u00220px\u0022,\u0022containerBorderStyle\u0022:\u0022none\u0022,\u0022containerBorderWidth\u0022:\u00221px\u0022,\u0022containerBorderColor\u0022:\u0022#000000\u0022,\u0022containerBorderRadius\u0022:\u00223px\u0022,\u0022containerShadowSize\u0022:\u0022none\u0022,\u0022customCss\u0022:\u0022\u0022}","fieldBorderRadius":"0px","fieldBorderColor":"#cccccc","fieldTextColor":"#ffffff","buttonBorderStyle":"solid","buttonBorderRadius":"0px","buttonBackgroundColor":"#dddddd","buttonTextColor":"#666666","buttonBorderColor":"#cccccc"} /--></div>
-<!-- /wp:column --></div>
-<!-- /wp:columns -->
-
-<!-- wp:heading {"textAlign":"center","level":1} -->
-<h1 class="wp-block-heading has-text-align-center"><strong>Program &amp; Event Guide</strong></h1>
-<!-- /wp:heading -->
-
-<!-- wp:group {"style":{"spacing":{"padding":{"top":"0.25rem","bottom":"0.25rem","left":"2rem","right":"2rem"},"blockGap":"5px"}},"backgroundColor":"accent","layout":{"type":"default"}} -->
-<div class="wp-block-group has-accent-background-color has-background" style="padding-top:0.25rem;padding-right:2rem;padding-bottom:0.25rem;padding-left:2rem"><!-- wp:details {"className":"is-style-default","style":{"spacing":{"blockGap":"var:preset|spacing|10"}},"backgroundColor":"base","fontSize":"small"} -->
-<details class="wp-block-details is-style-default has-base-background-color has-background has-small-font-size"><summary><strong> Junior Group (AGES 5-10)</strong></summary><!-- wp:paragraph {"placeholder":"Type / to add a hidden block"} -->
-<p>Junior group is for LGBTQIA+ youth between the ages of 5-10 and their caregivers. This group creates a welcoming space for youth and their family members to explore their identities, make friends, and build a supportive community. Adult mentors help bridge the gap between the newly identifying LGBTQIA+ young people and their families by providing insight, wisdom, and resources in a fun and engaging environment.</p>
-<!-- /wp:paragraph --></details>
-<!-- /wp:details -->
-
-<!-- wp:details {"className":"is-style-default","style":{"spacing":{"blockGap":"var:preset|spacing|10"}},"backgroundColor":"base","fontSize":"small"} -->
-<details class="wp-block-details is-style-default has-base-background-color has-background has-small-font-size"><summary><strong> Tween Group (Ages 11-13)</strong></summary><!-- wp:paragraph {"placeholder":"Type / to add a hidden block"} -->
-<p>Tween group is for LGBTQIA+ youth between the ages of 11-13. This group creates a welcoming space for youth to explore their identities, make friends, and build self-esteem with a supportive community.&nbsp; This group is driven by the needs and suggestions of the youth involved, and facilitated by Adult Mentors. Activities &amp; Topics Include: Arts &amp; Crafts, Social and Emotional Development, Games, Identity Exploration, Healthy Relationships, and Comprehensive Health Education (just to name a few!)</p>
-<!-- /wp:paragraph --></details>
-<!-- /wp:details -->
-
-<!-- wp:details {"className":"is-style-default","style":{"spacing":{"blockGap":"var:preset|spacing|10"}},"backgroundColor":"base","fontSize":"small"} -->
-<details class="wp-block-details is-style-default has-base-background-color has-background has-small-font-size"><summary><strong> Teen Group (Ages 14-18)</strong></summary><!-- wp:paragraph {"placeholder":"Type / to add a hidden block"} -->
-<p>Teen Group brings together LGBTQIA+ youth between the ages of 14-18 in an affirming, fun and relaxing setting. Youth have the opportunity to explore their gender and sexuality, build self-worth and healthy relationships, and connect with the broader LGBTQIA+ community. This group is driven by the needs and suggestions of the youth involved, and facilitated by Adult Mentors and members of our Youth Leadership Council. Activities &amp; Topics Include: Game night, Queer History, Arts &amp; Crafts, Mental Health First-aid, Gender Expression &amp; Euphoria, Healthy Relationships and Comprehensive Health Education (just to name a few!)</p>
-<!-- /wp:paragraph --></details>
-<!-- /wp:details -->
-
-<!-- wp:details {"className":"is-style-default","style":{"spacing":{"blockGap":"var:preset|spacing|10"}},"backgroundColor":"base","fontSize":"small"} -->
-<details class="wp-block-details is-style-default has-base-background-color has-background has-small-font-size"><summary><strong> LYG Rising (Ages 18-24)</strong></summary><!-- wp:paragraph {"placeholder":"Type / to add a hidden block"} -->
-<p>LYG Rising is a monthly meetup for LGBTQIA+ Young Adults (ages 18-24) to socialize, learn life skills, and to develop the tools needed to build community and act as agents of change.</p>
-<!-- /wp:paragraph --></details>
-<!-- /wp:details -->
-
-<!-- wp:details {"className":"is-style-default","style":{"spacing":{"blockGap":"var:preset|spacing|10"}},"backgroundColor":"base","fontSize":"small"} -->
-<details class="wp-block-details is-style-default has-base-background-color has-background has-small-font-size"><summary><strong> Melanin MagiQ (Ages 13-19)</strong></summary><!-- wp:paragraph {"placeholder":"Type / to add a hidden block"} -->
-<p>Melanin MagiQ is a group for LGBTQIA2S+ Youth of the Global Majority - This group is specifically for Black, Indigenous, Latiné, Asian, Multi-Racial, and other Melanated youth, and is led by Mentors who also represent these racial &amp; ethnic identities. The Melanin MagiQ group provides a brave and affirming space for young people to discuss the unique ways that their identities intersect, build self-worth and healthy relationships, and grow into joyful and connected young adults.</p>
-<!-- /wp:paragraph --></details>
-<!-- /wp:details -->
-
-<!-- wp:details {"className":"is-style-default","style":{"spacing":{"blockGap":"var:preset|spacing|10"}},"backgroundColor":"base","fontSize":"small"} -->
-<details class="wp-block-details is-style-default has-base-background-color has-background has-small-font-size"><summary><strong> Trans, Non-Binary, and Intersex Group (Ages 13-19)</strong></summary><!-- wp:paragraph {"placeholder":"Type / to add a hidden block"} -->
-<p>Trans, Non-Binary, and Intersex Group is focused on the social, emotional, legal, and medical needs of gender expansive teens.&nbsp; Trans and NonBinary mentors provide support and help guide youth through the complexities of their own self-discovery and the practical steps toward realizing and affirming their gender identity and expression.</p>
-<!-- /wp:paragraph --></details>
-<!-- /wp:details -->
-
-<!-- wp:details {"className":"is-style-default","style":{"spacing":{"blockGap":"var:preset|spacing|10"}},"backgroundColor":"base","fontSize":"small"} -->
-<details class="wp-block-details is-style-default has-base-background-color has-background has-small-font-size"><summary><strong> Youth Leadership Council</strong></summary><!-- wp:paragraph {"placeholder":"Type / to add a hidden block"} -->
-<p>Our Youth Leadership Council (YLC) provides an opportunity to develop advocacy and leadership skills through collaborative organizing, peer education and support, and community service.&nbsp; The YLC serves as the guiding youth voice and vision for all of LYG's programs and events, and works closely with LYG staff and adult mentors to keep the needs of our youth centered.</p>
-<!-- /wp:paragraph -->
-
-<!-- wp:paragraph {"placeholder":"Type / to add a hidden block"} -->
-<p>Council members must be at least 13 years old, and are selected through an application process.&nbsp; For more information or to apply, please email our <a href="programs@louisvilleyouthgroup.org"><strong>Program Team</strong></a>.</p>
-<!-- /wp:paragraph --></details>
-<!-- /wp:details -->
-
-<!-- wp:details {"className":"is-style-default","style":{"spacing":{"blockGap":"var:preset|spacing|10"}},"backgroundColor":"base","fontSize":"small"} -->
-<details class="wp-block-details is-style-default has-base-background-color has-background has-small-font-size"><summary><strong> Beyond Labels and Resource Closet</strong></summary><!-- wp:paragraph {"placeholder":"Type / to add a hidden block"} -->
-<p>Tween group is for LGBTQIA+ youth between the ages of 11-13. This group creates a welcoming space for youth to explore their identities, make friends, and build self-esteem with a supportive community.&nbsp; This group is driven by the needs and suggestions of the youth involved, and facilitated by Adult Mentors. Activities &amp; Topics Include: Arts &amp; Crafts, Social and Emotional Development, Games, Identity Exploration, Healthy Relationships, and Comprehensive Health Education (just to name a few!)</p>
-<!-- /wp:paragraph --></details>
-<!-- /wp:details -->
-
-<!-- wp:details {"className":"is-style-default","style":{"spacing":{"blockGap":"var:preset|spacing|10"}},"backgroundColor":"base","fontSize":"small"} -->
-<details class="wp-block-details is-style-default has-base-background-color has-background has-small-font-size"><summary><strong> Pride Prom + Lavender Graduation (Spring)</strong></summary><!-- wp:paragraph {"placeholder":"Type / to add a hidden block"} -->
-<p>We provide a safe and celebratory space for LGBTQIA+ and allied youth (ages 14-24) to enjoy a fun evening with friends, old and new.&nbsp; During our prom, we hold a graduation ceremony to affirm and uplift our students who are graduating from home schooling, NTI, GED programs, trade school, traditional high school, and undergraduate programs.</p>
-<!-- /wp:paragraph --></details>
-<!-- /wp:details -->
-
-<!-- wp:details {"className":"is-style-default","style":{"spacing":{"blockGap":"var:preset|spacing|10"}},"backgroundColor":"base","fontSize":"small"} -->
-<details class="wp-block-details is-style-default has-base-background-color has-background has-small-font-size"><summary><strong> Youth Empowerment Camp (Fall)</strong></summary><!-- wp:paragraph {"placeholder":"Type / to add a hidden block"} -->
-<p>LYG Camp is a fun weekend to socialize, develop leadership skills, and enjoy nature. Activities include campfires, night hikes, challenge course initiatives, and lots of lively conversation.</p>
-<!-- /wp:paragraph --></details>
-<!-- /wp:details -->
-
-<!-- wp:details {"className":"is-style-default","style":{"spacing":{"blockGap":"var:preset|spacing|10"}},"backgroundColor":"base","fontSize":"small"} -->
-<details class="wp-block-details is-style-default has-base-background-color has-background has-small-font-size"><summary><strong> New Year's Eve Lock-In (Winter)</strong></summary><!-- wp:paragraph {"placeholder":"Type / to add a hidden block"} -->
-<p>LYG provides a safe and sober over-night event for youth to celebrate the New Year.&nbsp; Activities include board games, video games, movies, arts &amp; crafts, a new year ritual, and sparkling cider at midnight.&nbsp; Dinner, Dessert, and Breakfast are provided.</p>
-<!-- /wp:paragraph --></details>
-<!-- /wp:details --></div>
-<!-- /wp:group -->
+<!-- wp:template-part {"slug":"footer","theme":"twentytwentyfour","tagName":"footer","area":"footer"} /-->
