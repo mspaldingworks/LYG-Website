@@ -192,10 +192,10 @@
 }
 #lyg-programs-root .lyg-group:hover{transform:translateY(-4px);box-shadow:var(--lyg-shadow);color:var(--lyg-text)}
 .lyg-group__top{
-  display:flex;align-items:flex-end;
-  aspect-ratio:5/2;width:100%;padding:.9rem 1rem;
+  aspect-ratio:3/2;width:100%;overflow:hidden;
   background:var(--lyg-teal);
 }
+.lyg-group__top img{width:100%;height:100%;object-fit:cover;object-position:center 30%;display:block}
 .lyg-group__body{padding:1.1rem 1.25rem 1.4rem}
 #lyg-programs-root .lyg-group__age{
   display:inline-block;font-family:var(--lyg-font-display);font-weight:800;
@@ -205,8 +205,8 @@
 }
 #lyg-programs-root .lyg-group__title{margin:.6rem 0 .4rem;color:var(--lyg-text)}
 #lyg-programs-root .lyg-group__desc{font-size:.95rem;margin:0;color:var(--lyg-text);opacity:.85}
-.lyg-group--junior  .lyg-group__top{background:var(--lyg-gold)}
-.lyg-group--junior  {border-bottom-color:var(--lyg-gold)}
+.lyg-group--family  .lyg-group__top{background:var(--lyg-gold)}
+.lyg-group--family  {border-bottom-color:var(--lyg-gold)}
 .lyg-group--tween   .lyg-group__top{background:var(--lyg-green)}
 .lyg-group--tween   {border-bottom-color:var(--lyg-green)}
 .lyg-group--teen    .lyg-group__top{background:var(--lyg-teal)}
@@ -390,7 +390,8 @@
 
     <div class="lyg-cal__foot">
       <p style="margin:0">Need a printable copy?
-        <a href="https://drive.google.com/file/d/1P-A3g6NHR6owWAc5JjorwA_kDJv6wXcL/view?usp=drive_link">Download the 2025 program calendar (PDF)</a>.
+        <a href="https://drive.google.com/file/d/1P-A3g6NHR6owWAc5JjorwA_kDJv6wXcL/view?usp=drive_link">Download the printable calendar (PDF)</a>
+        or <a href="https://canva.link/39bodngrvshqbal" target="_blank" rel="noopener">view the 2026 program calendar in Canva</a>.
       </p>
       <a class="lyg-btn lyg-btn--gold" href="https://calendar.google.com/calendar/r?cid=louisvilleyouthgroup.org_dsuqb6s982mabolcjioivdu5pk@group.calendar.google.com">Add to Google Calendar</a>
     </div>
@@ -407,16 +408,16 @@
     </div>
 
     <div class="lyg-groups__grid">
-      <a class="lyg-group lyg-group--junior" href="#guide-junior">
-        <span class="lyg-group__top" aria-hidden="true"></span>
+      <a class="lyg-group lyg-group--family" href="#guide-family">
+        <span class="lyg-group__top"><img src="https://louisvilleyouthgroup.org/wp-content/uploads/2026/06/IMG_9980-scaled.jpg" alt="" loading="lazy"></span>
         <div class="lyg-group__body">
           <span class="lyg-group__age">Ages 5&ndash;10</span>
-          <h3 class="lyg-group__title">Junior Group</h3>
+          <h3 class="lyg-group__title">Family Group</h3>
           <p class="lyg-group__desc">Play, art, and community for our youngest crew and their caregivers.</p>
         </div>
       </a>
       <a class="lyg-group lyg-group--tween" href="#guide-tween">
-        <span class="lyg-group__top" aria-hidden="true"></span>
+        <span class="lyg-group__top"><img src="https://louisvilleyouthgroup.org/wp-content/uploads/2026/03/1F4A0013-scaled.jpg" alt="" loading="lazy"></span>
         <div class="lyg-group__body">
           <span class="lyg-group__age">Ages 11&ndash;13</span>
           <h3 class="lyg-group__title">Tween Group</h3>
@@ -424,7 +425,7 @@
         </div>
       </a>
       <a class="lyg-group lyg-group--teen" href="#guide-teen">
-        <span class="lyg-group__top" aria-hidden="true"></span>
+        <span class="lyg-group__top"><img src="https://louisvilleyouthgroup.org/wp-content/uploads/2026/03/F4A9890-scaled.jpg" alt="" loading="lazy"></span>
         <div class="lyg-group__body">
           <span class="lyg-group__age">Ages 14&ndash;18</span>
           <h3 class="lyg-group__title">Teen Group</h3>
@@ -432,7 +433,7 @@
         </div>
       </a>
       <a class="lyg-group lyg-group--rising" href="#guide-rising">
-        <span class="lyg-group__top" aria-hidden="true"></span>
+        <span class="lyg-group__top"><img src="https://louisvilleyouthgroup.org/wp-content/uploads/2025/07/D9A8754-e1519512245455-1.jpg" alt="" loading="lazy"></span>
         <div class="lyg-group__body">
           <span class="lyg-group__age">Ages 18&ndash;24</span>
           <h3 class="lyg-group__title">LYG Rising</h3>
@@ -456,7 +457,7 @@
         </div>
       </a>
       <a class="lyg-group lyg-group--ylc" href="#guide-ylc">
-        <span class="lyg-group__top" aria-hidden="true"></span>
+        <span class="lyg-group__top"><img src="https://louisvilleyouthgroup.org/wp-content/uploads/2026/06/IMG_0938-scaled.jpg" alt="" loading="lazy"></span>
         <div class="lyg-group__body">
           <span class="lyg-group__age">By application</span>
           <h3 class="lyg-group__title">Youth Leadership Council</h3>
@@ -523,7 +524,7 @@
     </div>
 
     <div class="lyg-guide__list">
-      <details id="guide-junior"><summary>Junior Group (Ages 5&ndash;10)</summary><div class="lyg-guide__body"><p>Junior group is for LGBTQIA+ youth between the ages of 5-10 and their caregivers. This group creates a welcoming space for youth and their family members to explore their identities, make friends, and build a supportive community. Adult mentors help bridge the gap between the newly identifying LGBTQIA+ young people and their families by providing insight, wisdom, and resources in a fun and engaging environment.</p></div></details>
+      <details id="guide-family"><summary>Family Group (Ages 5&ndash;10)</summary><div class="lyg-guide__body"><p>Family Group is for LGBTQIA+ youth between the ages of 5-10 and their caregivers. This group creates a welcoming space for youth and their family members to explore their identities, make friends, and build a supportive community. Adult mentors help bridge the gap between the newly identifying LGBTQIA+ young people and their families by providing insight, wisdom, and resources in a fun and engaging environment.</p></div></details>
 
       <details id="guide-tween"><summary>Tween Group (Ages 11&ndash;13)</summary><div class="lyg-guide__body"><p>Tween group is for LGBTQIA+ youth between the ages of 11-13. This group creates a welcoming space for youth to explore their identities, make friends, and build self-esteem with a supportive community. This group is driven by the needs and suggestions of the youth involved, and facilitated by Adult Mentors. Activities &amp; Topics Include: Arts &amp; Crafts, Social and Emotional Development, Games, Identity Exploration, Healthy Relationships, and Comprehensive Health Education (just to name a few!)</p></div></details>
 
