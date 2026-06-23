@@ -102,21 +102,27 @@
 #lyg-programs-root .lyg-btn--gold{background:var(--lyg-gold);color:var(--lyg-navy)}
 #lyg-programs-root .lyg-btn--gold:hover{background:#ffc658;color:var(--lyg-navy)}
 
-/* HERO CAROUSEL */
-.lyg-hero{position:relative;overflow:hidden;background:var(--lyg-navy)}
-.lyg-hero__slides{position:absolute;inset:0}
-.lyg-hero__slide{
-  position:absolute;inset:0;background-size:cover;background-position:center;
-  opacity:0;transition:opacity 900ms ease;
-}
-.lyg-hero__slide.is-active{opacity:1}
-.lyg-hero__overlay{
-  position:absolute;inset:0;
-  background:linear-gradient(180deg,rgba(16,36,58,.45) 0%,rgba(16,36,58,.82) 100%);
+/* SAFETY: make every section/nav its own positioning context so an
+   absolutely-positioned child can never escape and blanket the page,
+   even if the page builder reflows the markup. */
+#lyg-programs-root section,#lyg-programs-root nav{position:relative}
+
+/* HERO — image lives on the section background (no stacked absolute
+   layers that can escape their container). JS swaps the image. */
+#lyg-programs-root .lyg-hero{
+  position:relative;overflow:hidden;
+  min-height:clamp(360px,46vw,560px);
+  display:flex;align-items:center;
+  background-color:var(--lyg-navy);
+  background-size:cover;background-position:center;background-repeat:no-repeat;
+  background-image:
+    linear-gradient(180deg,rgba(16,36,58,.5) 0%,rgba(16,36,58,.85) 100%),
+    url('https://louisvilleyouthgroup.org/wp-content/uploads/2026/06/Programs1-scaled.png');
+  transition:background-image 500ms ease;
 }
 .lyg-hero__inner{
-  position:relative;z-index:2;
-  padding:clamp(3.5rem,9vw,7rem) 0 clamp(4rem,10vw,8rem);
+  position:relative;z-index:2;width:100%;
+  padding:clamp(3rem,7vw,5rem) 0;
 }
 .lyg-hero::after{
   content:"";position:absolute;inset:auto 0 0 0;height:8px;z-index:3;
@@ -320,18 +326,12 @@ main > .wp-block-post-title:first-of-type{display:none}
   .lyg-hero__nav{position:static;justify-content:center;margin-top:1.25rem}
 }
 @media (prefers-reduced-motion:reduce){
-  .lyg-hero__slide{transition:none}
+  .lyg-hero{transition:none}
 }
 </style>
 
 <!-- ============== HERO CAROUSEL ============== -->
 <section class="lyg-hero" aria-labelledby="lyg-h1" data-lyg-hero>
-  <div class="lyg-hero__slides" aria-hidden="true">
-    <div class="lyg-hero__slide is-active" style="background-image:url('https://louisvilleyouthgroup.org/wp-content/uploads/2026/06/Programs1-scaled.png')"></div>
-    <div class="lyg-hero__slide" style="background-image:url('https://louisvilleyouthgroup.org/wp-content/uploads/2026/06/Programs2-scaled.png')"></div>
-    <div class="lyg-hero__slide" style="background-image:url('https://louisvilleyouthgroup.org/wp-content/uploads/2026/06/Programs3-scaled.png')"></div>
-  </div>
-  <div class="lyg-hero__overlay" aria-hidden="true"></div>
   <div class="lyg-hero__inner">
     <div class="lyg-wrap">
       <span class="lyg-hero__tick" aria-hidden="true"></span>
@@ -569,20 +569,28 @@ main > .wp-block-post-title:first-of-type{display:none}
   if (!root) return;
   var hero = root.querySelector('[data-lyg-hero]');
   if (!hero) return;
-  var slides = Array.prototype.slice.call(hero.querySelectorAll('.lyg-hero__slide'));
+  var imgs = [
+    'https://louisvilleyouthgroup.org/wp-content/uploads/2026/06/Programs1-scaled.png',
+    'https://louisvilleyouthgroup.org/wp-content/uploads/2026/06/Programs2-scaled.png',
+    'https://louisvilleyouthgroup.org/wp-content/uploads/2026/06/Programs3-scaled.png'
+  ];
+  var grad = 'linear-gradient(180deg,rgba(16,36,58,.5) 0%,rgba(16,36,58,.85) 100%)';
   var dots = Array.prototype.slice.call(hero.querySelectorAll('[data-lyg-dot]'));
   var prev = hero.querySelector('[data-lyg-prev]');
   var next = hero.querySelector('[data-lyg-next]');
   var i = 0, timer = null;
   var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
+  // preload so swaps don't flash
+  imgs.forEach(function (src) { var im = new Image(); im.src = src; });
+
   function show(n) {
-    i = (n + slides.length) % slides.length;
-    slides.forEach(function (s, idx) { s.classList.toggle('is-active', idx === i); });
+    i = (n + imgs.length) % imgs.length;
+    hero.style.backgroundImage = grad + ", url('" + imgs[i] + "')";
     dots.forEach(function (d, idx) { d.classList.toggle('is-active', idx === i); });
   }
   function start() {
-    if (reduce || slides.length < 2) return;
+    if (reduce || imgs.length < 2) return;
     stop();
     timer = setInterval(function () { show(i + 1); }, 6000);
   }
