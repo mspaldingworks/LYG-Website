@@ -203,7 +203,15 @@
   background:var(--lyg-navy);color:var(--lyg-cream);
   padding:.25rem .6rem;border-radius:999px;
 }
-#lyg-programs-root .lyg-group__title{margin:.6rem 0 .4rem;color:var(--lyg-text)}
+/* PROGRAM CARD TITLES — darker for readability */
+#lyg-programs-root .lyg-group__title{
+  margin:.6rem 0 .4rem;
+  color:#110430 !important;   /* deep indigo */
+  font-weight:700;
+}
+#lyg-programs-root .lyg-group:hover .lyg-group__title{
+  color:#2A4F7A !important;
+}
 #lyg-programs-root .lyg-group__desc{font-size:.95rem;margin:0;color:var(--lyg-text);opacity:.85}
 .lyg-group--family  .lyg-group__top{background:var(--lyg-gold)}
 .lyg-group--family  {border-bottom-color:var(--lyg-gold)}
@@ -288,6 +296,12 @@
 .lyg-guide details[open] summary::after{content:"\2013"}
 .lyg-guide__body{padding:0 1.2rem 1.2rem;color:var(--lyg-cream);opacity:.95}
 .lyg-guide__todo{font-style:italic;opacity:.75}
+
+/* SAFETY: hide an accidental duplicated page title that the theme may
+   render above this block (this stylesheet only loads on the Programs
+   page, so it can't affect other pages). */
+main .entry-header:first-of-type,
+main > .wp-block-post-title:first-of-type{display:none}
 
 /* RESPONSIVE */
 @media (max-width:960px){
